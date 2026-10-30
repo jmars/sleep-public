@@ -5,8 +5,8 @@ Artifact for the paper `paper.md`:
 > *Does the sleep paradigm survive a different substrate? A mechanism assay of dream-based
 > consolidation on a frozen 4-bit mixture of experts*
 
-**DOI: PENDING-ZENODO** — the concept DOI is minted by the deposit itself and this line is
-replaced with it when that happens. Cite the paper by the concept DOI, which always resolves to
+**Published: concept doi [10.5281/zenodo.23820950](https://doi.org/10.5281/zenodo.23820950)** —
+it always resolves to the latest archived version. Cite the paper by the concept DOI, which always resolves to
 the latest archived version.
 
 This repository is the paper's **evidence deposit**: the paper, its claim-to-artefact table, the
