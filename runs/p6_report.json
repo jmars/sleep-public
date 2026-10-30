@@ -1,0 +1,1273 @@
+{
+  "protocol": "plan3 full protocol (corpus, Table 3 CPT column shape)",
+  "arms": {
+    "S": {
+      "run": "p6_s",
+      "sft_mode": "qa",
+      "n_passages": 200,
+      "n_questions": 923,
+      "arm_status": "COMPLETE",
+      "timings": {
+        "dream_phase_s": 0.0033257007598876953,
+        "build_phase_s": 66.10167193412781,
+        "base_reads_s": 509.2608242034912,
+        "train_phase_s": 13406.715014457703,
+        "final_reads_s": 492.91677737236023,
+        "total_s": 14478.15798330307
+      }
+    },
+    "C": {
+      "run": "p6_c",
+      "sft_mode": "cpt",
+      "n_passages": 200,
+      "n_questions": 923,
+      "arm_status": "COMPLETE",
+      "timings": {
+        "dream_phase_s": 0.0033435821533203125,
+        "build_phase_s": 64.48180651664734,
+        "base_reads_s": 506.8283443450928,
+        "train_phase_s": 11679.797542572021,
+        "final_reads_s": 496.71920943260193,
+        "total_s": 12750.975400924683
+      }
+    },
+    "N": {
+      "run": "p6_n",
+      "sft_mode": "dreams",
+      "n_passages": 200,
+      "n_questions": 923,
+      "arm_status": "COMPLETE",
+      "timings": {
+        "dream_phase_s": 0.003326416015625,
+        "build_phase_s": 65.16650795936584,
+        "base_reads_s": 520.0830655097961,
+        "train_phase_s": 11925.472612142563,
+        "final_reads_s": 480.5514886379242,
+        "total_s": 12994.424887895584
+      }
+    }
+  },
+  "primary_single_hop_frame": "corpus_orig",
+  "n_para_accepted": 473,
+  "frames_present": [
+    "corpus_orig",
+    "corpus_para",
+    "transfer",
+    "heldout"
+  ],
+  "single_hop": {
+    "frame": "corpus_orig",
+    "primary_metric": "em",
+    "S_minus_C": {
+      "n_questions": 923,
+      "base_em": 4.658721560130011,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -4.333694474539545,
+      "ci95_pts": [
+        -5.742145178764897,
+        -2.925243770314193
+      ],
+      "n_flipped_up": 3,
+      "n_flipped_down": 43,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_orig"
+    },
+    "S_minus_C_f1": {
+      "n_questions": 923,
+      "base_f1": 11.448580614918642,
+      "final_f1": 10.94020063648532,
+      "gain_pts": -0.5083799784333334,
+      "ci95_pts": [
+        -2.095436851481411,
+        1.061206117312783
+      ],
+      "n_flipped_up": 272,
+      "n_flipped_down": 207,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_orig"
+    },
+    "S_minus_N": {
+      "n_questions": 923,
+      "base_em": 11.484290357529794,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -11.159263271939327,
+      "ci95_pts": [
+        -13.217768147345613,
+        -9.209100758396534
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 104,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@corpus_orig"
+    },
+    "S_gain_over_own_base": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -10.617551462621885,
+      "ci95_pts": [
+        -12.676056338028168,
+        -8.66738894907909
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 98,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@corpus_orig"
+    },
+    "C_gain_over_own_base": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 4.658721560130011,
+      "gain_pts": -6.28385698808234,
+      "ci95_pts": [
+        -8.234019501625136,
+        -4.442036836403034
+      ],
+      "n_flipped_up": 12,
+      "n_flipped_down": 70,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@corpus_orig"
+    },
+    "N_gain_over_own_base": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 11.484290357529794,
+      "gain_pts": 0.5417118093174431,
+      "ci95_pts": [
+        -1.4084507042253522,
+        2.4918743228602382
+      ],
+      "n_flipped_up": 46,
+      "n_flipped_down": 41,
+      "verdict": "INSUFFICIENT",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@corpus_orig"
+    }
+  },
+  "transfer": {
+    "frame": "transfer",
+    "primary_metric": "f1",
+    "S_minus_C": {
+      "n_questions": 117,
+      "base_f1": 2.823127936250108,
+      "final_f1": 5.993124309588548,
+      "gain_pts": 3.1699963733384386,
+      "ci95_pts": [
+        0.9721878311621903,
+        5.469101901188908
+      ],
+      "n_flipped_up": 27,
+      "n_flipped_down": 14,
+      "verdict": "PASS",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@transfer"
+    },
+    "S_minus_C_em": {
+      "n_questions": 117,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "gain_pts": 0.0,
+      "ci95_pts": [
+        0.0,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 0,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@transfer"
+    },
+    "S_minus_N": {
+      "n_questions": 117,
+      "base_f1": 6.9415223902403405,
+      "final_f1": 5.993124309588548,
+      "gain_pts": -0.9483980806517914,
+      "ci95_pts": [
+        -4.572517625823969,
+        2.3656783811979487
+      ],
+      "n_flipped_up": 24,
+      "n_flipped_down": 15,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@transfer"
+    },
+    "S_gain_over_own_base": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 5.993124309588548,
+      "gain_pts": -2.3611565607675797,
+      "ci95_pts": [
+        -6.350589878017042,
+        1.3993209269862439
+      ],
+      "n_flipped_up": 22,
+      "n_flipped_down": 26,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@transfer"
+    },
+    "C_gain_over_own_base": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 2.823127936250108,
+      "gain_pts": -5.531152934106019,
+      "ci95_pts": [
+        -8.941487920609932,
+        -2.433578515780627
+      ],
+      "n_flipped_up": 9,
+      "n_flipped_down": 26,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@transfer"
+    },
+    "N_gain_over_own_base": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 6.9415223902403405,
+      "gain_pts": -1.4127584801157878,
+      "ci95_pts": [
+        -5.742136055107397,
+        2.8906881621813745
+      ],
+      "n_flipped_up": 14,
+      "n_flipped_down": 22,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@transfer"
+    }
+  },
+  "transfer_strata": {
+    "available": true,
+    "n_rows": 117,
+    "n_compositional": 84,
+    "n_hop2_answerable": 33,
+    "arms": {
+      "S|em": {
+        "n": 84,
+        "base": 0.0,
+        "final": 0.0
+      },
+      "S|f1": {
+        "n": 84,
+        "base": 8.652775550166087,
+        "final": 6.094078749153937
+      },
+      "C|em": {
+        "n": 84,
+        "base": 0.0,
+        "final": 0.0
+      },
+      "C|f1": {
+        "n": 84,
+        "base": 8.652775550166087,
+        "final": 2.7081601871517837
+      },
+      "N|em": {
+        "n": 84,
+        "base": 0.0,
+        "final": 0.0
+      },
+      "N|f1": {
+        "n": 84,
+        "base": 8.652775550166087,
+        "final": 4.162596662596663
+      }
+    },
+    "S_minus_C": {
+      "n_questions": 84,
+      "base_f1": 2.7081601871517837,
+      "final_f1": 6.094078749153937,
+      "gain_pts": 3.3859185620021535,
+      "ci95_pts": [
+        0.732231652731432,
+        6.173378974130855
+      ],
+      "n_flipped_up": 21,
+      "n_flipped_down": 11,
+      "verdict": "PASS",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@transfer_compositional"
+    }
+  },
+  "bootstraps": {
+    "own_base|S|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -10.617551462621885,
+      "ci95_pts": [
+        -12.676056338028168,
+        -8.66738894907909
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 98,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@corpus_orig"
+    },
+    "own_base|S|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 21.8755251675981,
+      "final_f1": 10.94020063648532,
+      "gain_pts": -10.935324531112785,
+      "ci95_pts": [
+        -12.92682655492739,
+        -8.981732758225851
+      ],
+      "n_flipped_up": 181,
+      "n_flipped_down": 329,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@corpus_orig"
+    },
+    "own_base|S|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 8.879492600422832,
+      "final_em": 0.42283298097251587,
+      "gain_pts": -8.456659619450317,
+      "ci95_pts": [
+        -10.993657505285412,
+        -6.13107822410148
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 40,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@corpus_para"
+    },
+    "own_base|S|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 19.58450116021094,
+      "final_f1": 9.742426650001187,
+      "gain_pts": -9.84207451020973,
+      "ci95_pts": [
+        -12.399261375644805,
+        -7.370781141612095
+      ],
+      "n_flipped_up": 90,
+      "n_flipped_down": 146,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@corpus_para"
+    },
+    "own_base|S|transfer|em": {
+      "n_questions": 117,
+      "base_em": 0.8547008547008547,
+      "final_em": 0.0,
+      "gain_pts": -0.8547008547008548,
+      "ci95_pts": [
+        -2.564102564102564,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 1,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@transfer"
+    },
+    "own_base|S|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 5.993124309588548,
+      "gain_pts": -2.3611565607675797,
+      "ci95_pts": [
+        -6.350589878017042,
+        1.3993209269862439
+      ],
+      "n_flipped_up": 22,
+      "n_flipped_down": 26,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@transfer"
+    },
+    "own_base|S|heldout|em": {
+      "n_questions": 92,
+      "base_em": 4.3478260869565215,
+      "final_em": 0.0,
+      "gain_pts": -4.3478260869565215,
+      "ci95_pts": [
+        -8.695652173913043,
+        -1.0869565217391304
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 4,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@heldout"
+    },
+    "own_base|S|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 13.855205784553608,
+      "final_f1": 6.465899735687057,
+      "gain_pts": -7.389306048866554,
+      "ci95_pts": [
+        -12.157346157379811,
+        -3.160346695899933
+      ],
+      "n_flipped_up": 14,
+      "n_flipped_down": 23,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S@heldout"
+    },
+    "own_base|C|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 4.658721560130011,
+      "gain_pts": -6.28385698808234,
+      "ci95_pts": [
+        -8.234019501625136,
+        -4.442036836403034
+      ],
+      "n_flipped_up": 12,
+      "n_flipped_down": 70,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@corpus_orig"
+    },
+    "own_base|C|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 21.8755251675981,
+      "final_f1": 11.448580614918642,
+      "gain_pts": -10.426944552679462,
+      "ci95_pts": [
+        -12.428882983202199,
+        -8.46760104871797
+      ],
+      "n_flipped_up": 117,
+      "n_flipped_down": 279,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@corpus_orig"
+    },
+    "own_base|C|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 8.879492600422832,
+      "final_em": 2.536997885835095,
+      "gain_pts": -6.342494714587738,
+      "ci95_pts": [
+        -8.668076109936575,
+        -4.2283298097251585
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 31,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@corpus_para"
+    },
+    "own_base|C|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 19.58450116021094,
+      "final_f1": 8.742016592851515,
+      "gain_pts": -10.842484567359408,
+      "ci95_pts": [
+        -13.363236146026885,
+        -8.398071996733567
+      ],
+      "n_flipped_up": 60,
+      "n_flipped_down": 143,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@corpus_para"
+    },
+    "own_base|C|transfer|em": {
+      "n_questions": 117,
+      "base_em": 0.8547008547008547,
+      "final_em": 0.0,
+      "gain_pts": -0.8547008547008548,
+      "ci95_pts": [
+        -2.564102564102564,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 1,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@transfer"
+    },
+    "own_base|C|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 2.823127936250108,
+      "gain_pts": -5.531152934106019,
+      "ci95_pts": [
+        -8.941487920609932,
+        -2.433578515780627
+      ],
+      "n_flipped_up": 9,
+      "n_flipped_down": 26,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@transfer"
+    },
+    "own_base|C|heldout|em": {
+      "n_questions": 92,
+      "base_em": 4.3478260869565215,
+      "final_em": 1.0869565217391304,
+      "gain_pts": -3.260869565217391,
+      "ci95_pts": [
+        -7.608695652173914,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 3,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@heldout"
+    },
+    "own_base|C|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 13.855205784553608,
+      "final_f1": 5.275136286291893,
+      "gain_pts": -8.580069498261718,
+      "ci95_pts": [
+        -13.499482814414163,
+        -4.210450590599331
+      ],
+      "n_flipped_up": 8,
+      "n_flipped_down": 28,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C@heldout"
+    },
+    "own_base|N|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 10.942578548212351,
+      "final_em": 11.484290357529794,
+      "gain_pts": 0.5417118093174431,
+      "ci95_pts": [
+        -1.4084507042253522,
+        2.4918743228602382
+      ],
+      "n_flipped_up": 46,
+      "n_flipped_down": 41,
+      "verdict": "INSUFFICIENT",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@corpus_orig"
+    },
+    "own_base|N|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 21.8755251675981,
+      "final_f1": 21.736021582344396,
+      "gain_pts": -0.1395035852536984,
+      "ci95_pts": [
+        -2.2433316867060484,
+        2.0244173335325746
+      ],
+      "n_flipped_up": 170,
+      "n_flipped_down": 200,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@corpus_orig"
+    },
+    "own_base|N|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 8.879492600422832,
+      "final_em": 11.839323467230445,
+      "gain_pts": 2.9598308668076108,
+      "ci95_pts": [
+        0.42283298097251587,
+        5.496828752642706
+      ],
+      "n_flipped_up": 25,
+      "n_flipped_down": 11,
+      "verdict": "PASS",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@corpus_para"
+    },
+    "own_base|N|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 19.58450116021094,
+      "final_f1": 19.66627696113723,
+      "gain_pts": 0.08177580092630181,
+      "ci95_pts": [
+        -2.6598856868677276,
+        2.891525773195623
+      ],
+      "n_flipped_up": 78,
+      "n_flipped_down": 95,
+      "verdict": "INSUFFICIENT",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@corpus_para"
+    },
+    "own_base|N|transfer|em": {
+      "n_questions": 117,
+      "base_em": 0.8547008547008547,
+      "final_em": 1.7094017094017093,
+      "gain_pts": 0.8547008547008548,
+      "ci95_pts": [
+        -1.7094017094017095,
+        3.418803418803419
+      ],
+      "n_flipped_up": 2,
+      "n_flipped_down": 1,
+      "verdict": "INSUFFICIENT",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@transfer"
+    },
+    "own_base|N|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 8.354280870356124,
+      "final_f1": 6.9415223902403405,
+      "gain_pts": -1.4127584801157878,
+      "ci95_pts": [
+        -5.742136055107397,
+        2.8906881621813745
+      ],
+      "n_flipped_up": 14,
+      "n_flipped_down": 22,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@transfer"
+    },
+    "own_base|N|heldout|em": {
+      "n_questions": 92,
+      "base_em": 4.3478260869565215,
+      "final_em": 2.1739130434782608,
+      "gain_pts": -2.1739130434782608,
+      "ci95_pts": [
+        -6.521739130434782,
+        2.1739130434782608
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 3,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@heldout"
+    },
+    "own_base|N|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 13.855205784553608,
+      "final_f1": 8.57331074722379,
+      "gain_pts": -5.28189503732982,
+      "ci95_pts": [
+        -11.127462513332079,
+        0.33420383963862244
+      ],
+      "n_flipped_up": 13,
+      "n_flipped_down": 22,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "N@heldout"
+    },
+    "S-C|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 4.658721560130011,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -4.333694474539545,
+      "ci95_pts": [
+        -5.742145178764897,
+        -2.925243770314193
+      ],
+      "n_flipped_up": 3,
+      "n_flipped_down": 43,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_orig"
+    },
+    "S-N|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 11.484290357529794,
+      "final_em": 0.3250270855904659,
+      "gain_pts": -11.159263271939327,
+      "ci95_pts": [
+        -13.217768147345613,
+        -9.209100758396534
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 104,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@corpus_orig"
+    },
+    "C-N|corpus_orig|em": {
+      "n_questions": 923,
+      "base_em": 11.484290357529794,
+      "final_em": 4.658721560130011,
+      "gain_pts": -6.825568797399784,
+      "ci95_pts": [
+        -8.884073672806068,
+        -4.8754062838569885
+      ],
+      "n_flipped_up": 15,
+      "n_flipped_down": 78,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@corpus_orig"
+    },
+    "S-C|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 11.448580614918642,
+      "final_f1": 10.94020063648532,
+      "gain_pts": -0.5083799784333334,
+      "ci95_pts": [
+        -2.095436851481411,
+        1.061206117312783
+      ],
+      "n_flipped_up": 272,
+      "n_flipped_down": 207,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_orig"
+    },
+    "S-N|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 21.736021582344396,
+      "final_f1": 10.94020063648532,
+      "gain_pts": -10.795820945859074,
+      "ci95_pts": [
+        -12.895310639469514,
+        -8.744430204069225
+      ],
+      "n_flipped_up": 195,
+      "n_flipped_down": 299,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@corpus_orig"
+    },
+    "C-N|corpus_orig|f1": {
+      "n_questions": 923,
+      "base_f1": 21.736021582344396,
+      "final_f1": 11.448580614918642,
+      "gain_pts": -10.287440967425756,
+      "ci95_pts": [
+        -12.51434918662583,
+        -8.170176495628814
+      ],
+      "n_flipped_up": 152,
+      "n_flipped_down": 262,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@corpus_orig"
+    },
+    "S-C|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 2.536997885835095,
+      "final_em": 0.42283298097251587,
+      "gain_pts": -2.1141649048625792,
+      "ci95_pts": [
+        -3.8054968287526427,
+        -0.6342494714587738
+      ],
+      "n_flipped_up": 2,
+      "n_flipped_down": 12,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_para"
+    },
+    "S-N|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 11.839323467230445,
+      "final_em": 0.42283298097251587,
+      "gain_pts": -11.416490486257928,
+      "ci95_pts": [
+        -14.376321353065538,
+        -8.668076109936575
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 54,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@corpus_para"
+    },
+    "C-N|corpus_para|em": {
+      "n_questions": 473,
+      "base_em": 11.839323467230445,
+      "final_em": 2.536997885835095,
+      "gain_pts": -9.30232558139535,
+      "ci95_pts": [
+        -12.050739957716702,
+        -6.553911205073996
+      ],
+      "n_flipped_up": 2,
+      "n_flipped_down": 46,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@corpus_para"
+    },
+    "S-C|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 8.742016592851515,
+      "final_f1": 9.742426650001187,
+      "gain_pts": 1.0004100571496768,
+      "ci95_pts": [
+        -0.779817575429572,
+        2.697974244358134
+      ],
+      "n_flipped_up": 130,
+      "n_flipped_down": 97,
+      "verdict": "INSUFFICIENT",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@corpus_para"
+    },
+    "S-N|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 19.66627696113723,
+      "final_f1": 9.742426650001187,
+      "gain_pts": -9.923850311136032,
+      "ci95_pts": [
+        -12.762442905796407,
+        -7.172134732922848
+      ],
+      "n_flipped_up": 92,
+      "n_flipped_down": 137,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@corpus_para"
+    },
+    "C-N|corpus_para|f1": {
+      "n_questions": 473,
+      "base_f1": 19.66627696113723,
+      "final_f1": 8.742016592851515,
+      "gain_pts": -10.924260368285706,
+      "ci95_pts": [
+        -13.846140834884055,
+        -8.077116362304848
+      ],
+      "n_flipped_up": 73,
+      "n_flipped_down": 134,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@corpus_para"
+    },
+    "S-C|transfer|em": {
+      "n_questions": 117,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "gain_pts": 0.0,
+      "ci95_pts": [
+        0.0,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 0,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@transfer"
+    },
+    "S-N|transfer|em": {
+      "n_questions": 117,
+      "base_em": 1.7094017094017093,
+      "final_em": 0.0,
+      "gain_pts": -1.7094017094017095,
+      "ci95_pts": [
+        -4.273504273504273,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 2,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@transfer"
+    },
+    "C-N|transfer|em": {
+      "n_questions": 117,
+      "base_em": 1.7094017094017093,
+      "final_em": 0.0,
+      "gain_pts": -1.7094017094017095,
+      "ci95_pts": [
+        -4.273504273504273,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 2,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@transfer"
+    },
+    "S-C|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 2.823127936250108,
+      "final_f1": 5.993124309588548,
+      "gain_pts": 3.1699963733384386,
+      "ci95_pts": [
+        0.9721878311621903,
+        5.469101901188908
+      ],
+      "n_flipped_up": 27,
+      "n_flipped_down": 14,
+      "verdict": "PASS",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@transfer"
+    },
+    "S-N|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 6.9415223902403405,
+      "final_f1": 5.993124309588548,
+      "gain_pts": -0.9483980806517914,
+      "ci95_pts": [
+        -4.572517625823969,
+        2.3656783811979487
+      ],
+      "n_flipped_up": 24,
+      "n_flipped_down": 15,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@transfer"
+    },
+    "C-N|transfer|f1": {
+      "n_questions": 117,
+      "base_f1": 6.9415223902403405,
+      "final_f1": 2.823127936250108,
+      "gain_pts": -4.1183944539902315,
+      "ci95_pts": [
+        -7.744181827892237,
+        -0.8411080846978284
+      ],
+      "n_flipped_up": 15,
+      "n_flipped_down": 16,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@transfer"
+    },
+    "S-C|heldout|em": {
+      "n_questions": 92,
+      "base_em": 1.0869565217391304,
+      "final_em": 0.0,
+      "gain_pts": -1.0869565217391304,
+      "ci95_pts": [
+        -3.260869565217391,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 1,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@heldout"
+    },
+    "S-N|heldout|em": {
+      "n_questions": 92,
+      "base_em": 2.1739130434782608,
+      "final_em": 0.0,
+      "gain_pts": -2.1739130434782608,
+      "ci95_pts": [
+        -5.434782608695652,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 2,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@heldout"
+    },
+    "C-N|heldout|em": {
+      "n_questions": 92,
+      "base_em": 2.1739130434782608,
+      "final_em": 1.0869565217391304,
+      "gain_pts": -1.0869565217391304,
+      "ci95_pts": [
+        -3.260869565217391,
+        0.0
+      ],
+      "n_flipped_up": 0,
+      "n_flipped_down": 1,
+      "verdict": "FAIL",
+      "metric": "em",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@heldout"
+    },
+    "S-C|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 5.275136286291893,
+      "final_f1": 6.465899735687057,
+      "gain_pts": 1.1907634493951627,
+      "ci95_pts": [
+        -2.1745361304016573,
+        4.394241248797717
+      ],
+      "n_flipped_up": 20,
+      "n_flipped_down": 13,
+      "verdict": "INSUFFICIENT",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-C@heldout"
+    },
+    "S-N|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 8.57331074722379,
+      "final_f1": 6.465899735687057,
+      "gain_pts": -2.107411011536736,
+      "ci95_pts": [
+        -6.459072197899767,
+        1.8270349884631747
+      ],
+      "n_flipped_up": 16,
+      "n_flipped_down": 19,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "S-N@heldout"
+    },
+    "C-N|heldout|f1": {
+      "n_questions": 92,
+      "base_f1": 8.57331074722379,
+      "final_f1": 5.275136286291893,
+      "gain_pts": -3.298174460931898,
+      "ci95_pts": [
+        -6.973170962015356,
+        0.020399286703634435
+      ],
+      "n_flipped_up": 12,
+      "n_flipped_down": 16,
+      "verdict": "FAIL",
+      "metric": "f1",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT",
+      "label": "C-N@heldout"
+    }
+  },
+  "guards": {
+    "S": {
+      "heldout_drop_pts": 4.3478260869565215,
+      "heldout_ok": false,
+      "with_context_drop_pts": 31.999999999999996,
+      "with_context_ok": false,
+      "literalism": {
+        "n_passages": 200,
+        "median_containment": 0.0,
+        "alarm_count": 0,
+        "ok_count": 200,
+        "insufficient_count": 0
+      },
+      "share_trained": 0.10976473922902494,
+      "share_heldout": 0.09526047751168225,
+      "share_band": [
+        0.05,
+        0.09
+      ],
+      "dose": {
+        "steps": 6000,
+        "supervised_tokens_total": 94187,
+        "supervised_tokens_mean_per_passage": 470.935,
+        "n_examples": 1924,
+        "examples_per_passage": 9.62,
+        "visits_per_example": 12.474012474012474,
+        "note": "label tokens the loss scored, summed over all SFT steps (answer-masked for qa, whole-text otherwise); visits_per_example is the epoch count"
+      },
+      "arm_status": "COMPLETE",
+      "training": {
+        "steps_requested": 6000,
+        "steps_trained": 6000,
+        "start_step": 0,
+        "aborted": false,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "train_routers": false,
+        "first_loss": 4.140133380889893,
+        "last_loss": 0.025852704420685768,
+        "epochs": 12.474012474012474
+      }
+    },
+    "C": {
+      "heldout_drop_pts": 3.260869565217391,
+      "heldout_ok": false,
+      "with_context_drop_pts": 20.0,
+      "with_context_ok": false,
+      "literalism": {
+        "n_passages": 200,
+        "median_containment": 0.0,
+        "alarm_count": 0,
+        "ok_count": 200,
+        "insufficient_count": 0
+      },
+      "share_trained": 0.06656568877551021,
+      "share_heldout": 0.06465300087616822,
+      "share_band": [
+        0.05,
+        0.09
+      ],
+      "dose": {
+        "steps": 6000,
+        "supervised_tokens_total": 3474120,
+        "supervised_tokens_mean_per_passage": 17370.6,
+        "n_examples": 200,
+        "examples_per_passage": 1.0,
+        "visits_per_example": 120.0,
+        "note": "label tokens the loss scored, summed over all SFT steps (answer-masked for qa, whole-text otherwise); visits_per_example is the epoch count"
+      },
+      "arm_status": "COMPLETE",
+      "training": {
+        "steps_requested": 6000,
+        "steps_trained": 6000,
+        "start_step": 0,
+        "aborted": false,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "train_routers": false,
+        "first_loss": 0.9311585426330566,
+        "last_loss": 0.02464688941836357,
+        "epochs": 120.0
+      }
+    },
+    "N": {
+      "heldout_drop_pts": 2.1739130434782608,
+      "heldout_ok": true,
+      "with_context_drop_pts": 6.666666666666664,
+      "with_context_ok": true,
+      "literalism": {
+        "n_passages": 200,
+        "median_containment": 0.0,
+        "alarm_count": 0,
+        "ok_count": 200,
+        "insufficient_count": 0
+      },
+      "share_trained": 0.11422902494331066,
+      "share_heldout": 0.1095967800817757,
+      "share_band": [
+        0.05,
+        0.09
+      ],
+      "dose": {
+        "steps": 6000,
+        "supervised_tokens_total": 4482846,
+        "supervised_tokens_mean_per_passage": 22414.23,
+        "n_examples": 1586,
+        "examples_per_passage": 7.93,
+        "visits_per_example": 15.132408575031526,
+        "note": "label tokens the loss scored, summed over all SFT steps (answer-masked for qa, whole-text otherwise); visits_per_example is the epoch count"
+      },
+      "arm_status": "COMPLETE",
+      "training": {
+        "steps_requested": 6000,
+        "steps_trained": 6000,
+        "start_step": 0,
+        "aborted": false,
+        "batch_size": 4,
+        "lr": 0.0001,
+        "train_routers": false,
+        "first_loss": 1.1513060331344604,
+        "last_loss": 0.2428382933139801,
+        "epochs": 15.132408575031526
+      }
+    }
+  },
+  "secondary": {
+    "paper_corpus_gap_armed_pts": 8.1,
+    "S_minus_N_on_primary": -11.159263271939327,
+    "S_minus_N_ci95": [
+      -13.217768147345613,
+      -9.209100758396534
+    ],
+    "gap_reached": false,
+    "note": "informational; NOT a continue/stop input"
+  },
+  "dose_efficiency": {
+    "frame": "corpus_para",
+    "metric": "em",
+    "S_gain_minus_C_gain_pts": -2.1141649048625792,
+    "ci95_pts": [
+      -3.8054968287526427,
+      -0.6342494714587738
+    ],
+    "verdict": "UNPROVEN",
+    "reason": "paired CI does not exclude 0 in S favour; no third run",
+    "S_dose": {
+      "steps": 6000,
+      "supervised_tokens_total": 94187,
+      "supervised_tokens_mean_per_passage": 470.935,
+      "n_examples": 1924,
+      "examples_per_passage": 9.62,
+      "visits_per_example": 12.474012474012474,
+      "note": "label tokens the loss scored, summed over all SFT steps (answer-masked for qa, whole-text otherwise); visits_per_example is the epoch count"
+    },
+    "C_dose": {
+      "steps": 6000,
+      "supervised_tokens_total": 3474120,
+      "supervised_tokens_mean_per_passage": 17370.6,
+      "n_examples": 200,
+      "examples_per_passage": 1.0,
+      "visits_per_example": 120.0,
+      "note": "label tokens the loss scored, summed over all SFT steps (answer-masked for qa, whole-text otherwise); visits_per_example is the epoch count"
+    }
+  },
+  "stop_rule": {
+    "read": "STOP-NEGATIVE",
+    "reason": "CI95 excludes 0 against S on ['corpus_orig']",
+    "frames": [
+      {
+        "gain_pts": -4.333694474539545,
+        "ci95_pts": [
+          -5.742145178764897,
+          -2.925243770314193
+        ],
+        "direction": "against_left",
+        "metric": "em",
+        "frame": "corpus_orig"
+      },
+      {
+        "gain_pts": 3.1699963733384386,
+        "ci95_pts": [
+          0.9721878311621903,
+          5.469101901188908
+        ],
+        "direction": "for_left",
+        "metric": "f1",
+        "frame": "transfer"
+      }
+    ],
+    "note": "published as a READ; the decision is the orchestrator's and the user's, not this script's"
+  }
+}

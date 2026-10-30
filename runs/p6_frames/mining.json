@@ -1,0 +1,8 @@
+{
+  "n_passages": 200,
+  "n_supported_pairs": 1580,
+  "n_candidates": 360,
+  "cap": 600,
+  "n_kept": 360,
+  "n_bridge_not_entity": 1065
+}

@@ -1,0 +1,7 @@
+{
+  "n_passages": 200,
+  "n_supported_pairs": 1580,
+  "n_candidates": 1423,
+  "cap": 600,
+  "n_kept": 600
+}

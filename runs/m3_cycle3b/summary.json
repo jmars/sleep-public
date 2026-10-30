@@ -1,0 +1,124 @@
+{
+  "run": "m3_cycle3b",
+  "config": "single_n1",
+  "mode": "full",
+  "passage_id": "5726b98bf1498d1400e8e8f2",
+  "n_questions": 5,
+  "no_context_em": 20.0,
+  "no_context_f1": 20.0,
+  "base_em": 20.0,
+  "cycles": 3,
+  "new_expert_share": 0.20619959677419356,
+  "leak": {
+    "no_context_em": 20.0,
+    "with_context_em": 20.0,
+    "delta": 0.0,
+    "min_delta": 10.0,
+    "leak": true
+  },
+  "stage_evals": {
+    "post_surgery": {
+      "em": 20.0,
+      "f1": 36.66666666666667,
+      "n": 5
+    },
+    "post_warmup": {
+      "em": 20.0,
+      "f1": 33.33333333333333,
+      "n": 5
+    },
+    "cycle1": {
+      "em": 0.0,
+      "f1": 0.0,
+      "n": 5
+    },
+    "cycle2": {
+      "em": 0.0,
+      "f1": 18.333333333333332,
+      "n": 5
+    },
+    "cycle3": {
+      "em": 20.0,
+      "f1": 20.0,
+      "n": 5
+    },
+    "post_cycle": {
+      "em": 20.0,
+      "f1": 20.0,
+      "n": 5
+    }
+  },
+  "timings": {
+    "teacher_load_s": 0.0,
+    "dream_gen_s": 177.2525818347931,
+    "student_build_s": 23.754342079162598,
+    "score_s_0": 12.863901615142822,
+    "warmup_s": 38.924004793167114,
+    "sft_s_0": 53.23192358016968,
+    "score_s_1": 12.913926839828491,
+    "sft_s_1": 55.367021560668945,
+    "score_s_2": 11.853147268295288,
+    "sft_s_2": 50.16834783554077,
+    "eval_s": 4.232043504714966,
+    "total_s": 495.06515669822693
+  },
+  "probes": {
+    "memorisation": {
+      "n": 6,
+      "mean_loss": 0.021708981522048514,
+      "losses": [
+        0.057488951832056046,
+        0.008052701130509377,
+        0.015984896570444107,
+        0.005073401611298323,
+        0.035381246358156204,
+        0.008272691629827023
+      ]
+    },
+    "routing": {
+      "on_context": 0.20619959677419356,
+      "on_eval_prompts": 0.2835304054054054,
+      "on_dreams": 0.2671628937007874
+    },
+    "format": {
+      "eval": {
+        "em": 20.0,
+        "f1": 20.0,
+        "predictions": [
+          "Prime Minister.",
+          "one-year.",
+          "1949",
+          "Tuiatua Tupua Tamasese Efi",
+          "one-party state"
+        ]
+      },
+      "qa": {
+        "em": 0.0,
+        "f1": 0.0,
+        "predictions": [
+          "state leader",
+          "one-year",
+          "Tupua Tamasese Mea'ole",
+          "Tuiatua Tupua Tamasese Efi",
+          "one-party state"
+        ]
+      },
+      "quiz": {
+        "em": 0.0,
+        "f1": 0.0,
+        "predictions": [
+          "2. Is he one of the four paramount chiefs of Samoa?",
+          "2. Who was the second joint head of state?",
+          "2. What was the name of the second one?",
+          "2. Who was the previous one?",
+          "2. What did the country name its first one?"
+        ]
+      }
+    }
+  },
+  "gain_over_base": 0.0,
+  "gates": {
+    "single_passage_gain": false,
+    "no_leak": false
+  }
+}

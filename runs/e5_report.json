@@ -1,0 +1,467 @@
+{
+  "arms": {
+    "sleep_qa": {
+      "run": "e5_sleep_qa",
+      "sft_mode": "qa",
+      "dream_variant": "quiz",
+      "dream_temperature": 0.7,
+      "n_passages": 20,
+      "n_questions": 109,
+      "pooled_base_em": 13.761467889908257,
+      "pooled_final_em": 17.431192660550458,
+      "pooled_gain_pts": 3.669724770642201,
+      "dose": {
+        "steps_mean": 30.0,
+        "steps_min": 30,
+        "steps_max": 30,
+        "supervised_tokens_mean": 475.4,
+        "supervised_tokens_min": 210,
+        "supervised_tokens_max": 880,
+        "supervised_tokens_total": 9508,
+        "note": "supervised tokens = label tokens the loss scored, summed over the passage's SFT steps (answer-masked for qa, whole-text otherwise)"
+      },
+      "heldout_post_surgery_em": 3.260869565217391,
+      "heldout_final_em": 2.608695652173913,
+      "heldout_drop": 0.652173913043478,
+      "n_heldout_questions": 460,
+      "share_heldout_range": [
+        0.07343409903606965,
+        0.08823315065298508
+      ],
+      "band": [
+        0.05,
+        0.09
+      ],
+      "prose_overlap_median_of_passage_medians": 0.5701678765880218,
+      "answer_support_median_of_passage_values": 0.7712418300653594,
+      "pairs_per_passage_mean": 11.45,
+      "mean_dream_words": 106.01666666666668,
+      "literalism_verdicts": [
+        "OK"
+      ],
+      "warmup_text_kind": [
+        "qa_pairs"
+      ],
+      "gates": {
+        "pooled_gain_vs_own_base": true,
+        "heldout_drop_within_2pts": true
+      }
+    },
+    "sleep_recap": {
+      "run": "e5_sleep_recap",
+      "sft_mode": "recap",
+      "dream_variant": "recap",
+      "dream_temperature": 0.9,
+      "n_passages": 20,
+      "n_questions": 109,
+      "pooled_base_em": 13.761467889908257,
+      "pooled_final_em": 9.174311926605505,
+      "pooled_gain_pts": -4.587155963302752,
+      "dose": {
+        "steps_mean": 30.0,
+        "steps_min": 30,
+        "steps_max": 30,
+        "supervised_tokens_mean": 5872.3,
+        "supervised_tokens_min": 2070,
+        "supervised_tokens_max": 16440,
+        "supervised_tokens_total": 117446,
+        "note": "supervised tokens = label tokens the loss scored, summed over the passage's SFT steps (answer-masked for qa, whole-text otherwise)"
+      },
+      "heldout_post_surgery_em": 3.260869565217391,
+      "heldout_final_em": 2.391304347826087,
+      "heldout_drop": 0.8695652173913042,
+      "n_heldout_questions": 460,
+      "share_heldout_range": [
+        0.0737385662831675,
+        0.09632663505389719
+      ],
+      "band": [
+        0.05,
+        0.09
+      ],
+      "prose_overlap_median_of_passage_medians": 0.8520833333333334,
+      "answer_support_median_of_passage_values": 0.0,
+      "pairs_per_passage_mean": 0.0,
+      "mean_dream_words": 33.875,
+      "literalism_verdicts": [
+        "ALARM",
+        "OK"
+      ],
+      "warmup_text_kind": [
+        "dream_prose"
+      ],
+      "gates": {
+        "pooled_gain_vs_own_base": false,
+        "heldout_drop_within_2pts": true
+      }
+    },
+    "cpt": {
+      "run": "e5_cpt",
+      "sft_mode": "cpt",
+      "dream_variant": "quiz",
+      "dream_temperature": 0.7,
+      "n_passages": 20,
+      "n_questions": 109,
+      "pooled_base_em": 13.761467889908257,
+      "pooled_final_em": 17.431192660550458,
+      "pooled_gain_pts": 3.669724770642201,
+      "dose": {
+        "steps_mean": 30.0,
+        "steps_min": 30,
+        "steps_max": 30,
+        "supervised_tokens_mean": 4665.0,
+        "supervised_tokens_min": 2100,
+        "supervised_tokens_max": 7680,
+        "supervised_tokens_total": 93300,
+        "note": "supervised tokens = label tokens the loss scored, summed over the passage's SFT steps (answer-masked for qa, whole-text otherwise)"
+      },
+      "heldout_post_surgery_em": 3.260869565217391,
+      "heldout_final_em": 4.130434782608695,
+      "heldout_drop": -0.8695652173913042,
+      "n_heldout_questions": 460,
+      "share_heldout_range": [
+        0.07722941283167496,
+        0.09296291977611941
+      ],
+      "band": [
+        0.05,
+        0.09
+      ],
+      "prose_overlap_median_of_passage_medians": 0.5307803898229431,
+      "answer_support_median_of_passage_values": 0.7638888888888888,
+      "pairs_per_passage_mean": 12.3,
+      "mean_dream_words": 120.65,
+      "literalism_verdicts": [
+        "OK"
+      ],
+      "warmup_text_kind": [
+        "qa_pairs"
+      ],
+      "gates": {
+        "pooled_gain_vs_own_base": true,
+        "heldout_drop_within_2pts": true
+      }
+    },
+    "nodream": {
+      "run": "e4_nodream",
+      "sft_mode": "dreams",
+      "dream_variant": "quiz",
+      "dream_temperature": 0.7,
+      "n_passages": 20,
+      "n_questions": 109,
+      "pooled_base_em": 13.761467889908257,
+      "pooled_final_em": 19.26605504587156,
+      "pooled_gain_pts": 5.5045871559633035,
+      "dose": {
+        "note": "not recorded by this run (pre-instrument)"
+      },
+      "heldout_post_surgery_em": 2.1739130434782608,
+      "heldout_final_em": 4.130434782608695,
+      "heldout_drop": -1.9565217391304346,
+      "n_heldout_questions": 460,
+      "share_heldout_range": [
+        0.07853149616500829,
+        0.09069075196932007
+      ],
+      "band": [
+        0.05,
+        0.09
+      ],
+      "prose_overlap_median_of_passage_medians": null,
+      "answer_support_median_of_passage_values": 0.7638888888888888,
+      "pairs_per_passage_mean": 12.3,
+      "mean_dream_words": null,
+      "literalism_verdicts": [
+        "OK"
+      ],
+      "warmup_text_kind": [],
+      "gates": {
+        "pooled_gain_vs_own_base": true,
+        "heldout_drop_within_2pts": true
+      }
+    }
+  },
+  "reference_e4_cpt": {
+    "run": "e4_cpt",
+    "sft_mode": "cpt",
+    "dream_variant": "quiz",
+    "dream_temperature": 0.7,
+    "n_passages": 20,
+    "n_questions": 109,
+    "pooled_base_em": 13.761467889908257,
+    "pooled_final_em": 14.678899082568808,
+    "pooled_gain_pts": 0.9174311926605512,
+    "dose": {
+      "note": "not recorded by this run (pre-instrument)"
+    },
+    "heldout_post_surgery_em": 2.1739130434782608,
+    "heldout_final_em": 4.130434782608695,
+    "heldout_drop": -1.9565217391304346,
+    "n_heldout_questions": 460,
+    "share_heldout_range": [
+      0.07757031897802653,
+      0.09036037261608623
+    ],
+    "band": [
+      0.05,
+      0.09
+    ],
+    "prose_overlap_median_of_passage_medians": null,
+    "answer_support_median_of_passage_values": 0.7638888888888888,
+    "pairs_per_passage_mean": 12.3,
+    "mean_dream_words": null,
+    "literalism_verdicts": [
+      "OK"
+    ],
+    "warmup_text_kind": [],
+    "gates": {
+      "pooled_gain_vs_own_base": false,
+      "heldout_drop_within_2pts": true
+    }
+  },
+  "bootstraps": {
+    "sleep_qa_vs_own_base": {
+      "n_questions": 109,
+      "base_em": 13.761467889908257,
+      "final_em": 17.431192660550458,
+      "gain_pts": 3.669724770642202,
+      "ci95_pts": [
+        -2.7522935779816518,
+        10.091743119266056
+      ],
+      "n_flipped_up": 9,
+      "n_flipped_down": 5,
+      "verdict": "INSUFFICIENT",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_recap_vs_own_base": {
+      "n_questions": 109,
+      "base_em": 13.761467889908257,
+      "final_em": 9.174311926605505,
+      "gain_pts": -4.587155963302752,
+      "ci95_pts": [
+        -10.091743119266056,
+        0.9174311926605505
+      ],
+      "n_flipped_up": 2,
+      "n_flipped_down": 7,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "cpt_vs_own_base": {
+      "n_questions": 109,
+      "base_em": 13.761467889908257,
+      "final_em": 17.431192660550458,
+      "gain_pts": 3.669724770642202,
+      "ci95_pts": [
+        -1.834862385321101,
+        9.174311926605505
+      ],
+      "n_flipped_up": 7,
+      "n_flipped_down": 3,
+      "verdict": "INSUFFICIENT",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "nodream_vs_own_base": {
+      "n_questions": 109,
+      "base_em": 13.761467889908257,
+      "final_em": 19.26605504587156,
+      "gain_pts": 5.5045871559633035,
+      "ci95_pts": [
+        0.0,
+        11.009174311926607
+      ],
+      "n_flipped_up": 8,
+      "n_flipped_down": 2,
+      "verdict": "INSUFFICIENT",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_qa_minus_cpt": {
+      "n_questions": 109,
+      "base_em": 17.431192660550458,
+      "final_em": 17.431192660550458,
+      "gain_pts": 0.0,
+      "ci95_pts": [
+        -6.422018348623854,
+        6.422018348623854
+      ],
+      "n_flipped_up": 6,
+      "n_flipped_down": 6,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_recap_minus_cpt": {
+      "n_questions": 109,
+      "base_em": 17.431192660550458,
+      "final_em": 9.174311926605505,
+      "gain_pts": -8.256880733944955,
+      "ci95_pts": [
+        -14.678899082568808,
+        -2.7522935779816518
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 10,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_qa_minus_nodream": {
+      "n_questions": 109,
+      "base_em": 19.26605504587156,
+      "final_em": 17.431192660550458,
+      "gain_pts": -1.834862385321101,
+      "ci95_pts": [
+        -7.339449541284404,
+        3.669724770642202
+      ],
+      "n_flipped_up": 4,
+      "n_flipped_down": 6,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_recap_minus_nodream": {
+      "n_questions": 109,
+      "base_em": 19.26605504587156,
+      "final_em": 9.174311926605505,
+      "gain_pts": -10.091743119266056,
+      "ci95_pts": [
+        -16.51376146788991,
+        -4.587155963302752
+      ],
+      "n_flipped_up": 1,
+      "n_flipped_down": 12,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "sleep_qa_minus_sleep_recap": {
+      "n_questions": 109,
+      "base_em": 9.174311926605505,
+      "final_em": 17.431192660550458,
+      "gain_pts": 8.256880733944955,
+      "ci95_pts": [
+        1.834862385321101,
+        15.59633027522936
+      ],
+      "n_flipped_up": 12,
+      "n_flipped_down": 3,
+      "verdict": "PASS",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "cpt_minus_nodream": {
+      "n_questions": 109,
+      "base_em": 19.26605504587156,
+      "final_em": 17.431192660550458,
+      "gain_pts": -1.834862385321101,
+      "ci95_pts": [
+        -7.339449541284404,
+        2.7522935779816518
+      ],
+      "n_flipped_up": 3,
+      "n_flipped_down": 5,
+      "verdict": "FAIL",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    }
+  },
+  "conditions": {
+    "sleep_qa": {
+      "i_gain_over_own_base": {
+        "pass": false,
+        "gain_pts": 3.669724770642202,
+        "ci95_pts": [
+          -2.7522935779816518,
+          10.091743119266056
+        ],
+        "n_flipped_up": 9,
+        "n_flipped_down": 5
+      },
+      "ii_sleep_at_least_cpt_plus_2": {
+        "pass": false,
+        "sleep_minus_cpt_pts": 0.0,
+        "ci95_pts": [
+          -6.422018348623854,
+          6.422018348623854
+        ]
+      },
+      "iii_sleep_at_least_nodream_plus_2": {
+        "pass": false,
+        "sleep_minus_nodream_pts": -1.834862385321101,
+        "ci95_pts": [
+          -7.339449541284404,
+          3.669724770642202
+        ]
+      },
+      "iv_non_destruction_heldout_drop_le_2": {
+        "pass": true,
+        "heldout_drop": 0.652173913043478,
+        "heldout_post_surgery_em": 3.260869565217391,
+        "heldout_final_em": 2.608695652173913,
+        "n_heldout_questions": 460
+      }
+    },
+    "sleep_recap": {
+      "i_gain_over_own_base": {
+        "pass": false,
+        "gain_pts": -4.587155963302752,
+        "ci95_pts": [
+          -10.091743119266056,
+          0.9174311926605505
+        ],
+        "n_flipped_up": 2,
+        "n_flipped_down": 7
+      },
+      "ii_sleep_at_least_cpt_plus_2": {
+        "pass": false,
+        "sleep_minus_cpt_pts": -8.256880733944955,
+        "ci95_pts": [
+          -14.678899082568808,
+          -2.7522935779816518
+        ]
+      },
+      "iii_sleep_at_least_nodream_plus_2": {
+        "pass": false,
+        "sleep_minus_nodream_pts": -10.091743119266056,
+        "ci95_pts": [
+          -16.51376146788991,
+          -4.587155963302752
+        ]
+      },
+      "iv_non_destruction_heldout_drop_le_2": {
+        "pass": true,
+        "heldout_drop": 0.8695652173913042,
+        "heldout_post_surgery_em": 3.260869565217391,
+        "heldout_final_em": 2.391304347826087,
+        "n_heldout_questions": 460
+      }
+    }
+  },
+  "contrast_objective_at_equal_steps": {
+    "sleep_qa_minus_sleep_recap": {
+      "n_questions": 109,
+      "base_em": 9.174311926605505,
+      "final_em": 17.431192660550458,
+      "gain_pts": 8.256880733944955,
+      "ci95_pts": [
+        1.834862385321101,
+        15.59633027522936
+      ],
+      "n_flipped_up": 12,
+      "n_flipped_down": 3,
+      "verdict": "PASS",
+      "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+    },
+    "note": "same build, warmup, bias tune and 30 SFT steps; the arms differ in dream prompt, objective and supervised-token dose -- read the dose columns before attributing a difference to the objective"
+  },
+  "contrast_recap_minus_cpt_review2_A3": {
+    "n_questions": 109,
+    "base_em": 17.431192660550458,
+    "final_em": 9.174311926605505,
+    "gain_pts": -8.256880733944955,
+    "ci95_pts": [
+      -14.678899082568808,
+      -2.7522935779816518
+    ],
+    "n_flipped_up": 1,
+    "n_flipped_down": 10,
+    "verdict": "FAIL",
+    "rule": "PASS = gain >= +2.0 pts AND CI95 low > 0; FAIL = gain <= 0; else INSUFFICIENT"
+  }
+}

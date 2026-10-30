@@ -1,0 +1,17 @@
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-30 00:11:16.262527: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793319076.279231    4209 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793319076.285397    4209 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793319076.303795    4209 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319076.303816    4209 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319076.303819    4209 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319076.303821    4209 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+[data] 200 passages, 923 questions
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:09,  1.84s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:03<00:07,  1.83s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:05<00:05,  1.81s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:07<00:03,  1.82s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:09<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:10<00:00,  1.52s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:10<00:00,  1.68s/it]
+[eval] no-context  EM=11.48  F1=22.11  n=923
+[leak] with-context EM=55.00 vs no-context 5.00  delta=50.00  leak=False
+[rebase] base=11.48 paper=31.9 gap=-20.42 absolute_gate_demoted=True
+[done] runs/p6_true_base/summary.json  wall=257.9s

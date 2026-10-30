@@ -1,0 +1,1056 @@
+{
+  "run": "e4_cpt",
+  "config": "single_n1",
+  "sft_mode": "cpt",
+  "warmup_arm": "w1",
+  "dream_variant": "quiz",
+  "dream_temperature": 0.7,
+  "cycles": 1,
+  "n_passages": 20,
+  "n_questions": 109,
+  "pooled_base_em": 13.761467889908257,
+  "pooled_final_em": 14.678899082568808,
+  "pooled_gain": 0.9174311926605512,
+  "base_em_arg": null,
+  "n_heldout_questions": 460,
+  "eval_batch": 32,
+  "heldout_read_every": 4,
+  "heldout_post_surgery_em": 2.1739130434782608,
+  "heldout_final_em": 4.130434782608695,
+  "timings": {
+    "teacher_phase_s": 0.001737833023071289,
+    "total_s": 1856.176254749298
+  },
+  "per_passage": [
+    {
+      "passage": 0,
+      "passage_id": "57267de2dd62a815002e870e",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 20.0,
+      "base_f1": 0.0,
+      "final_f1": 20.0,
+      "new_share": 0.038037109375,
+      "share_trained": 0.07472330729166667,
+      "share_heldout": 0.07757031897802653,
+      "share_contrast": -0.0028470116863598682,
+      "top4_base_share_heldout": 0.08984779876658375,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "The first Greek film was a documentary with the same name as the country, produced",
+        "In 1896, the first public cinema was opened in Athens.",
+        "Universal Pictures",
+        "The first Greek feature film, Grypo sti thalassa (Bride",
+        "Nikos Tsiforos"
+      ],
+      "predictions": [
+        "1896",
+        "1896",
+        "Universal Pictures",
+        "The Last Days of Pompeii",
+        "Nikos Tsiforos"
+      ],
+      "golds": [
+        [
+          "1896"
+        ],
+        [
+          "1907"
+        ],
+        [
+          "Asty Films"
+        ],
+        [
+          "Golfo"
+        ],
+        [
+          "Orestis Laskos"
+        ]
+      ],
+      "heldout_em": 6.521739130434782,
+      "heldout_f1": 13.066504751287358,
+      "seconds": 123.0
+    },
+    {
+      "passage": 1,
+      "passage_id": "56f985bd9b226e1400dd1506",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 60.0,
+      "base_f1": 40.0,
+      "final_f1": 60.0,
+      "new_share": 0.04943181818181818,
+      "share_trained": 0.10364583333333334,
+      "share_heldout": 0.08424916433457712,
+      "share_contrast": 0.019396668998756222,
+      "top4_base_share_heldout": 0.09036847014925373,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "First Opium War",
+        "1842",
+        "Shanghai",
+        "Taiping Heavenly Kingdom",
+        "In 1842, the Treaty of Nanking was signed, opening five ports to"
+      ],
+      "predictions": [
+        "First Opium War",
+        "1843",
+        "Shanghai",
+        "the Taiping Heavenly Kingdom",
+        "In 1843."
+      ],
+      "golds": [
+        [
+          "the First Opium War"
+        ],
+        [
+          "1843"
+        ],
+        [
+          "Ningbo"
+        ],
+        [
+          "the Taiping Heavenly Kingdom"
+        ],
+        [
+          "1876"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 86.3
+    },
+    {
+      "passage": 2,
+      "passage_id": "5726cfd8f1498d1400e8ebf6",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 40.0,
+      "base_f1": 38.98989898989898,
+      "final_f1": 54.545454545454554,
+      "new_share": 0.0390625,
+      "share_trained": 0.09567089521452145,
+      "share_heldout": 0.08064414256840796,
+      "share_contrast": 0.015026752646113486,
+      "top4_base_share_heldout": 0.08840643786276949,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "In 2008, the constitution was amended to allow for a vice president to be elected",
+        "executive, legislative, and judicial",
+        "four",
+        "two terms",
+        "The executive branch is headed by the President of the Republic."
+      ],
+      "predictions": [
+        "In 2008, the constitution was amended to allow for a presidential two-term limit",
+        "legislative, executive and judicial",
+        "four years",
+        "two terms",
+        "the President"
+      ],
+      "golds": [
+        [
+          "1999"
+        ],
+        [
+          "the executive, legislative, and judicial branches of government"
+        ],
+        [
+          "five-year"
+        ],
+        [
+          "two terms"
+        ],
+        [
+          "president"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 85.0
+    },
+    {
+      "passage": 3,
+      "passage_id": "5731fd11e17f3d14004225b2",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 10.0,
+      "final_f1": 10.0,
+      "new_share": 0.025490785256410256,
+      "share_trained": 0.08961838942307693,
+      "share_heldout": 0.08588081726782752,
+      "share_contrast": 0.003737572155249405,
+      "top4_base_share_heldout": 0.0903206947035655,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "The Witch of Endor",
+        "Pompey",
+        "the Roman state",
+        "as a witch",
+        "Greek"
+      ],
+      "predictions": [
+        "Circe",
+        "Caesar",
+        "Therianthropy",
+        "as a witch",
+        "Greece"
+      ],
+      "golds": [
+        [
+          "Erichtho"
+        ],
+        [
+          "Sextus Pompeius"
+        ],
+        [
+          "order of gods"
+        ],
+        [
+          "stereotypical witch"
+        ],
+        [
+          "Thessaly"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 87.6
+    },
+    {
+      "passage": 4,
+      "passage_id": "56d36d5f59d6e41400146370",
+      "n_questions": 8,
+      "base_em": 12.5,
+      "final_em": 0.0,
+      "base_f1": 21.022727272727273,
+      "final_f1": 6.25,
+      "new_share": 0.050975483425414365,
+      "share_trained": 0.07891152547575199,
+      "share_heldout": 0.0843795346185738,
+      "share_contrast": -0.005468009142821806,
+      "top4_base_share_heldout": 0.0898324134535655,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "two",
+        "four",
+        "only one, Elise Testone",
+        "twelve",
+        "the seventh season",
+        "The top three contestants from each district advanced to the next round.",
+        "four",
+        "twelve"
+      ],
+      "predictions": [
+        "three wildcards",
+        "two wildcard contestants",
+        "four",
+        "twelve",
+        "the eighth season",
+        "four.",
+        "two",
+        "Top 24"
+      ],
+      "golds": [
+        [
+          "four"
+        ],
+        [
+          "three"
+        ],
+        [
+          "five"
+        ],
+        [
+          "thirteen"
+        ],
+        [
+          "season eight"
+        ],
+        [
+          "three"
+        ],
+        [
+          "four"
+        ],
+        [
+          "10"
+        ]
+      ],
+      "heldout_em": 3.260869565217391,
+      "heldout_f1": 10.484032875337224,
+      "seconds": 103.2
+    },
+    {
+      "passage": 5,
+      "passage_id": "56de2cf84396321400ee262f",
+      "n_questions": 6,
+      "base_em": 33.33333333333333,
+      "final_em": 33.33333333333333,
+      "base_f1": 46.666666666666664,
+      "final_f1": 46.666666666666664,
+      "new_share": 0.03805803571428571,
+      "share_trained": 0.09119897959183673,
+      "share_heldout": 0.0854637943097015,
+      "share_contrast": 0.005735185282135236,
+      "top4_base_share_heldout": 0.0899563057110282,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Henry Fielding",
+        "Contrasts was written in 1725.",
+        "Contrasts",
+        "Contrasts was written in 1725.",
+        "the modern world",
+        "Gothic"
+      ],
+      "predictions": [
+        "John Milton",
+        "1844",
+        "Contrasts",
+        "1853",
+        "the modern world",
+        "Gothic"
+      ],
+      "golds": [
+        [
+          "Augustus Welby Northmore Pugin"
+        ],
+        [
+          "1836"
+        ],
+        [
+          "Contrasts"
+        ],
+        [
+          "1836"
+        ],
+        [
+          "modern, industrial world"
+        ],
+        [
+          "Gothic"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 86.6
+    },
+    {
+      "passage": 6,
+      "passage_id": "572eb0c2c246551400ce4520",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 24.663278750235275,
+      "final_f1": 20.581418581418585,
+      "new_share": 0.03951671511627907,
+      "share_trained": 0.07944979408914729,
+      "share_heldout": 0.08648813225538972,
+      "share_contrast": -0.007038338166242428,
+      "top4_base_share_heldout": 0.08954171201285241,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Pitt's grand strategy was to concentrate British naval and military strength in North America,",
+        "the Royal Navy",
+        "the French colonies of Acadia, Canada, and Louisiana",
+        "He planned to raise a force of 50,000 provincial troops, to be commanded",
+        "Pitt's strategy was to keep the French occupied overseas while Britain's military and naval"
+      ],
+      "predictions": [
+        "Pitt's grand strategy was to block French naval and merchant shipping from getting into the",
+        "Pitt's primary military advantage was the Royal Navy.",
+        "the French colonies of Acadia, Canada, and Louisiana",
+        "the British regulars",
+        "Pitt's strategy was to keep the French occupied in North America, where they would"
+      ],
+      "golds": [
+        [
+          "a grand strategy of seizing the entire French Empire"
+        ],
+        [
+          "Britain's main weapon was the Royal Navy"
+        ],
+        [
+          "North America and India"
+        ],
+        [
+          "He also planned to use colonial forces from the Thirteen American colonies"
+        ],
+        [
+          "even after that the British continued his strategy"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 88.2
+    },
+    {
+      "passage": 7,
+      "passage_id": "56e0d27c7aa994140058e757",
+      "n_questions": 6,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 4.318488529014845,
+      "final_f1": 11.11111111111111,
+      "new_share": 0.044109513274336286,
+      "share_trained": 0.10878239570164348,
+      "share_heldout": 0.08760721133913764,
+      "share_contrast": 0.021175184362505844,
+      "top4_base_share_heldout": 0.08991662779850747,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "The country is also a major exporter of coffee, gold, and cotton.",
+        "household income",
+        "biotechnology",
+        "Boston is the most expensive city in the United States to buy a house.",
+        "Boston is the most expensive city in the United States to buy a house",
+        "world-class institutions of higher learning."
+      ],
+      "predictions": [
+        "top 10",
+        "television ownership",
+        "quality of life",
+        "third most expensive",
+        "Boston is ranked as the 11th most livable city in the world, according",
+        "universities and hospitals."
+      ],
+      "golds": [
+        [
+          "businesses and institutions"
+        ],
+        [
+          "philanthropy"
+        ],
+        [
+          "environmental sustainability and investment"
+        ],
+        [
+          "The city has one of the highest costs of living"
+        ],
+        [
+          "high"
+        ],
+        [
+          "colleges and universities"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 86.2
+    },
+    {
+      "passage": 8,
+      "passage_id": "572760f55951b619008f8907",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 0.0,
+      "base_f1": 43.33333333333333,
+      "final_f1": 23.333333333333332,
+      "new_share": 0.027301290760869564,
+      "share_trained": 0.07877604166666667,
+      "share_heldout": 0.08243450715174129,
+      "share_contrast": -0.003658465485074619,
+      "top4_base_share_heldout": 0.08823962867951907,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "oil",
+        "vegetable oil",
+        "cottonseed oil",
+        "to provide roughage",
+        "as a poison"
+      ],
+      "predictions": [
+        "oil",
+        "cottonseed oil",
+        "cottonseed meal",
+        "as a source of protein and fiber",
+        "as a poison"
+      ],
+      "golds": [
+        [
+          "cottonseed oil"
+        ],
+        [
+          "vegetable oil."
+        ],
+        [
+          "ruminant livestock"
+        ],
+        [
+          "roughage"
+        ],
+        [
+          "poisonous pigment"
+        ]
+      ],
+      "heldout_em": 3.260869565217391,
+      "heldout_f1": 11.300842876929833,
+      "seconds": 104.0
+    },
+    {
+      "passage": 9,
+      "passage_id": "57302bd0a23a5019007fceed",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 0.0,
+      "final_f1": 0.0,
+      "new_share": 0.05121951219512195,
+      "share_trained": 0.08462271341463415,
+      "share_heldout": 0.0793007618159204,
+      "share_contrast": 0.0053219515987137506,
+      "top4_base_share_heldout": 0.09001865671641791,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "In the late 19th century, the first commercial school in Santa Monica, the",
+        "The college is located on a 1,300-acre (5.2 km",
+        "the Art Deco district",
+        "Santa Monica is home to the California State University, Los Angeles (CSULA",
+        "about 10,000"
+      ],
+      "predictions": [
+        "1875",
+        "1,000",
+        "1.5 acre",
+        "Los Angeles",
+        "about 10,000"
+      ],
+      "golds": [
+        [
+          "1929"
+        ],
+        [
+          "35"
+        ],
+        [
+          "Airport"
+        ],
+        [
+          "22-mile"
+        ],
+        [
+          "30,000"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 86.6
+    },
+    {
+      "passage": 10,
+      "passage_id": "56d96856dc89441400fdb408",
+      "n_questions": 9,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 2.9629629629629632,
+      "final_f1": 7.4074074074074066,
+      "new_share": 0.046295166015625,
+      "share_trained": 0.06356201171875,
+      "share_heldout": 0.08617475772180763,
+      "share_contrast": -0.022612746003057627,
+      "top4_base_share_heldout": 0.09088752202529021,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "The torch relay began in Athens on 17 April 2008, with the Olympic flame being",
+        "3,000",
+        "Liu Xiaobo",
+        "torchbearers",
+        "Chennai",
+        "The route was 1,600 miles (2,575 km) long.",
+        "two",
+        "The number of bearers was reduced to four.",
+        "Zheng Xiaotong"
+      ],
+      "predictions": [
+        "August 10, 2008",
+        "3,000",
+        "Zinedine Zidane",
+        "Tibet",
+        "Delhi",
+        "1,600",
+        "two",
+        "The number of bearers was reduced to just three.",
+        "Liu Yu-ti"
+      ],
+      "golds": [
+        [
+          "April 17"
+        ],
+        [
+          "70"
+        ],
+        [
+          "Baichung Bhutia"
+        ],
+        [
+          "five"
+        ],
+        [
+          "New Delhi"
+        ],
+        [
+          "1.5"
+        ],
+        [
+          "70"
+        ],
+        [
+          "five"
+        ],
+        [
+          "Baichung Bhutia"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 91.2
+    },
+    {
+      "passage": 11,
+      "passage_id": "5729b65c6aef051400155088",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 40.0,
+      "base_f1": 54.22222222222223,
+      "final_f1": 48.0,
+      "new_share": 0.04874213836477988,
+      "share_trained": 0.09428229821802935,
+      "share_heldout": 0.0847682162106136,
+      "share_contrast": 0.009514082007415742,
+      "top4_base_share_heldout": 0.08743068511608623,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "IBM Research",
+        "over 100",
+        "IBM has been the U.S. leader in patent generation for 21 consecutive years",
+        "IBM has won four Nobel Prizes.",
+        "universal product code"
+      ],
+      "predictions": [
+        "IBM Research",
+        "over 200",
+        "Since 1995, IBM has been the leading U.S. patent recipient in annual",
+        "IBM employees have won four Nobel Prizes.",
+        "universal product code"
+      ],
+      "golds": [
+        [
+          "IBM Research"
+        ],
+        [
+          "12 research laboratories worldwide"
+        ],
+        [
+          "22 consecutive years"
+        ],
+        [
+          "five Nobel Prizes"
+        ],
+        [
+          "Universal Product Code"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 88.7
+    },
+    {
+      "passage": 12,
+      "passage_id": "570ad72b4103511400d59a72",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 40.0,
+      "base_f1": 50.5,
+      "final_f1": 48.0,
+      "new_share": 0.05203186758893281,
+      "share_trained": 0.06847002635046114,
+      "share_heldout": 0.09036037261608623,
+      "share_contrast": -0.021890346265625096,
+      "top4_base_share_heldout": 0.08841048662935323,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Electromagnetic Aircraft Launch System",
+        "General Atomics",
+        "a single-stage, all-up combination of a fighter aircraft and a missile",
+        "the US Navy",
+        "65"
+      ],
+      "predictions": [
+        "Electromagnetic Aircraft Launch System",
+        "General Atomics",
+        "a single-stage, all-up design",
+        "the US Navy",
+        "62"
+      ],
+      "golds": [
+        [
+          "Electromagnetic Aircraft Launch System"
+        ],
+        [
+          "General Atomics"
+        ],
+        [
+          "varied aircraft including unmanned combat air vehicles (UCAV)"
+        ],
+        [
+          "Indian Navy officers"
+        ],
+        [
+          "three"
+        ]
+      ],
+      "heldout_em": 4.3478260869565215,
+      "heldout_f1": 11.550397066701414,
+      "seconds": 106.0
+    },
+    {
+      "passage": 13,
+      "passage_id": "5733dc134776f4190066138e",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 29.047619047619044,
+      "final_f1": 10.0,
+      "new_share": 0.039919354838709675,
+      "share_trained": 0.0923807123655914,
+      "share_heldout": 0.08719504690091211,
+      "share_contrast": 0.005185665464679287,
+      "top4_base_share_heldout": 0.08754081156716417,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "political",
+        "bias",
+        "the tendency for anthropologists to apply male perspectives to the study of gender",
+        "the social construction of gender and sexuality",
+        "Feminist anthropology"
+      ],
+      "predictions": [
+        "Marxist anthropology",
+        "sexism",
+        "the tendency to see the world from a male point of view",
+        "the ways in which power is exercised and knowledge produced in various social contexts",
+        "feminist anthropology"
+      ],
+      "golds": [
+        [
+          "Feminist"
+        ],
+        [
+          "male bias"
+        ],
+        [
+          "systematic bias"
+        ],
+        [
+          "gender"
+        ],
+        [
+          "birth anthropology"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 85.6
+    },
+    {
+      "passage": 14,
+      "passage_id": "56e09b2a7aa994140058e635",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 20.0,
+      "base_f1": 43.49206349206349,
+      "final_f1": 36.75213675213676,
+      "new_share": 0.0396484375,
+      "share_trained": 0.08626302083333333,
+      "share_heldout": 0.08822991163971808,
+      "share_contrast": -0.0019668908063847496,
+      "top4_base_share_heldout": 0.08889148009950248,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "30 December 1922",
+        "the Second All-Russian Congress of Soviets",
+        "March 3, 1918",
+        "the Soviet Union",
+        "the Treaty of Brest-Litovsk"
+      ],
+      "predictions": [
+        "On 30 December 1922, the Russian Soviet Federative Socialist Republic adopted the Declaration",
+        "The All-Russian Congress of Soviets renamed the state the Soviet Russian Republic.",
+        "March 3, 1918",
+        "Soviet Russia",
+        "the Russian Socialist Federative Soviet Republic"
+      ],
+      "golds": [
+        [
+          "January 25, 1918"
+        ],
+        [
+          "All-Russian Congress of Soviets"
+        ],
+        [
+          "March 3, 1918"
+        ],
+        [
+          "Germany"
+        ],
+        [
+          "Russian Constitution of 1918"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 86.0
+    },
+    {
+      "passage": 15,
+      "passage_id": "57277bc0f1498d1400e8f962",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 40.0,
+      "base_f1": 40.0,
+      "final_f1": 40.0,
+      "new_share": 0.03885554635761589,
+      "share_trained": 0.10222647626931568,
+      "share_heldout": 0.0798756866708126,
+      "share_contrast": 0.022350789598503076,
+      "top4_base_share_heldout": 0.09155070999170813,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Fujiwara no Yorinaga",
+        "Battle of Uji",
+        "Taira and Minamoto",
+        "1156",
+        "Minamoto clan"
+      ],
+      "predictions": [
+        "Fujiwara no Yorinaga",
+        "the Battle of Uji",
+        "the Taira and the Minamoto",
+        "1156",
+        "the Fujiwara"
+      ],
+      "golds": [
+        [
+          "Fujiwara no Yorinaga"
+        ],
+        [
+          "H\u014dgen Rebellion"
+        ],
+        [
+          "Taira and Minamoto"
+        ],
+        [
+          "1159"
+        ],
+        [
+          "Taira"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 88.3
+    },
+    {
+      "passage": 16,
+      "passage_id": "572b91e5f75d5e190021fe52",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 0.0,
+      "base_f1": 27.27272727272727,
+      "final_f1": 11.428571428571429,
+      "new_share": 0.055113636363636365,
+      "share_trained": 0.06352391098484848,
+      "share_heldout": 0.08353496190920398,
+      "share_contrast": -0.020011050924355497,
+      "top4_base_share_heldout": 0.09057900601160862,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "ten",
+        "in the diphthongs /ou\u032f/ and /i\u032fa",
+        "unstressed",
+        "the body's response to stress",
+        "the primary word stress is on the first syllable of the word."
+      ],
+      "predictions": [
+        "five",
+        "in unstressed syllables",
+        "unstressed",
+        "the environment",
+        "the first syllable of most words"
+      ],
+      "golds": [
+        [
+          "ten"
+        ],
+        [
+          "loanwords"
+        ],
+        [
+          "schwa sounds"
+        ],
+        [
+          "vowel length"
+        ],
+        [
+          "first syllable"
+        ]
+      ],
+      "heldout_em": 3.260869565217391,
+      "heldout_f1": 11.09915326219674,
+      "seconds": 103.7
+    },
+    {
+      "passage": 17,
+      "passage_id": "56dde56e9a695914005b967c",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 20.0,
+      "base_f1": 16.666666666666664,
+      "final_f1": 43.80952380952382,
+      "new_share": 0.0380859375,
+      "share_trained": 0.09073893229166667,
+      "share_heldout": 0.0793760688743781,
+      "share_contrast": 0.011362863417288566,
+      "top4_base_share_heldout": 0.09150212479270316,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "The British North America Act, 1867, united the colonies of Nova Scotia, New",
+        "forces of the Kingdom of Prussia and the Austrian Empire",
+        "The threat of extinction",
+        "the War of 1812",
+        "the British"
+      ],
+      "predictions": [
+        "1867",
+        "the British and the French",
+        "the threat of extinction.",
+        "War of 1812",
+        "the British"
+      ],
+      "golds": [
+        [
+          "1867"
+        ],
+        [
+          "French and British forces"
+        ],
+        [
+          "European powers"
+        ],
+        [
+          "the American Revolutionary War"
+        ],
+        [
+          "invasion by the United States"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 88.4
+    },
+    {
+      "passage": 18,
+      "passage_id": "570d1a97b3d812140066d411",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 9.904761904761905,
+      "final_f1": 15.079365079365079,
+      "new_share": 0.04257454128440367,
+      "share_trained": 0.104560875382263,
+      "share_heldout": 0.08560469138681592,
+      "share_contrast": 0.018956183995447073,
+      "top4_base_share_heldout": 0.08855138370646766,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Apple claimed that Microsoft and Hewlett-Packard were guilty of infringing Apple",
+        "Apple lost the lawsuit.",
+        "The FSF did not release any GNU software for the Macintosh platform until",
+        "Apple claimed that Microsoft and HP were abusing their dominance in the market for Intel",
+        "the market for operating systems for personal computers"
+      ],
+      "predictions": [
+        "Apple claimed that Microsoft and Hewlett-Packard \"rapidly gained significant",
+        "Apple lost the lawsuit and lost the licensing fees, but Apple's user interface design",
+        "two years",
+        "Apple claimed that the icons and GUI were copied from Apple's Macintosh.",
+        "the Macintosh operating system"
+      ],
+      "golds": [
+        [
+          "they infringed Apple's copyrighted GUI"
+        ],
+        [
+          "against Apple"
+        ],
+        [
+          "seven years"
+        ],
+        [
+          "the use of rectangular, overlapping, and resizable windows"
+        ],
+        [
+          "GUIs in general"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 89.5
+    },
+    {
+      "passage": 19,
+      "passage_id": "56dfc3097aa994140058e15d",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 3.076923076923076,
+      "final_f1": 8.0,
+      "new_share": 0.044173481308411214,
+      "share_trained": 0.09505208333333333,
+      "share_heldout": 0.08502409825870647,
+      "share_contrast": 0.010027985074626863,
+      "top4_base_share_heldout": 0.0880639122097844,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "number one",
+        "Bell Telephone Laboratories",
+        "Bell's stamp is part of the \"I Love New York\" series.",
+        "The stamp was officially released on May 6, 1971.",
+        "London"
+      ],
+      "predictions": [
+        "number four",
+        "the Bell Telephone Laboratories",
+        "Bell's own personal stamp",
+        "October 1, 1975",
+        "London"
+      ],
+      "golds": [
+        [
+          "First"
+        ],
+        [
+          "commemorative stamp"
+        ],
+        [
+          "Famous Americans Series"
+        ],
+        [
+          "October 28"
+        ],
+        [
+          "Boston"
+        ]
+      ],
+      "heldout_em": null,
+      "heldout_f1": null,
+      "seconds": 88.3
+    }
+  ],
+  "heldout_drop": -1.9565217391304346,
+  "gates": {
+    "pooled_gain_vs_own_base": false,
+    "heldout_drop_within_2pts": true
+  }
+}

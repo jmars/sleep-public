@@ -1,0 +1,22 @@
+# License — the paper and its companion records
+
+Copyright (c) 2026 Jaye Timothy Marshall
+
+The paper (`paper.md`), its PDF render (`paper.pdf`), and the claim-to-artefact table
+`numbers.md` are licensed under the Creative Commons Attribution 4.0 International
+license (CC-BY-4.0).
+
+Canonical deed: <https://creativecommons.org/licenses/by/4.0/>
+
+You are free to share and adapt the paper and its companion records for any
+purpose, including commercial use, provided you give appropriate credit, provide
+a link to the license, and indicate if changes were made. Full terms are in the
+deed linked above.
+
+Everything else in this repository — the code under `code/` (the `qlora_sleep`
+package, the experiment scripts, the configs, the tests, the data preparation) and
+the run data under `runs/` and `boxlogs/` — is licensed under the MIT license; see
+`LICENSE`.
+
+This is the same split paper 1's, paper 2's and paper 3's deposits use (CC-BY-4.0 for
+the paper, MIT for the code and run data), so the deposits are licensed alike.

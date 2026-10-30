@@ -1,0 +1,36 @@
+# SNAPSHOT — the revision of the lab tree this deposit was taken from.
+#
+# This repository is a SNAPSHOT of a working tree, not a live mirror of it. The paper
+# cites specific code, and a reader following one of those citations is looking at the
+# code as it stood at the revision below — not at whatever the lab tree happens to say
+# today. Re-syncing from a LATER revision produces a LATER snapshot, and this file then
+# names that later revision.
+#
+# The lab tree has NO git history: the experiments were run in a plain working tree on
+# the execution box and copied back, so there is no commit to name. `revision: none`
+# records that fact rather than a sha a reader could mistake for a pin.
+
+revision:                 none
+revision_short:           none
+snapshot_utc:             2026-10-30T19:39:39Z
+source:                   ~/research/qlora-sleep, as executed 2026-10-29/30
+source_dirty:             true
+source_dirty_paths:       unknown (no version control in the source tree)
+published_paths_modified: true (one path, named in STATE)
+
+STATE: the source tree carries no version control at all, so `source_dirty` is true in the
+sense that nothing about it is pinned: there is no revision under which the tree was
+committed, and files were edited on the execution box and copied back between sessions.
+`published_paths_modified` is true for exactly one path: `numbers.md`, whose scope line was
+rewritten for this deposit (the lab tree's `~/research/qlora-sleep/` prefix replaced by
+this deposit's root, and the rows that cite artefacts outside the deposit named). Every
+other published file is the lab tree's own bytes at the snapshot time above — `paper.md`
+is byte-identical to `~/research/qlora-sleep/paper/paper.md`.
+
+SUBSET: this deposit carries the code the runs executed — `src/`, `scripts/`, `configs/`,
+`tests/`, `data/` and `pyproject.toml`, under `code/` — plus the cited run data under
+`runs/` and `boxlogs/`. It is not the lab tree's whole content: the probe scripts the
+work used before the package existed (the `.probe_*.py` and `.diag_*.py` files at the tree
+root, some of them root-owned from container runs), the container and HF caches under
+`.cache/`, and the dream caches (`*.pt`) are outside it. See the README's "Not included,
+by design".

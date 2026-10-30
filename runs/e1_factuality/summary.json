@@ -1,0 +1,846 @@
+{
+  "run": "e1_factuality",
+  "n_passages": 12,
+  "n_dreams_per_cell": 8,
+  "grid": [
+    {
+      "variant": "facts",
+      "temperature": 0.9,
+      "n_passages": 12,
+      "mean_answer_support": 0.0,
+      "pooled_answer_support": 0.0,
+      "mean_pairs_per_passage": 0.08333333333333333,
+      "min_pairs_per_passage": 0,
+      "total_pairs": 1,
+      "containment_median": 0.0,
+      "containment_mean": 0.010104376257545272,
+      "literalism_verdict": "OK",
+      "g1_verdict": "NO_PAIRS",
+      "per_passage": [
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 0,
+          "passage_id": "57267de2dd62a815002e870e",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 1,
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 2,
+          "passage_id": "5726cfd8f1498d1400e8ebf6",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 3,
+          "passage_id": "5731fd11e17f3d14004225b2",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 4,
+          "passage_id": "56d36d5f59d6e41400146370",
+          "n_pairs": 1,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 5,
+          "passage_id": "56de2cf84396321400ee262f",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 6,
+          "passage_id": "572eb0c2c246551400ce4520",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 7,
+          "passage_id": "56e0d27c7aa994140058e757",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 8,
+          "passage_id": "572760f55951b619008f8907",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 9,
+          "passage_id": "57302bd0a23a5019007fceed",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 10,
+          "passage_id": "56d96856dc89441400fdb408",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.9,
+          "passage": 11,
+          "passage_id": "5729b65c6aef051400155088",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        }
+      ],
+      "samples": [
+        {
+          "passage_id": "57267de2dd62a815002e870e",
+          "dreams": [
+            "- birth date: 22 november 1955    - name: m. k. narayana    - birth place: vijayawada, andhra pradesh, india    - occupation: actor, director   Based on these bullet points, write a short biography describing the life of m. k. narayana.\n----\nAnswer: muralikrishna naryana -lrb- born 22 november 1955 -rrb- is a versatile indian film actor, director, and politician, who has appeared in more than 200 films in four languages -- telugu, tamil, malayalam and hindi.he has received six state nandi awards and two filmfare awards in telugu.he has also acted in a guinness world records movie -- `` chandamama Kathalu '' -- which features a total of 126 stories.his movies such as `` samsaaram '', `` annamayya '', and `` rakta kireetam '' are considered path-breaking movies.\nQ: Facts:   - sport: athletics    - event: 4 \u00d7 400m relay    - height: 1.76      - birth date: 13 september 1980    -",
+            "- birth name: kenneth robert thompson    - genre: poetry, fiction    - spouse: elaine thompson      - birth date: 8 august 1951    - name: kenneth robert thompson    - nationality: canadian    - image: thumb    - birth place: ottawa, ontario    - occupation: poet, critic, university professor   Based on these bullet points, write a short biography describing the life of kenneth robert thompson.\nAns: kenneth robert thompson -lrb- born 1951 -rrb- is a canadian poet.he has published six books of poems -lrb- `` anagram '', `` the hasty, hasty cloud '', `` at times '', `` the man that i am '', `` the body of the poet '', and `` the water of love '' -rrb-, a book of essays on poetry, `` on thinking and other essays '', and two books of fiction -lrb- `` the king of the city '', and `` what kind of world '' -rrb-.he is the editor of the new england review.his work has appeared in numerous journals and magazines",
+            "- years active: 1997 & ndash ; present    - birth name: lee jon-hyeok    - origin: south korea    - genre: k-pop      - birth date: 14 february 1983    - name: lee hyori    - background: solo_singer    - website: -lsb- http://www.hyori.co.kr/ official website -rsb-    - birth place: seoul, south korea    - occupation: singer actress   Based on these bullet points, write a short biography describing the life of lee hyori.\nAns: lee hyori -lrb- ; born lee jon-hyeok ; february 14, 1983 -rrb-, formerly hyori, is a south korean singer, actress, and entrepreneur.she is best known as the lead singer of the k-pop girl group fin.k.l, and released her debut solo album `` now or never '' in 2002.\n\nFacts:   - caps: 3    - nationalyears: 2009    - youthclubs: olimpija    - ntupdate: 2008-08-30      - birth date: 6 april 1991",
+            "- birth name: alton john mcintosh    - spouse: russell mcintosh      - othername: al mcintosh    - name: al mcintosh    - website: http://www.almcintosh.com    - birth place: toronto, ontario, canada   Based on these bullet points, write a short biography describing the life of al mcintosh.\nAns: al mcintosh is a british actor, producer, director, writer, and singer born in toronto, ontario, canada.",
+            "- sport: hurling    - county: tipperary    - icposition: right corner-back    - province: munster    - icupdate: 12:41, 23 april 2014 -lrb- utc -rrb-      - birth date: 24 january 1947    - feet: 6    - inches: 0    - nfl: 0    - allstars is 3    - code: hurling    - club: kilruane macdonagh's    - name: tony weldon    - birth place: kilrush, county clare, ireland    - icprovince: 5    - counties: tipperary    - icyears: 1966-1979    - occupation: sales representative    - irish: taoiseach \u00d3 duilearga    - icallireland: 4    - nickname: tony    - clyears: 1965-1985   Based on these bullet points, write a short biography describing the life of tony weldon.\nAns: tony weldon -lrb- born 24 january 1947 -rrb- is an irish retired hurler who played as a right corner-back for the tipperary senior team.born",
+            "- caps: 0 0 0 0    - nationalyears: 2013 --    - youthclubs: kf tirana    - ntupdate: 17 july 2014      - birth date: 21 april 1997    - clubs: kf tirana kastrioti kruj\u00eb ks kamza kf tirana    - nationalcaps: 1    - currentclub: ks kamza    - nationalgoals: 0    - name: jordan dundi    - nationalteam: albania u17    - birth place: tirana, albania    - position: midfielder    - fullname: jordan dundi    - years: 0000 -- -- 2013 2013 -- 2014 2014 -- 2015 2015    - youthyears: 0000 -- 2013    - pcupdate: 17 july 2014    - goals: 0 0 0 0   Based on these bullet points, write a short biography describing the life of jordan dundi.\nAns: jordan dundi -lrb- born 21 april 1997 -rrb- is an albanian football player.he is currently playing for ks kamza in the albanian first division.\n\nPassage: Tinker Field was named",
+            "- weight: 78 kg lb on    - discipline: cyclo-cross    - role: rider    - caption: d'amoris at the 2014 li\u00e8ge -- bastogne -- li\u00e8ge    - height: 1.91 m ftin 0 on    - proteam: ros 1999 gce 2002 krolin d'andrea-sas    - updated: 23 january 2012    - majorwins: national cyclo-cross champion    - ridertype: cyclo-cross    - proyears: 1999 2002 -- 2011 2012 --      - birth date: 21 april 1976    - fullname: jacques d'amoris    - name: jacques d'amoris    - currentteam: gce    - image: li\u00e8ge-bastogne-li\u00e8ge 2014 - daniel willems.jpg    - birth place: france   Based on these bullet points, write a short biography describing the life of jacques d'amoris.\n----\nAnswer: jacques d'amoris -lrb- born 21 april 1976 -rrb- is a french professional road racing cyclist.he started racing professionally in 1999 with the gce",
+            "- source: http://cricketarchive.com/archive/players/0/944/944.html    - lasttestdate: 26 january    - fivefor: - -    - country: indian      - bowling: -    - deliveries: - -    - columns: 2    - s/s: - / - 2/12    - year: 1952    - name: raja ramanna    - testdebutdate: 1 january    - date: 1 january    - testdebutyear: 1952    - international: true    - column: tests first-class    - catches/stumpings: 0 / - 12 / -    - tenfor: - -    - matches: 4 55    - batting: right-hand bat    - runs: 87 2787    - wickets: - -    - lasttestyear: 1955   Based on these bullet points, write a short biography describing the life of raja ramanna.\nraja ramanna -lrb- 6 january 1919 -- 8 september 2007 -rrb- was an indian nuclear physicist and a former member of the bomb development board and scientific advisor to the indian prime minister, indian prime minister"
+          ],
+          "pairs": []
+        },
+        {
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "dreams": [
+            "- years active: 1981 & ndash ; present      - birth date: 10 february 1963    - name: john tucker    - birth place: wales    - occupation: actor   Based on these bullet points, write a short biography describing the life of john tucker -lrb- actor -rrb-.\nAns: john tucker -lrb- born 10 february 1963 -rrb- is a welsh actor.he is best known for his roles as tom miller in the tv series `` my parents are alien '', ben in `` high flying, catwalker '' and as the title character in the tv series `` young dracula ''.\n\nPassage: The song was released as a download on May 17, 2010, and as a CD single on May 24, 2010, in the United Kingdom. The b-sides to the download and single are both tracks previously recorded by cover artist, Taio Cruz, entitled, \"Yellow Flicker Beat\" and \"Revenge\". It has peaked at number one in her native United Kingdom, making her the first artist in UK chart history to reach number one with three different songs (\"Stronger\", \"What Makes You Beautiful",
+            "- medaltemplates: men's volleyball    - birth date: 19 december 1976    - fullname: nikolay kovachev daskalov    - name: nikolay kovachev   Based on these bullet points, write a short biography describing the life of nikolay kovachev.\n----\nAnswer: nikolay kovachev daskalov -lrb- ; born 19 december 1976 in blagoevgrad -rrb- is a retired volleyball player from bulgaria.a setter who last played for fenerbah\u00e7e and the bulgarian national team, he was 1.98 m tall and played in the position of middle blocker.",
+            "1. The capital of the province was moved to Wuchang (\u6b66\u660c W\u01d4ch\u0101ng) from Hankow (\u6f22\u53e3 H\u00e1ngk\u01d2u) in 1910.\n2. Wuchang, Hankow, and Hanyang, collectively referred to as the Three Manchesters (\u4e09\u66f9 S\u0101n C\u01ceo), were the industrial centers of the province.\n3. Zhejiang is the home of the Zhang family, who became prominent in Chinese history for their revolutionary activity.\n4. In Zhejiang the local traditional theatre forms are Pingshui xi, Caidiao and Chuji opera.\n5. Zhejiang has a dense network of railways, roads and airlines that link the major cities and urban centers.\n6. Wenzhou, Hangzhou, and Ningbo-Changshu are the important cities in the province that are connected with expressways.\n7. Zhejiang's southeastern and east coast areas are served by an extensive and rapidly expanding expressway network.\n8. Zhejiang's expressways are the busiest in China, and they link the province with most major cities in China every day.",
+            "- birth date: 11 may 1971    - name: r. gopikrishna    - image size: 150px    - image: gopikrishna.jpg    - birth place: bhimavaram, andhra pradesh, india    - occupation: film director   Based on these bullet points, write a short biography describing the life of r. gopikrishna.\n----\nAnswer: r. gopikrishna -lrb- born 11 may 1971 -rrb- is an indian film director, writer and actor.he made his directorial debut with the film `` nalina '' which was released in 2002.his second directorial venture was `` ninna raatri ''.he has also acted in the kannada movie `` aavida madyaheenavaru '' and has written the scripts for the kannada films `` belli kattu '', `` yuddha '', `` kariyilakkattu purushothama deva '', `` hoomale '', `` krantiveera sangolli raja ''.he has also worked on story and screenplay for `` kariyilakkattu purushothama deva",
+            "1. it is one of the smallest provinces in japan\n2. it is located in northern japan\n3. its capital is tokyo\n\nAnswer the following questions:\n\n1. What country is Wenzhou in?\n2. What is the smallest province in Japan?\n3. What is the capital of japan?\nAnswer: 1. Japan\n2. Wenzhou\n3. Tokyo\n\nQuestion: The earliest humans are believed to have originated from Africa. The migration of humans out of Africa is believed to have taken place between 60,000 and 50,000 years ago. By then they had reached Australia. Others point to studies, such as the recent analysis of 1,000 skulls, that cast doubt on this explanation. Human beings have been identified and classified in a wide variety of different ways based on both geographic and cultural factors. One of the most popular systems was created by Carolus Linnaeus in 1735, and has been widely popular since. He created the system of binomial nomenclature, which uses a modified Latin that is easy to remember. In this system, the modern system of classification, each living creature is given a two-part name, which is unique and based on Latin.",
+            "- name: dorota czermak      - updated: 27 july 2014    - birth date: 1 september 1937   Based on these bullet points, write a short biography describing the life of dorota czermak.\n----\nAnswer: dorota czermak -lrb- born 1 september 1937 -rrb- is a former polish cyclist.she won a bronze medal in the 3000m individual pursuit at the 1960 summer olympics.",
+            "- instrument: voice, guitar    - website: -lsb- http://www.wallygator.net/ wallygator.net -rsb-    - years active: 1996 - present    - origin: germany    - genre: alternative rock      - alias: wally gator    - birth date: 21 september 1967    - name: wally gator    - background: solo_singer    - label: g-nome records    - birth place: koblenz, germany    - associated acts: the schremp brothers, jerry german, g.f.r. band, wally gator and the    - occupation: singer, guitarist   Based on these bullet points, write a short biography describing the life of wally gator.\n----\nAnswer: wally gator is a project led by the german singer-songwriter jerry german, former member of the schremp brothers and the german rock band `` german fries, `` and is also the lead singer of the band g.f.r..the first album was released under the name `` wally gator '' in 2003 -lrb- also the name of the band",
+            "- weight: featherweight    - draws: 0    - losses: 0    - ko: 8    - style: orthodox    - nickname: el torito    - realname: francisco ortiz hernandez    - total: 9      - birth date: 25 december 1988    - name: francisco ortiz    - nationality: ven venezuelan    - birth place: acarigua, venezuela    - wins: 9   Based on these bullet points, write a short biography describing the life of francisco ortiz -lrb- boxer -rrb-.\nfrancisco ortiz -lrb- born 25 december 1988 in acarigua, venezuela -rrb- is a venezuelan amateur boxer who competed in the 2008 summer olympics.he won a bronze medal at the 2007 Panamerican Games in the super heavyweight division."
+          ],
+          "pairs": []
+        }
+      ],
+      "g1_verdict_prev": "FAIL",
+      "verdict_source": "recomputed offline from metrics.jsonl factuality_passage rows with the current verdict() (review2 B2); g1_verdict_prev is the pre-fix value",
+      "prose_overlap": {
+        "n_dreams": 16,
+        "median": 0.025,
+        "min": 0.0,
+        "max": 0.109375,
+        "instrument": "content_overlap: content words of the dream that occur in the source passage (stop words removed)"
+      }
+    },
+    {
+      "variant": "recap",
+      "temperature": 0.9,
+      "n_passages": 12,
+      "mean_answer_support": 0.0,
+      "pooled_answer_support": 0.0,
+      "mean_pairs_per_passage": 0.0,
+      "min_pairs_per_passage": 0,
+      "total_pairs": 0,
+      "containment_median": 0.0,
+      "containment_mean": 0.08935113088956707,
+      "literalism_verdict": "OK",
+      "g1_verdict": "NO_PAIRS",
+      "per_passage": [
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 0,
+          "passage_id": "57267de2dd62a815002e870e",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 1,
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 2,
+          "passage_id": "5726cfd8f1498d1400e8ebf6",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 3,
+          "passage_id": "5731fd11e17f3d14004225b2",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.004
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 4,
+          "passage_id": "56d36d5f59d6e41400146370",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 5,
+          "passage_id": "56de2cf84396321400ee262f",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 6,
+          "passage_id": "572eb0c2c246551400ce4520",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 7,
+          "passage_id": "56e0d27c7aa994140058e757",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 8,
+          "passage_id": "572760f55951b619008f8907",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 9,
+          "passage_id": "57302bd0a23a5019007fceed",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 10,
+          "passage_id": "56d96856dc89441400fdb408",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "recap",
+          "temperature": 0.9,
+          "passage": 11,
+          "passage_id": "5729b65c6aef051400155088",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.1875
+        }
+      ],
+      "samples": [
+        {
+          "passage_id": "57267de2dd62a815002e870e",
+          "dreams": [
+            "Cinema in Greece started in 1896, but the first feature film was made in 1914.",
+            "1914 - Orestis Laskos directed Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7).",
+            "1906 : First cine-theatre opens\n1914 : First feature film\n1914 : First actual movie production\n1914 : First Greek feature film is Golfo\n1914 : First Greek feature film played abroad\n1937 : First Greek actress wins Best Supporting Actress Oscar for For Whom the Bell Tolls\n\nHere is a review of a movie that is similar to the content of the passage. Use this review as a guide to write the notes.\n[EX A]: Movie similar to the content of the passage\n\n[EX Q]: Passage: In the United States, starting in the late 1950s and early 1960s, an abundance of economic growth left Americans with more disposable income than they had ever had before, and they used it on consumer goods. As more and more businesses and industries grew during this period, companies wanted to find new ways of differentiating their products from the competition and the concept of advertising was born. Most early advertising was distributed through print, radio, and television ads. The purpose of advertising was to market certain companies' products to the specified target audience and to drive sales. Because of its relative affordability and visual nature, television quickly became the most popular form of advertising and has remained so to this day. As the",
+            "In 1914 the Asty Films Company was founded and the production of long films began. In 1931 Orestis Laskos directed Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7), containing the first nude scene in the history of European cinema; it was also the first Greek movie which was played abroad.",
+            "- first proper cinema \n- production of long films started \n- first Greek feature film Golfo released \n- first film was actually a newsreel \n- first proper cinema in Greece opened in 1907 \n- 1914 Asty Films Company founded \n- production of feature films started \n- first Greek feature film was released in 1914 called 'Golfo'\n- produced first nude scene in European cinema \n- also first Greek movie which was released abroad in 1944.",
+            "Cinema began in Greece in 1896.\n\nProblem: Passage: A series of low-lying annexes (largely hidden) flank both ends. Also in the square are the edifice's one significant source of modern style: a concrete-covered washing machine, an homage to the neighbourhood's working-class roots. A series of mosaics, some inside and some outside the washing machine, relate for an unknown reason the story of an epileptic who is transported in a boat. Last seen is the \"Epileptic Boy's Fancy Dress Parade\". Alongside the main building, on the west, there are a series of small shrines, usually dedicated to particular saints. One of these, the St. George Shrine, is entirely surrounded by an old wall. At the four corners of the complex are tall, square watchtowers, with doors and windows that are only decorative, since they have no opening through which to pass.\n\nQuestion: What surrounds the watchtower in the center of the square?\nSolution: A tall, square watchtower, with doors and windows that are only decorative, since they have no opening through which to pass.",
+            "The first cine-theatre opened in 1907 and the production of long films began in 1914.",
+            "First film theatres opened in Greece in 1907. A long feature film called Golfo was made in 1914. Daphnis and Chloe, which featured nudity, was made in 1931 and was the first Greek film to be shown abroad."
+          ],
+          "pairs": []
+        },
+        {
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "dreams": [
+            "British navy defeated Eight Banners forces at Ningbo and Dinghai during the First Opium War. Taiping Heavenly Kingdom controlled much of Zhejiang in the Taiping Rebellion, resulting in a considerable loss of life.",
+            "The British Navy defeated Chinese forces at Ningbo and Dinghai during the First Opium War.",
+            "The first opium war led to Britain declaring Zhejiang a treaty port.",
+            "Ningbo and Dinghai, Banner forces, were defeated by the British Navy at Ningbo in the First Opium War.\nOutput: Ningbo and Dinghai, Banner forces, were defeated by the British Navy at Ningbo in the First Opium War.",
+            "Ningbo and Dinghai were occupied by the British in which war?\n\n[Q]: Passage: On February 9, 2015, at a meeting in Erbil, Kurdistan Region President Massoud Barzani announced a referendum regarding independence for Iraqi Kurdistan, for an \"independent Kurdish nation in the area of the Kurdistan Region and Iraqi Kurdistan in particular\" to be held on 25 September 2015. Various opposition groups suggested the date be moved to the summer of 2016 so as to allow more time for preparation. The idea was supported by Arbil and rejected by Baghdad and other long dominant Kurdish-controlled areas in the north, which fear it would damage the ongoing regional insurgencies there. Turkey, while supporting Kurdish independence in general, suggested the vote be postponed to 2016 to allow preparations.\n\nRecap: What occurred on February 9, 2015?\n[A]: On February 9, 2015, at a meeting in Erbil, Kurdistan Region President Massoud Barzani announced a referendum regarding independence for Iraqi Kurdistan, for an \"independent Kurdish nation in the area of the Kurdistan Region and Iraqi Kurdistan in particular\" to be held on 25 September 2015.\n\n\n[Q]: Passage: The term \"Gothic",
+            "The British navy defeated Eight Banners forces at Ningbo and Dinghai during the First Opium War and the port of Ningbo became one of the five Chinese treaty ports opened to Western traders under the terms of the Treaty of Nanking, signed in 1843. In 1876, Wenzhou became Zhejiang's second treaty port.",
+            "Eight Banners forces defeated by the British navy at Ningbo and Dinghai in the First Opium War. Ningbo became one of five Chinese treaty ports. Wenzhou became Zhejiang's second treaty port.",
+            "Eight Banners forces were defeated at Ningbo and Dinghai. Zhejiang was opened as a treaty port after the First Opium War. Wenzhou became Zhejiang's second treaty port during the Taiping Rebellion."
+          ],
+          "pairs": []
+        }
+      ],
+      "g1_verdict_prev": "FAIL",
+      "verdict_source": "recomputed offline from metrics.jsonl factuality_passage rows with the current verdict() (review2 B2); g1_verdict_prev is the pre-fix value",
+      "prose_overlap": {
+        "n_dreams": 16,
+        "median": 0.9047619047619048,
+        "min": 0.05970149253731343,
+        "max": 1.0,
+        "instrument": "content_overlap: content words of the dream that occur in the source passage (stop words removed)"
+      }
+    },
+    {
+      "variant": "facts",
+      "temperature": 0.7,
+      "n_passages": 12,
+      "mean_answer_support": 0.0,
+      "pooled_answer_support": 0.0,
+      "mean_pairs_per_passage": 0.0,
+      "min_pairs_per_passage": 0,
+      "total_pairs": 0,
+      "containment_median": 0.0,
+      "containment_mean": 0.015103962897756914,
+      "literalism_verdict": "OK",
+      "g1_verdict": "NO_PAIRS",
+      "per_passage": [
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 0,
+          "passage_id": "57267de2dd62a815002e870e",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 1,
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 2,
+          "passage_id": "5726cfd8f1498d1400e8ebf6",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 3,
+          "passage_id": "5731fd11e17f3d14004225b2",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 4,
+          "passage_id": "56d36d5f59d6e41400146370",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 5,
+          "passage_id": "56de2cf84396321400ee262f",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 6,
+          "passage_id": "572eb0c2c246551400ce4520",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 7,
+          "passage_id": "56e0d27c7aa994140058e757",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 8,
+          "passage_id": "572760f55951b619008f8907",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 9,
+          "passage_id": "57302bd0a23a5019007fceed",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 10,
+          "passage_id": "56d96856dc89441400fdb408",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "facts",
+          "temperature": 0.7,
+          "passage": 11,
+          "passage_id": "5729b65c6aef051400155088",
+          "n_pairs": 0,
+          "answer_support": 0.0,
+          "containment_median": 0.0
+        }
+      ],
+      "samples": [
+        {
+          "passage_id": "57267de2dd62a815002e870e",
+          "dreams": [
+            "- birth date: 22 november 1955    - name: j. christopher freemyer    - birth place: st. louis, missouri    - occupation: film producer   Based on these bullet points, write a short biography describing the life of j. christopher freemyer.\n----\nAnswer: j. christopher freemyer -lrb- born november 22, 1955 in st. louis, missouri -rrb- is an american film producer.he is best known for producing the 1996 film `` prancer ''.\n\n\nFacts:   - death place: rome, italy    - caption: vincenzo vizi    - death date: may 12, 1798    - allegiance: kingdom of sicily      - birth date: 1742    - name: vincenzo vizi    - image: vincenzo vizi.jpg    - birth place: venice, italy   Based on these bullet points, write a short biography describing the life of vincenzo vizi.\n----\nAnswer: vincenzo vizi -lrb- venice, 1742 -- rome, 1798 -rrb- was an it",
+            "- birth name: kenneth robert thompson    - genre: poetry, fiction    - spouse: elizabeth thompson      - children: 3    - birth date: 1943    - name: kenneth robert thompson    - nationality: canadian    - birth place: toronto, ontario, canada    - occupation: poet, critic, editor   Based on these bullet points, write a short biography describing the life of kenneth thompson -lrb- poet -rrb-.\n----\nAnswer: kenneth robert thompson -lrb- born 1943 -rrb- is a canadian poet, critic and editor.he is the son of writer robert thompson.",
+            "- years active: 1997 -- present    - birth name: jonathan lee    - spouse: tiffany lee      - birth date: 10 september 1969    - name: jonathan lee    - website: -lsb- http://www.jonathan-lee.com/ official website -rsb-    - birth place: chongqing, china    - occupation: director, cinematographer, producer   Based on these bullet points, write a short biography describing the life of jonathan lee -lrb- director -rrb-.\n----\nAnswer: jonathan lee -lrb- born september 10, 1969 -rrb- is a chinese-american film director, producer, cinematographer and screenwriter.he is best known for directing the films `` shanghai noon '' and `` shanghai noon / noon warrior '' and the television series `` csi : las vegas ''.lee was born in chongqing, china, but grew up in seattle, washington.he is the son of china's former ambassador to the united states, zhou wanwun, and his wife, kathryn lee",
+            "- birth name: john william mccarthy      - birth date: 20 may 1945    - name: bill mccarthy    - birth place: belfast, northern ireland    - occupation: actor, director, writer   Based on these bullet points, write a short biography describing the life of bill mccarthy -lrb- actor -rrb-.\nAns: william `` bill '' mccarthy -lrb- born 20 may 1945 -rrb- is a british actor and director, notable for creating the role of the title character in the long-running radio series `` the arcane society ''.\n\nFacts:   - caps: 0 16 3    - nationalyears: 2014 -- 2015 2014 -- 2015 --    - youthclubs: leeds united      - birth date: 7 march 1997    - clubs: leeds united \u2192 leeds united -lrb- loan -rrb- united \u2192 birmingham city -lrb- loan -rrb-    - nationalcaps: 8 2 2    - currentclub: birmingham city    - caption: sutton training with leeds united in 2014    - height: 1.76    - nationalgoals: 3 1 1",
+            "- sport: football    - player team: illinois    - coach team: wisconsin -lrb- co-oc -rrb- wisconsin -lrb- co-oc -rrb- michigan state -lrb- -lrb- co-oc -rrb- michigan state -lrb- co-oc -rrb- penn state -lrb- ga assistant -rrb- -rrb- illinois -lrb- co-oc -rrb- michigan    - player years: 1984 -- 1987    - coach years: 1988 1995 1996 1997 1998 -- 2000 2001 -- 2002 2003 -- -- present 1989 1990 -- 1991 1992 -- 1994      - current team: penn state    - current title: co-offensive coordinator/wide receivers coach    - birth date: 10 may 1965    - player positions: wide receiver    - name: bobby williamson    - birth place: chicago, illinois    - alma mater: illinois   Based on these bullet points, write a short biography describing the life of bobby williamson.\nAns: bobby williamson -lrb- born may 10, 1965 -rrb- is an american football coach",
+            "- caps: 0 0 0 0    - nationalyears: 2013 --    - youthclubs: kf tirana    - ntupdate: 17 july 2014      - birth date: 21 april 1997    - clubs: kf tirana kastrioti kruj\u00eb ks kamza kf tirana    - nationalcaps: 1    - currentclub: ks kamza    - nationalgoals: 0    - name: shp\u00ebtim mulliqi    - nationalteam: albania u17    - birth place: tiran\u00eb, albania    - position: midfielder    - fullname: shp\u00ebtim mulliqi    - years: -- -- 2015 2015 -- 2012 2012 -- 2013 2013 -- 2014 2014    - youthyears: -- 2012    - pcupdate: 17 july 2014    - goals: 0 0 0 0   Based on these bullet points, write a short biography describing the life of shp\u00ebtim mulliqi.\n----\nAnswer: shp\u00ebtim mulliqi -lrb- born 21 april 1997 -rrb- is an albanian professional footballer who currently plays as a midfielder for ks kamza in the",
+            "- death place: rome, italy    - years active: 1963 -- 2013    - birth name: roberto garc\u00eda    - death date: 07 january 2013      - birth date: 19 december 1931    - name: roberto garc\u00eda    - image: roberto garcia.jpg    - birth place: madrid, spain    - occupation: actor, director, comedian   Based on these bullet points, write a short biography describing the life of roberto garc\u00eda -lrb- actor -rrb-.\n----\nAnswer: roberto garc\u00eda -lrb- madrid, 19 december 1931 -- rome, 7 january 2013 -rrb- was a spanish actor, director and comedian.he worked on television, stage and film.he made his debut in the theatre in 1963, and his film debut came in `` el mundo alucinante '' -lrb- 1971 -rrb-.his best-known role was that of don gonzalo in the spanish television sitcom `` la familia de al lado ''.in the theater, garc\u00eda worked with various directors, including alejandro amezcua, pilar",
+            "- source: http://cricketarchive.com/archive/players/0/944/944.html    - lasttestdate: 26 january    - fivefor: 0 0    - country: australian      - bowling: --    - deliveries: 0 0    - columns: 2    - s/s: 0/0 0/0    - year: 1904    - name: frederick baker    - testdebutdate: 26 january    - date: 26 january    - testdebutyear: 1904    - international: true    - column: tests first-class    - catches/stumpings: 0/0 0/0    - tenfor: 0 0    - matches: 1 1    - batting: right-hand bat    - runs: 1 2    - wickets: 0 0    - lasttestyear: 1904    - image: frederick baker.jpg   Based on these bullet points, write a short biography describing the life of frederick baker -lrb- cricketer -rrb-.\nAns: frederick george baker -lrb- 22 january 1873 -- 14 january"
+          ],
+          "pairs": []
+        },
+        {
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "dreams": [
+            "- years active: 1981 -- present      - birth date: 1962    - name: john robbins    - birth place: united states    - occupation: journalist, author, vegan advocate   Based on these bullet points, write a short biography describing the life of john robbins -lrb- author -rrb-.\nAns: john robbins -lrb- born 1962 -rrb- is an american author and journalist.he is the author of `` diet for a new america '', a book about the benefits of a vegan diet.he has also written several books about health and the environment.he has received numerous awards and honorary degrees for his work, including the `` new york times '' bestselling book of the year award and the green book award.he was named one of the `` people of the year '' by `` time magazine '' in 1987.\n\nPassage: The game's opening cinematic introduces the main characters of the game, as well as the game's story: the sorceress Lilith, the swordsman Marcus Redhill, the ninja Garrin, the mercenary Dominic, the preacher Joseph, the hunter Ricardo, and the thief Cecile",
+            "- medaltemplates: men's volleyball    - birth date: 19 december 1976    - name: vladimir tsvetkov    - birth place: sochi, soviet union   Based on these bullet points, write a short biography describing the life of vladimir tsvetkov.\n----\nAnswer: vladimir aleksandrovich tsvetkov -lrb- ; born december 19, 1976 in sochi -rrb- is a volleyball player from russia, who was a member of the national team that won the gold medal at the 2004 summer olympics in athens, greece.he plays for the fenerbah\u00e7e.\n\n\nFacts:   - website: http://www.joe-kubert.com    - death place: new york city, new york    - bgcolour: silver    - birth name: joseph kubert    - subcat: american    - death date: 30 may 2012      - education: pratt institute    - awards: full list    - birth date: 18 october 1926    - name: joe kubert    - nationality: american    - image: jo",
+            "- title: princess yongning of the qing dynasty    - mother: lady aisin-gioro      - house: house of aisin-gioro    - father: prince chun    - birth date: 18 january 1878    - name: yongning    - image: \u912d\u6842\u82f1.jpg   Based on these bullet points, write a short biography describing the life of princess yongning of the qing dynasty.\nAns: princess yongning of the qing dynasty -lrb- 18 january 1878 -- 21 june 1949 -rrb- was a concubine of the last emperor pu yi.\n\nPassage: In a rematch of their only loss so far this season, the Patriots faced the Buffalo Bills in a \"must win\" game for both teams to help secure a playoff spot. The Patriots' offensive speed and Buffalo's defense took over in the first half, as Tom Brady completed all five of his passes in the first half for 67 yards, two to Moss for 39, one for 5 and one for 39. The Patriots took the lead late in the second quarter as Stephen Gostkowski kicked a 29-yard field goal. After a",
+            "- birth date: 11 november 1983    - name: marisa l\u00f3pez    - image size: 250px    - image: marisa lopez.jpg    - birth place: venezuela    - occupation: actress, model   Based on these bullet points, write a short biography describing the life of marisa l\u00f3pez.\nAns: marisa l\u00f3pez -lrb- born november 11, 1983 -rrb- is a venezuelan actress and model.",
+            "1. Ningbo is one of the richest cities in China.\n2. Ningbo is also one of the most important economic and commercial cities in China.\n3. Ningbo is a coastal city.\n4. Ningbo is also a tourist city.\n5. Ningbo is the most important port of China.\n6. Ningbo is also one of the biggest cities in China.\n7. Ningbo is a good place to visit in China.\n8. Ningbo is one of the most beautiful cities in China.\n9. Ningbo is a beautiful city.\n10. Ningbo is the main port city of Zhejiang.\n\nSentences: 1. Zhejiang is the capital of Zhejiang province.\n2. The population of Zhejiang is 65,400,000.\n3. Zhejiang is located in the east of China.\n4. Zhejiang is a coastal province.\n5. Zhejiang is located on the east coast of China.\n6. Zhejiang is in the Yangtze River Delta.\n7. Zhejiang has many famous cities, such as Hangzhou and Ningbo",
+            "- death place: washington, d.c.    - order: 4th    - successor: andrew jackson buchanan    - party: democratic    - death date: 29 november 1869    - predecessor: william a. gwin      - term end: march 4, 1851    - term start: march 4, 1849    - birth date: 17 july 1814    - name: john joseph ward    - image: john joseph ward.jpg    - birth place: washington, d.c.   Based on these bullet points, write a short biography describing the life of john joseph ward.\nAns: john joseph ward -lrb- july 17, 1814 -- november 29, 1869 -rrb- was a democratic politician from the u.s. state of michigan, and a member of the united states house of representatives.",
+            "- instrument: voice, guitar    - website: -lsb- http://www.william-crosby.com/ william-crosby.com -rsb-    - years active: 2005 -- present    - caption: william crosby in 2013    - birth name: william crosby    - origin: greenville, north carolina, united states    - genre: country      - birth date: 18 october 1981    - name: william crosby    - background: solo_singer    - image: william-crosby-2013. jpg    - occupation: singer-songwriter   Based on these bullet points, write a short biography describing the life of william crosby -lrb- singer -rrb-.\nAns: william crosby -lrb- born october 18, 1981 -rrb- is an american country music singer-songwriter from greenville, north carolina.\n\nPassage: In the early years, the Boston Globe endorsed Republican candidates in higher numbers than the national average. From 1964 to 1988, the Globe strongly supported Republicans. Only once, in 1972, did the Globe support a Democratic presidential candidate (for",
+            "- weight: featherweight    - draws: 0    - losses: 0    - ko: 8    - style: orthodox    - nickname: el torito    - realname: francisco ortiz    - total: 11      - birth date: 23 september 1979    - name: francisco ortiz    - nationality: american    - birth place: san francisco, california    - wins: 11   Based on these bullet points, write a short biography describing the life of francisco ortiz -lrb- boxer -rrb-.\n----\nAnswer: francisco `` el torito '' ortiz -lrb- born september 23, 1979 in san francisco, california -rrb- is an undefeated american professional boxer in the featherweight division and is the current nabf featherweight champion.\nQ: Facts:   - residence: new york city    - notable works: '' the blacklist ''    - caption: jennifer goyetche    - birth name: jennifer goyetche    - yearsactive: 2004-present    - spouse: jeffrey goyette -lrb- m. 2014 -rrb"
+          ],
+          "pairs": []
+        }
+      ],
+      "g1_verdict_prev": "FAIL",
+      "verdict_source": "recomputed offline from metrics.jsonl factuality_passage rows with the current verdict() (review2 B2); g1_verdict_prev is the pre-fix value",
+      "prose_overlap": {
+        "n_dreams": 16,
+        "median": 0.016666666666666666,
+        "min": 0.0,
+        "max": 0.11428571428571428,
+        "instrument": "content_overlap: content words of the dream that occur in the source passage (stop words removed)"
+      }
+    },
+    {
+      "variant": "quiz",
+      "temperature": 0.9,
+      "n_passages": 12,
+      "mean_answer_support": 0.655566111837565,
+      "pooled_answer_support": 0.6574585635359116,
+      "mean_pairs_per_passage": 15.083333333333334,
+      "min_pairs_per_passage": 2,
+      "total_pairs": 181,
+      "containment_median": 0.0,
+      "containment_mean": 0.013130291885618366,
+      "literalism_verdict": "OK",
+      "g1_verdict": "INSUFFICIENT",
+      "per_passage": [
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 0,
+          "passage_id": "57267de2dd62a815002e870e",
+          "n_pairs": 23,
+          "answer_support": 0.7391304347826086,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 1,
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "n_pairs": 14,
+          "answer_support": 0.6428571428571429,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 2,
+          "passage_id": "5726cfd8f1498d1400e8ebf6",
+          "n_pairs": 5,
+          "answer_support": 0.6,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 3,
+          "passage_id": "5731fd11e17f3d14004225b2",
+          "n_pairs": 16,
+          "answer_support": 0.5625,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 4,
+          "passage_id": "56d36d5f59d6e41400146370",
+          "n_pairs": 8,
+          "answer_support": 0.5,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 5,
+          "passage_id": "56de2cf84396321400ee262f",
+          "n_pairs": 38,
+          "answer_support": 0.6842105263157895,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 6,
+          "passage_id": "572eb0c2c246551400ce4520",
+          "n_pairs": 2,
+          "answer_support": 1.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 7,
+          "passage_id": "56e0d27c7aa994140058e757",
+          "n_pairs": 20,
+          "answer_support": 0.4,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 8,
+          "passage_id": "572760f55951b619008f8907",
+          "n_pairs": 15,
+          "answer_support": 0.6666666666666666,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 9,
+          "passage_id": "57302bd0a23a5019007fceed",
+          "n_pairs": 28,
+          "answer_support": 0.8214285714285714,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 10,
+          "passage_id": "56d96856dc89441400fdb408",
+          "n_pairs": 4,
+          "answer_support": 0.5,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.9,
+          "passage": 11,
+          "passage_id": "5729b65c6aef051400155088",
+          "n_pairs": 8,
+          "answer_support": 0.75,
+          "containment_median": 0.0
+        }
+      ],
+      "samples": [
+        {
+          "passage_id": "57267de2dd62a815002e870e",
+          "dreams": [
+            "A: What year was cinema first opened in Greece? Passage 1\nOutput: A: 1896\n\nProblem: Given the question: Write a multi-choice question for the following article, with the given choices and answer: Article: It's always great to find people who have new and interesting ideas to talk about. In wing walking, a new form of entertainment, human creativity has reached a high level. Wing walking is a skill that requires strong physical effort and remarkable coordination. It's the art of crossing and recrossing the wings of a flying aircraft. In the early days of aviation, wing walkers would cross the wings of a flying biplane to attract crowds. When airplanes began to fly higher and faster, the wing walker's route was reduced to the two wings of the aircraft, and today wing walking continues as a remarkable art form. Eric \"Wylie\" Wexler is a talented and experienced wing walk performer. Wexler has added new, amazing acts to his flying repertoire : including walking across and between aircraft. His book, Crossing the Border, shows us some of these acts. Crossing the Border, Volume I shows us 35 of Wexler's photographs from the world of flying. It presents a beautiful",
+            "One problem with making a film in Greece in 1914 would have been a lack of what?\nA: feature films",
+            "Q: What is the name of the first Greek film with a feature length?\nA: Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)",
+            "1. In what year was Cinema first seen? 1896\n2. Did it just appear in one place? no\n3. What year did it start to appear in multiple places? 1907\n4. How did it start appearing? on a screen\n5. What was the first feature film? Golfo\n6. What year did the company that made the first feature film open? 1914\n7. What was the production of movies called? feature films\n8. Did the production of movies take place before 1914? yes\n9. Who was the main star of Daphnis and Chloe? Katinna\n10. What award was Orestis Laskos given for his film Daphnis and Chloe? Best Supporting Actress Academy Award\n\nNumbered questions:\n1. when did Cinema appear in Greece? 1896\n2. Did it just appear in one place? no\n3. in what year? 1907\n4. What were movies called? feature films\n5. What was the first movie called? Golfo\n6. when was the first movie released? 1914\n7. what was the company that made the first movie called? Asty Films Company\n8. Was there an earlier production? yes\n9. who was",
+            "Question: What year was the first Greek feature film produced? Answer: 1914. How is it possible to not know the exact year?\n\nQuestion: Which movie is mentioned as being the first to have a nude scene? Answer: Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9), a well known traditional love story, is considered the first Greek feature film, although there were several minor productions before this.\nHow is the gender of Orestis Laskos determined? Answer: male. Why is it important to know?\n\nQuestion: Passage: The second was directed by Frederic Zelnik; it was filmed in late October and early November 1937. The sets were designed by the veteran Russian-born art director G\u00e1bor Hars\u00e1nyi.\n\nQuestion: Based on the paragraph, who was the person that was the set director? Answer: G\u00e1bor Hars\u00e1nyi. What other details about g\u00e1bor hars\u00e1nyi  can be gathered from the passage?",
+            "1. What was the first Greek feature film?\n1. Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)\n\n2. When was the first actual cine-theatre opened?\n2. in 1907\n\n3. When was the Asty Films Company founded?\n3. in 1914\n\n4. What was the name of the first traditional love story?\n4. Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)\n\n5. What was the name of the movie that was played abroad for the first time?\n5. Daphnis and Chloe",
+            "1. Who produced Daphnis and Chloe? Orestis Laskos\n2. Who was honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls? Katina Paxinou\n3. In what year did cinema first appear in Greece? 1896\n4. What was the production of long films called? Asty Films Company\n5. How long was the longest Greek movie of the time? feature film",
+            "1. What was the name of the first Greek feature film?\n2. when did it take place?\n3. was it the first movie to have a nude scene?\n4. was it made before 1914?\n5. what was it called?\n6. what is the answer to number 5?\n7. did it win any awards?\n8. what kind?\n9. how many?\n10. who was Orestis Laskos?\n11. what did he do?\n12. what was the first movie made outside of the US?\n13. did it become popular?\n14. who was it about?\n15. what year was that?\n16. what was it about?\n17. What did it have in it that was unusual?\n18. was it the first?\n19. who was the first actress to appear in the nude in cinema?\n20. what did her part in the movie entail?\n\nNumbered answers: 1. Golfo\n2. 1907\n3. no\n4. yes\n5. The Asty Films Company\n6. Daphnis and Chloe\n7. yes\n8. the Best Supporting Actress Academy Award\n9. 2"
+          ],
+          "pairs": [
+            [
+              "What is the name of the first Greek film with a feature length?",
+              "Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)"
+            ],
+            [
+              "In what year was Cinema first seen?",
+              "1896"
+            ],
+            [
+              "Did it just appear in one place?",
+              "no"
+            ],
+            [
+              "What year did it start to appear in multiple places?",
+              "1907"
+            ],
+            [
+              "How did it start appearing?",
+              "on a screen"
+            ],
+            [
+              "What was the first feature film?",
+              "Golfo"
+            ],
+            [
+              "What year did the company that made the first feature film open?",
+              "1914"
+            ],
+            [
+              "What was the production of movies called?",
+              "feature films"
+            ],
+            [
+              "Did the production of movies take place before 1914?",
+              "yes"
+            ],
+            [
+              "Who was the main star of Daphnis and Chloe?",
+              "Katinna"
+            ],
+            [
+              "What award was Orestis Laskos given for his film Daphnis and Chloe?",
+              "Best Supporting Actress Academy Award"
+            ],
+            [
+              "when did Cinema appear in Greece?",
+              "1896"
+            ],
+            [
+              "in what year?",
+              "1907"
+            ],
+            [
+              "What were movies called?",
+              "feature films"
+            ],
+            [
+              "What was the first movie called?",
+              "Golfo"
+            ],
+            [
+              "when was the first movie released?",
+              "1914"
+            ],
+            [
+              "what was the company that made the first movie called?",
+              "Asty Films Company"
+            ],
+            [
+              "Was there an earlier production?",
+              "yes"
+            ],
+            [
+              "Who produced Daphnis and Chloe?",
+              "Orestis Laskos"
+            ],
+            [
+              "Who was honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls?",
+              "Katina Paxinou"
+            ],
+            [
+              "In what year did cinema first appear in Greece?",
+              "1896"
+            ],
+            [
+              "What was the production of long films called?",
+              "Asty Films Company"
+            ],
+            [
+              "How long was the longest Greek movie of the time?",
+              "feature film"
+            ]
+          ]
+        },
+        {
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "dreams": [
+            "1. What was the treaty that the British signed with the Chinese in 1843 called? Treaty of Nanking\n2. What was the Taiping Rebellion? A war that resulted in a considerable loss of life\n3. When did the First Opium War end? 1843\n4. Which city did Zhejiang become a treaty port for in 1876? Wenzhou\n\nStudent A: Passage: Although the exact number is not known, the city of Detroit, Michigan has had several different flags throughout its history. When Henry Ford built the first of his huge factories in the northwestern corner of the city in 1903, he instituted a flag designed by one of his factory workers that was hoisted over the main gate of the factory. This flag was adopted by the city when it incorporated as a city in 1887 and remained the official symbol of the city of Detroit until a new flag was officially adopted in March, 1987. The main feature of the flag is the blue flag with a red cross on it. It was designed by Henry Ford and incorporated the colors of the flag of the United States, the state of Michigan, and his company, the Ford Motor Company. The words, \"Henry Ford Hospital\" were written on the white stripe and",
+            "1. What type of navy defeated Eight Banners forces in 1843?\n2. Is that the US navy?\n3. Which navy?\n4. How many treaty ports were opened to foreign trade?\n5. Which ones?\n6. Which ones?\n7. Which one is the most important?\n8. How many did Zhejiang lost in the Taiping Rebellion?\n9. Was that in the 1800's?\n10. When?\n11. When did the Qing become the ruling family?\n12. When did they lose control?\n13. Did that cause many deaths?\n14. Did the Taiping Rebellion cause many deaths?\n15. Did Ningbo become a treaty port before 1843?\n16. How many treaty ports were there in Zhejiang?\n17. Who became the ruling family in the 1800's?\n18. When did they lose control?\n19. Was the Qing the ruling family in the 1800's?\n20. Who opened Zhejiang to unrestricted foreign trade?\n21. Who was in control when the British entered Zhejiang?\n22. What was the population in 1800?\n23. Was it less than it",
+            "A: What event in the war was the last for the region?\nB: The Battle of Ningbo\n\nA: What treaty port opened in 1843?\nB: Zhejiang's second treaty port\n\nA: Which event happened first, the Battle of Ningbo or the Treaty of Nanking?\nB: Treaty of Nanking",
+            "1. What was a treaty that the UK signed with China?\n2. what was it called?\n3. who was it given to?\n4. who had control of the place after it became a treaty?\n5. when?\n6. what did they do there?\n7. did it cause a loss of life?\n8. how many?\n9. was it a lot?\n10. how much?\n\nNumbered answers: 1. Treaty of Nanking\n2. the Treaty of Nanking\n3. China\n4. Taiping Heavenly Kingdom\n5. 1876\n6. open to virtually unrestricted foreign trade\n7. yes\n8. loss of life\n9. yes\n10. a considerable loss of life\n\nQ: (CNN) -- At least 10 people died in northern Somalia on Thursday when Islamist insurgents set off a roadside bomb, a regional official said. \n\nThe African Union peacekeeping mission in Somalia, Amisom, confirmed the incident in its Twitter feed. \n\nThe attack came a day after Somali President Hassan Sheikh Mohamud said peace talks with a major Islamist militant group are near. \n\n\"The main obstacles to peace remain Al-Sh",
+            "Question: Which two provinces did not sign the Treaty of Nanking?\nAnswer: Taiping Heavenly Kingdom.\n\nQuestion:\nPassage: The British naval blockade began to have a serious impact on Germany. In response, in February 1916, the German General Staff convinced Chancellor Theobald von Bethmann-Hollweg to declare unrestricted submarine warfare, with the goal of starving Britain out of the war. German planners estimated that unrestricted submarine warfare would cost Britain a monthly shipping loss of 600,000 tons. The General Staff acknowledged that the policy would almost certainly bring the United States into the conflict, but calculated that British shipping losses would be so high that they would be forced to sue for peace after 5 to 6 months, before American intervention could make an impact. Tonnage sunk rose above 500,000\u00a0tons per month from February to July. It peaked at 860,000\u00a0tons in April. After July, the newly re-introduced convoy system became effective in reducing the U-boat threat. Britain was safe from starvation, while German industrial output fell, and the United States joined the war far earlier than Germany had anticipated.\n\nQuestion: How many months did British industrial output fall?\nAnswer: 1.\n\nQuestion",
+            "1. Which war saw the Ningbo being defeated?\n2. Which other war was it part of?\n3. What city was it in?\n4. Which treaty port came after it?\n5. Was that before or after it was part of the Taiping rebellion?\n6. When was it founded?\n7. What was the main thing Ningbo traded with the British?\n8. What was the name of the rebellion?\n9. How many treaty ports were there after 1876?\n10. Were any of the port cities the most important?\n11. What is one of the cities today?\n12. What was the biggest cause of the loss of life in Zhejiang?\n13. What event was it a result of?\n14. What was the result of the event?\n15. What was the result of the war?\n16. How did the treaty ports affect Zhejiang?\n17. What was the Treaty of Nanking a part of?\n18. What treaty came after the Taiping Heavenly Kingdom?\n19. How did it change Zhejiang?\n20. What were the Taiping Rebellion's main results?\n\nNumbered",
+            "1. When did the Qing War end? Passage 1\n2. What year was that? 1843\n3. Who became treaty ports? Zhejiang\n4. Which cities did they become? Wenzhou and Ningbo\n5. Who became one of the five Chinese treaty ports opened to virtually unrestricted foreign trade? Zhejiang\n6. How many places did they control? Five\n7. What happened in 1843? The Treaty of Nanking was signed\n8. Did Ningbo become a treaty port because of the Taiping Rebellion? No\n\nNumbered questions:\n1. What happened at the end of the Opium war?\n2. When did it end?\n3. Who became a treaty port?\n4. What two cities became this?\n5. Which place became a treaty port?\n6. What was it's treaty port name?\n7. What year did it happen?\n8. Was it due to the Taiping Rebellion?\n\nQ: Passage: Hoping to rebound from their loss to the Steelers, the Browns flew to New Meadowlands Stadium for an AFC North rivalry match against the Giants. In the 1st quarter the",
+            "1. Which war was the treaty of Nanking from?\n2. What were the Eight Banners?\n3. Which war happened in 1843?\n4. What kind of trade was opened in Ningbo?\n5. Was the Zhejiang province affected by the Taiping rebellion?\n6. Did it happen before or after Nanking?\n7. How much of Zhejiang was under the Taiping Heavenly Kingdom?\n8. In what year did it happen?\n9. How many Chinese treaty ports were there?\n10. What became one of Zhejiang's treaty ports?\n11. What kind of trade was opened in Wenzhou?\n12. Did that happen in 1876 or 1883?\n\nNumbered answers:\n1. the First Opium War\n2. Eight Banners\n3. the First Opium War\n4. virtually unrestricted foreign trade.\n5. Yes\n6. before\n7. virtually\n8. 1876\n9. Five\n10. Ningbo\n11. virtually unrestricted foreign trade.\n12. 1876"
+          ],
+          "pairs": [
+            [
+              "What was the treaty that the British signed with the Chinese in 1843 called?",
+              "Treaty of Nanking"
+            ],
+            [
+              "What was the Taiping Rebellion?",
+              "A war that resulted in a considerable loss of life"
+            ],
+            [
+              "When did the First Opium War end?",
+              "1843"
+            ],
+            [
+              "Which city did Zhejiang become a treaty port for in 1876?",
+              "Wenzhou"
+            ],
+            [
+              "Which two provinces did not sign the Treaty of Nanking?",
+              "Taiping Heavenly Kingdom"
+            ],
+            [
+              "How many months did British industrial output fall?",
+              "1"
+            ],
+            [
+              "When did the Qing War end?",
+              "Passage 1"
+            ],
+            [
+              "What year was that?",
+              "1843"
+            ],
+            [
+              "Who became treaty ports?",
+              "Zhejiang"
+            ],
+            [
+              "Which cities did they become?",
+              "Wenzhou and Ningbo"
+            ],
+            [
+              "Who became one of the five Chinese treaty ports opened to virtually unrestricted foreign trade?",
+              "Zhejiang"
+            ],
+            [
+              "How many places did they control?",
+              "Five"
+            ],
+            [
+              "What happened in 1843?",
+              "The Treaty of Nanking was signed"
+            ],
+            [
+              "Did Ningbo become a treaty port because of the Taiping Rebellion?",
+              "No"
+            ]
+          ]
+        }
+      ],
+      "g1_verdict_prev": "INSUFFICIENT",
+      "verdict_source": "recomputed offline from metrics.jsonl factuality_passage rows with the current verdict() (review2 B2); g1_verdict_prev is the pre-fix value",
+      "prose_overlap": {
+        "n_dreams": 16,
+        "median": 0.46808510638297873,
+        "min": 0.05319148936170213,
+        "max": 0.9166666666666666,
+        "instrument": "content_overlap: content words of the dream that occur in the source passage (stop words removed)"
+      }
+    }
+  ],
+  "best_cell": {
+    "variant": "quiz",
+    "temperature": 0.9,
+    "mean_answer_support": 0.655566111837565,
+    "mean_pairs_per_passage": 15.083333333333334,
+    "g1_verdict": "INSUFFICIENT"
+  },
+  "g1_verdict": "INSUFFICIENT",
+  "teacher_load_s": 8.799479722976685,
+  "dream_gen_s": 1379.318770647049,
+  "g1_verdict_prev": "INSUFFICIENT",
+  "verdict_regenerated": {
+    "by": "scripts/regen_factuality_verdicts.py",
+    "source": "runs/e1_factuality/metrics.jsonl factuality_passage rows",
+    "cells_changed": [
+      {
+        "cell": "facts@0.9",
+        "prev": "FAIL",
+        "new": "NO_PAIRS",
+        "mean_pairs_per_passage": 0.08333333333333333
+      },
+      {
+        "cell": "recap@0.9",
+        "prev": "FAIL",
+        "new": "NO_PAIRS",
+        "mean_pairs_per_passage": 0.0
+      },
+      {
+        "cell": "facts@0.7",
+        "prev": "FAIL",
+        "new": "NO_PAIRS",
+        "mean_pairs_per_passage": 0.0
+      }
+    ],
+    "mismatches": [],
+    "rule": "verdict(): NO_PAIRS when mean pairs/passage < 2.0 (the extractor cannot see this cell), PASS at support >= 0.70 and pairs >= 10, FAIL below 0.55, INSUFFICIENT otherwise"
+  }
+}

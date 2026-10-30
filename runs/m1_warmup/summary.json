@@ -1,0 +1,30 @@
+{
+  "run": "m1_warmup",
+  "mode": "warmup-only",
+  "passage_id": "5726b98bf1498d1400e8e8f2",
+  "n_questions": 5,
+  "no_context_em": 20.0,
+  "no_context_f1": 20.0,
+  "base_em": 20.0,
+  "new_expert_share": 0.07505040322580646,
+  "leak": {
+    "no_context_em": 20.0,
+    "with_context_em": 40.0,
+    "delta": 20.0,
+    "min_delta": 10.0,
+    "leak": false
+  },
+  "timings": {
+    "teacher_load_s": 0.0,
+    "dream_gen_s": 0.0,
+    "student_build_s": 25.867796182632446,
+    "warmup_s": 47.260658264160156,
+    "eval_s": 4.885567665100098,
+    "total_s": 90.2779176235199
+  },
+  "gain_over_base": 0.0,
+  "gates": {
+    "warmup_within_2pts": true,
+    "no_leak": true
+  }
+}

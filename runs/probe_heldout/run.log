@@ -1,0 +1,22 @@
+[data] trained 5 q, held-out 20 passages / 92 q
+[data] 20 pairs (support 0.65), 20 prepared qa pairs, 6 warmup texts
+`torch_dtype` is deprecated! Use `dtype` instead!
+No prebuilt binary for ROCm 7.16, loading ROCm 7.15 instead. Set BNB_ROCM_VERSION to override.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:18,  3.69s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.61s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:10,  3.51s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.53s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:18<00:03,  3.63s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.03s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.31s/it]
+[post_surgery] trained EM=20.0 F1=26.7 | heldout EM=3.3 F1=11.5
+  [trained_context] n=1 new=0.000 top4base=0.104 (each ['0.026', '0.026', '0.026', '0.026']) max_base=0.026 top4new=0.000
+  [trained_prompts] n=5 new=0.000 top4base=0.091 (each ['0.025', '0.023', '0.021', '0.021']) max_base=0.025 top4new=0.000
+  [heldout_contexts] n=20 new=0.000 top4base=0.091 (each ['0.026', '0.024', '0.021', '0.020']) max_base=0.026 top4new=0.000
+  [heldout_prompts] n=92 new=0.000 top4base=0.100 (each ['0.028', '0.026', '0.024', '0.022']) max_base=0.028 top4new=0.000
+[post_warmup] trained EM=40.0 F1=53.3 | heldout EM=6.5 F1=16.4
+  [trained_context] n=1 new=0.160 top4base=0.090 (each ['0.023', '0.023', '0.022', '0.021']) max_base=0.023 top4new=0.160
+  [trained_prompts] n=5 new=0.232 top4base=0.073 (each ['0.020', '0.018', '0.017', '0.017']) max_base=0.020 top4new=0.232
+  [heldout_contexts] n=20 new=0.259 top4base=0.071 (each ['0.020', '0.018', '0.017', '0.015']) max_base=0.020 top4new=0.259
+  [heldout_prompts] n=92 new=0.264 top4base=0.073 (each ['0.021', '0.019', '0.017', '0.017']) max_base=0.021 top4new=0.264
+[sft] 10 steps loss 2.898 -> 1.547
+[post_sft] trained EM=0.0 F1=26.7 | heldout EM=2.2 F1=8.8
+  [trained_context] n=1 new=0.161 top4base=0.090 (each ['0.023', '0.023', '0.022', '0.021']) max_base=0.023 top4new=0.161
+  [trained_prompts] n=5 new=0.239 top4base=0.073 (each ['0.020', '0.018', '0.018', '0.017']) max_base=0.020 top4new=0.239
+  [heldout_contexts] n=20 new=0.258 top4base=0.071 (each ['0.020', '0.018', '0.017', '0.016']) max_base=0.020 top4new=0.258
+  [heldout_prompts] n=92 new=0.274 top4base=0.073 (each ['0.021', '0.018', '0.017', '0.017']) max_base=0.021 top4new=0.274
+[done] runs/probe_heldout/summary.json

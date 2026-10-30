@@ -1,0 +1,759 @@
+{
+  "run": "m3_gate20_qa2",
+  "config": "single_n1",
+  "sft_mode": "qa",
+  "cycles": 1,
+  "n_passages": 20,
+  "n_questions": 109,
+  "pooled_base_em": 14.678899082568808,
+  "pooled_final_em": 11.009174311926605,
+  "pooled_gain": -3.669724770642203,
+  "base_em_arg": 11.926605504587156,
+  "timings": {
+    "teacher_phase_s": 1172.1251862049103,
+    "total_s": 3986.5466425418854
+  },
+  "per_passage": [
+    {
+      "passage": 0,
+      "passage_id": "57267de2dd62a815002e870e",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 0.0,
+      "final_f1": 0.0,
+      "new_share": 0.190625,
+      "predictions": [
+        "The first cinema screen in Greece was opened in 1907.",
+        "In the early 1900s, the first cinema theater in Greece was opened.",
+        "Universal Pictures",
+        "The first Greek feature film was \"Oedipus Tyrannus\" (",
+        "Georges Pito\u00ebff"
+      ],
+      "golds": [
+        [
+          "1896"
+        ],
+        [
+          "1907"
+        ],
+        [
+          "Asty Films"
+        ],
+        [
+          "Golfo"
+        ],
+        [
+          "Orestis Laskos"
+        ]
+      ],
+      "seconds": 163.1
+    },
+    {
+      "passage": 1,
+      "passage_id": "56f985bd9b226e1400dd1506",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 20.0,
+      "base_f1": 40.0,
+      "final_f1": 27.999999999999996,
+      "new_share": 0.20134943181818182,
+      "predictions": [
+        "First Opium War",
+        "1842",
+        "Hong Kong",
+        "The Taiping Rebellion",
+        "Wenzhou"
+      ],
+      "golds": [
+        [
+          "the First Opium War"
+        ],
+        [
+          "1843"
+        ],
+        [
+          "Ningbo"
+        ],
+        [
+          "the Taiping Heavenly Kingdom"
+        ],
+        [
+          "1876"
+        ]
+      ],
+      "seconds": 96.7
+    },
+    {
+      "passage": 2,
+      "passage_id": "5726cfd8f1498d1400e8ebf6",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 0.0,
+      "base_f1": 38.98989898989898,
+      "final_f1": 22.54545454545455,
+      "new_share": 0.2057549504950495,
+      "predictions": [
+        "The constitution was amended in 2002.",
+        "legislative, executive and judicial",
+        "four years",
+        "ten",
+        "President of the United States"
+      ],
+      "golds": [
+        [
+          "1999"
+        ],
+        [
+          "the executive, legislative, and judicial branches of government"
+        ],
+        [
+          "five-year"
+        ],
+        [
+          "two terms"
+        ],
+        [
+          "president"
+        ]
+      ],
+      "seconds": 98.0
+    },
+    {
+      "passage": 3,
+      "passage_id": "5731fd11e17f3d14004225b2",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 10.0,
+      "final_f1": 23.333333333333332,
+      "new_share": 0.19245793269230768,
+      "predictions": [
+        "Circe",
+        "Pompey the Great",
+        "the order of the dead",
+        "as a witch",
+        "Greece"
+      ],
+      "golds": [
+        [
+          "Erichtho"
+        ],
+        [
+          "Sextus Pompeius"
+        ],
+        [
+          "order of gods"
+        ],
+        [
+          "stereotypical witch"
+        ],
+        [
+          "Thessaly"
+        ]
+      ],
+      "seconds": 101.4
+    },
+    {
+      "passage": 4,
+      "passage_id": "56d36d5f59d6e41400146370",
+      "n_questions": 8,
+      "base_em": 12.5,
+      "final_em": 0.0,
+      "base_f1": 21.022727272727273,
+      "final_f1": 6.25,
+      "new_share": 0.22168508287292818,
+      "predictions": [
+        "1",
+        "one",
+        "one",
+        "one finalist",
+        "the 1994 season",
+        "one",
+        "one",
+        "32"
+      ],
+      "golds": [
+        [
+          "four"
+        ],
+        [
+          "three"
+        ],
+        [
+          "five"
+        ],
+        [
+          "thirteen"
+        ],
+        [
+          "season eight"
+        ],
+        [
+          "three"
+        ],
+        [
+          "four"
+        ],
+        [
+          "10"
+        ]
+      ],
+      "seconds": 96.3
+    },
+    {
+      "passage": 5,
+      "passage_id": "56de2cf84396321400ee262f",
+      "n_questions": 6,
+      "base_em": 33.33333333333333,
+      "final_em": 16.666666666666664,
+      "base_f1": 46.666666666666664,
+      "final_f1": 30.0,
+      "new_share": 0.20669642857142856,
+      "predictions": [
+        "John Milton",
+        "Contrasts",
+        "The architectonic principles of the Gothic style",
+        "Contrasts was written in 1787",
+        "modern world",
+        "Gothic"
+      ],
+      "golds": [
+        [
+          "Augustus Welby Northmore Pugin"
+        ],
+        [
+          "1836"
+        ],
+        [
+          "Contrasts"
+        ],
+        [
+          "1836"
+        ],
+        [
+          "modern, industrial world"
+        ],
+        [
+          "Gothic"
+        ]
+      ],
+      "seconds": 96.8
+    },
+    {
+      "passage": 6,
+      "passage_id": "572eb0c2c246551400ce4520",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 24.360248447204967,
+      "final_f1": 6.444444444444445,
+      "new_share": 0.17151162790697674,
+      "predictions": [
+        "The grand strategy was to block France from any access to the seas.",
+        "a large army",
+        "the French colonies of Senegal, Ivory Coast, Ghana, Togo,",
+        "the militia",
+        "Pitt's strategy was to keep the French from invading England, and to invade France"
+      ],
+      "golds": [
+        [
+          "a grand strategy of seizing the entire French Empire"
+        ],
+        [
+          "Britain's main weapon was the Royal Navy"
+        ],
+        [
+          "North America and India"
+        ],
+        [
+          "He also planned to use colonial forces from the Thirteen American colonies"
+        ],
+        [
+          "even after that the British continued his strategy"
+        ]
+      ],
+      "seconds": 104.9
+    },
+    {
+      "passage": 7,
+      "passage_id": "56e0d27c7aa994140058e757",
+      "n_questions": 6,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 8.022192232718549,
+      "final_f1": 9.25925925925926,
+      "new_share": 0.1954507743362832,
+      "predictions": [
+        "The United States",
+        "Households in Boston claim the highest average rate of homeownership in the United",
+        "Top-tier universities",
+        "The cost of living in Boston is higher than the national average.",
+        "The city is also ranked as the most expensive in the United States.",
+        "Boston is internationally known for education and medicine because of its many colleges and universities."
+      ],
+      "golds": [
+        [
+          "businesses and institutions"
+        ],
+        [
+          "philanthropy"
+        ],
+        [
+          "environmental sustainability and investment"
+        ],
+        [
+          "The city has one of the highest costs of living"
+        ],
+        [
+          "high"
+        ],
+        [
+          "colleges and universities"
+        ]
+      ],
+      "seconds": 91.5
+    },
+    {
+      "passage": 8,
+      "passage_id": "572760f55951b619008f8907",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 20.0,
+      "base_f1": 43.33333333333333,
+      "final_f1": 30.0,
+      "new_share": 0.22312330163043478,
+      "predictions": [
+        "cottonseed oil",
+        "cottonseed oil",
+        "a source of protein",
+        "to feed livestock",
+        "as a poison"
+      ],
+      "golds": [
+        [
+          "cottonseed oil"
+        ],
+        [
+          "vegetable oil."
+        ],
+        [
+          "ruminant livestock"
+        ],
+        [
+          "roughage"
+        ],
+        [
+          "poisonous pigment"
+        ]
+      ],
+      "seconds": 85.6
+    },
+    {
+      "passage": 9,
+      "passage_id": "57302bd0a23a5019007fceed",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 0.0,
+      "final_f1": 0.0,
+      "new_share": 0.22419969512195123,
+      "predictions": [
+        "Santa Monica Junior College was founded in 1912.",
+        "The Santa Monica Junior College is a two-year college that is located in",
+        "Art",
+        "Los Angeles",
+        "The college enrolls approximately 1,000 students each year."
+      ],
+      "golds": [
+        [
+          "1929"
+        ],
+        [
+          "35"
+        ],
+        [
+          "Airport"
+        ],
+        [
+          "22-mile"
+        ],
+        [
+          "30,000"
+        ]
+      ],
+      "seconds": 253.8
+    },
+    {
+      "passage": 10,
+      "passage_id": "56d96856dc89441400fdb408",
+      "n_questions": 9,
+      "base_em": 11.11111111111111,
+      "final_em": 0.0,
+      "base_f1": 12.592592592592592,
+      "final_f1": 0.0,
+      "new_share": 0.199676513671875,
+      "predictions": [
+        "New Delhi",
+        "7",
+        "Yao Jian",
+        "the torch was extinguished in Paris",
+        "Chennai",
+        "The route was approximately 1,500 miles (2,400 km) in length",
+        "two",
+        "The number of bearers was reduced to only two.",
+        "Liu Changchun"
+      ],
+      "golds": [
+        [
+          "April 17"
+        ],
+        [
+          "70"
+        ],
+        [
+          "Baichung Bhutia"
+        ],
+        [
+          "five"
+        ],
+        [
+          "New Delhi"
+        ],
+        [
+          "1.5"
+        ],
+        [
+          "70"
+        ],
+        [
+          "five"
+        ],
+        [
+          "Baichung Bhutia"
+        ]
+      ],
+      "seconds": 430.5
+    },
+    {
+      "passage": 11,
+      "passage_id": "5729b65c6aef051400155088",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 40.0,
+      "base_f1": 48.88888888888889,
+      "final_f1": 55.714285714285715,
+      "new_share": 0.18617334905660377,
+      "predictions": [
+        "IBM Research",
+        "over 20",
+        "for the second consecutive year",
+        "five",
+        "Universal Product Code"
+      ],
+      "golds": [
+        [
+          "IBM Research"
+        ],
+        [
+          "12 research laboratories worldwide"
+        ],
+        [
+          "22 consecutive years"
+        ],
+        [
+          "five Nobel Prizes"
+        ],
+        [
+          "Universal Product Code"
+        ]
+      ],
+      "seconds": 111.4
+    },
+    {
+      "passage": 12,
+      "passage_id": "570ad72b4103511400d59a72",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 40.0,
+      "base_f1": 50.5,
+      "final_f1": 52.44444444444445,
+      "new_share": 0.2130373023715415,
+      "predictions": [
+        "Electromagnetic Aircraft Launch System",
+        "General Atomics",
+        "aircraft.",
+        "US Navy",
+        "12"
+      ],
+      "golds": [
+        [
+          "Electromagnetic Aircraft Launch System"
+        ],
+        [
+          "General Atomics"
+        ],
+        [
+          "varied aircraft including unmanned combat air vehicles (UCAV)"
+        ],
+        [
+          "Indian Navy officers"
+        ],
+        [
+          "three"
+        ]
+      ],
+      "seconds": 102.0
+    },
+    {
+      "passage": 13,
+      "passage_id": "5733dc134776f4190066138e",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 29.047619047619044,
+      "final_f1": 10.0,
+      "new_share": 0.23941532258064516,
+      "predictions": [
+        "political anthropology",
+        "the biases of Western culture",
+        "that the study of gender is not limited to the differences between masculinity and femin",
+        "feminist anthropology",
+        "feminist anthropology"
+      ],
+      "golds": [
+        [
+          "Feminist"
+        ],
+        [
+          "male bias"
+        ],
+        [
+          "systematic bias"
+        ],
+        [
+          "gender"
+        ],
+        [
+          "birth anthropology"
+        ]
+      ],
+      "seconds": 99.0
+    },
+    {
+      "passage": 14,
+      "passage_id": "56e09b2a7aa994140058e635",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 20.0,
+      "base_f1": 25.71428571428572,
+      "final_f1": 37.77777777777778,
+      "new_share": 0.21393229166666666,
+      "predictions": [
+        "December 30, 1917",
+        "The Soviet Russian Republic",
+        "March 3rd, 1918",
+        "Germany",
+        "The Russian Socialist Federative Soviet Republic"
+      ],
+      "golds": [
+        [
+          "January 25, 1918"
+        ],
+        [
+          "All-Russian Congress of Soviets"
+        ],
+        [
+          "March 3, 1918"
+        ],
+        [
+          "Germany"
+        ],
+        [
+          "Russian Constitution of 1918"
+        ]
+      ],
+      "seconds": 105.6
+    },
+    {
+      "passage": 15,
+      "passage_id": "57277bc0f1498d1400e8f962",
+      "n_questions": 5,
+      "base_em": 40.0,
+      "final_em": 60.0,
+      "base_f1": 40.0,
+      "final_f1": 60.0,
+      "new_share": 0.1839817880794702,
+      "predictions": [
+        "Fujiwara no Yorinaga",
+        "Battle of the Dannoura",
+        "the Taira and the Minamoto",
+        "1159",
+        "Fujiwara no Yorinaga"
+      ],
+      "golds": [
+        [
+          "Fujiwara no Yorinaga"
+        ],
+        [
+          "H\u014dgen Rebellion"
+        ],
+        [
+          "Taira and Minamoto"
+        ],
+        [
+          "1159"
+        ],
+        [
+          "Taira"
+        ]
+      ],
+      "seconds": 118.7
+    },
+    {
+      "passage": 16,
+      "passage_id": "572b91e5f75d5e190021fe52",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 0.0,
+      "base_f1": 27.27272727272727,
+      "final_f1": 19.48717948717949,
+      "new_share": 0.16612215909090908,
+      "predictions": [
+        "five",
+        "in the diphthongs /au\u032f/, /eu\u032f/, /",
+        "schwa",
+        "stress unrelated to",
+        "The primary word stress in Czech is on the first syllable of a word."
+      ],
+      "golds": [
+        [
+          "ten"
+        ],
+        [
+          "loanwords"
+        ],
+        [
+          "schwa sounds"
+        ],
+        [
+          "vowel length"
+        ],
+        [
+          "first syllable"
+        ]
+      ],
+      "seconds": 161.0
+    },
+    {
+      "passage": 17,
+      "passage_id": "56dde56e9a695914005b967c",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 20.0,
+      "base_f1": 16.666666666666664,
+      "final_f1": 40.0,
+      "new_share": 0.22021484375,
+      "predictions": [
+        "1867",
+        "the forces of the United Kingdom, the United States, and France",
+        "The threat of the Mongol Empire.",
+        "American Civil War",
+        "the British"
+      ],
+      "golds": [
+        [
+          "1867"
+        ],
+        [
+          "French and British forces"
+        ],
+        [
+          "European powers"
+        ],
+        [
+          "the American Revolutionary War"
+        ],
+        [
+          "invasion by the United States"
+        ]
+      ],
+      "seconds": 245.6
+    },
+    {
+      "passage": 18,
+      "passage_id": "570d1a97b3d812140066d411",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 9.904761904761905,
+      "final_f1": 8.380952380952381,
+      "new_share": 0.19581422018348624,
+      "predictions": [
+        "Apple claimed that Microsoft and Hewlett-Packard infringed its copyrights by",
+        "The court ruled that the look and feel of Windows 3.0 was sufficiently different",
+        "The FSF did not boycott GNU software for the Macintosh platform.",
+        "Apple claimed that the look and feel of Windows 95 and the graphical user interface of",
+        "the Apple trademark"
+      ],
+      "golds": [
+        [
+          "they infringed Apple's copyrighted GUI"
+        ],
+        [
+          "against Apple"
+        ],
+        [
+          "seven years"
+        ],
+        [
+          "the use of rectangular, overlapping, and resizable windows"
+        ],
+        [
+          "GUIs in general"
+        ]
+      ],
+      "seconds": 158.2
+    },
+    {
+      "passage": 19,
+      "passage_id": "56dfc3097aa994140058e15d",
+      "n_questions": 5,
+      "base_em": 0.0,
+      "final_em": 0.0,
+      "base_f1": 3.076923076923076,
+      "final_f1": 0.0,
+      "new_share": 0.2329877336448598,
+      "predictions": [
+        "third",
+        "the Bell Telephone Laboratories",
+        "Bell's line",
+        "the date of release was the date of release",
+        "New York City"
+      ],
+      "golds": [
+        [
+          "First"
+        ],
+        [
+          "commemorative stamp"
+        ],
+        [
+          "Famous Americans Series"
+        ],
+        [
+          "October 28"
+        ],
+        [
+          "Boston"
+        ]
+      ],
+      "seconds": 91.9
+    }
+  ],
+  "gain_over_external_base": -0.9174311926605512,
+  "gates": {
+    "pooled_gain_vs_external_base": false,
+    "pooled_gain_vs_own_base": false
+  }
+}

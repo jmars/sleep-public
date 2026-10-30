@@ -1,0 +1,50 @@
+{
+  "run": "m3_cycle",
+  "config": "single_n1",
+  "mode": "full",
+  "passage_id": "5726b98bf1498d1400e8e8f2",
+  "n_questions": 5,
+  "no_context_em": 20.0,
+  "no_context_f1": 20.0,
+  "base_em": 20.0,
+  "new_expert_share": 0.18583669354838708,
+  "leak": {
+    "no_context_em": 20.0,
+    "with_context_em": 60.0,
+    "delta": 40.0,
+    "min_delta": 10.0,
+    "leak": false
+  },
+  "stage_evals": {
+    "post_surgery": {
+      "em": 0.0,
+      "f1": 4.444444444444445,
+      "n": 5
+    },
+    "post_warmup": {
+      "em": 20.0,
+      "f1": 43.33333333333333,
+      "n": 5
+    },
+    "post_cycle": {
+      "em": 20.0,
+      "f1": 20.0,
+      "n": 5
+    }
+  },
+  "timings": {
+    "teacher_load_s": 0.0,
+    "dream_gen_s": 70.72088170051575,
+    "student_build_s": 23.222857236862183,
+    "score_s": 12.048378705978394,
+    "warmup_s": 36.80306935310364,
+    "sft_s": 54.767131328582764,
+    "eval_s": 4.338003396987915,
+    "total_s": 223.21968340873718
+  },
+  "gain_over_base": 0.0,
+  "gates": {
+    "single_passage_gain": false,
+    "no_leak": true
+  }
+}

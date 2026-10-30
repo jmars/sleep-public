@@ -1,0 +1,15 @@
+{
+  "frames_written": [
+    "data/transfer_twohop.jsonl",
+    "data/corpus_para.jsonl"
+  ],
+  "n_transfer_accepted": 200,
+  "n_transfer_candidates": 600,
+  "transfer_yield_ladder": "template",
+  "n_para_accepted": 473,
+  "para_accept_rate": 0.5124593716143012,
+  "primary_single_hop_frame": "corpus_orig",
+  "transfer_gate": "MEASURED",
+  "spot_read_artifact": "runs/p6_frames/spot_read.txt",
+  "seconds": 846.6
+}

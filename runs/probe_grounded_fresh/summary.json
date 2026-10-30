@@ -1,0 +1,92 @@
+{
+ "grounded-fresh": {
+  "n_pairs": 13,
+  "steps": 30,
+  "train_routers": false,
+  "base": {
+   "em": 20.0,
+   "f1": 26.66666666666667,
+   "predictions": [
+    "Head of Samoa",
+    "five-year terms",
+    "1871",
+    "Malietoa Tanumafili II",
+    "Samoa was a constitutional monarchy with the head of state being the Samo"
+   ]
+  },
+  "warmup": {
+   "em": 20.0,
+   "f1": 26.66666666666667,
+   "predictions": [
+    "Head of Samoa",
+    "Samoa's first joint heads of state were Tuiatua Tupua",
+    "1883",
+    "Malietoa Tanumafili II",
+    "Samoa was a constitutional monarchy, with the head of state being a hereditary"
+   ]
+  },
+  "final": {
+   "em": 20.0,
+   "f1": 20.0,
+   "predictions": [
+    "Presidency",
+    "Tupua Tamasese Mea'ole died after a year in office",
+    "1970",
+    "Tuiatua Tupua Tamasese Efi",
+    "constitutional monarchy"
+   ]
+  },
+  "delta_em_vs_base": 0.0,
+  "delta_f1_vs_base": -6.666666666666671,
+  "delta_em_vs_warmup": 0.0,
+  "loss_first": 4.594880104064941,
+  "loss_final": 0.02548861689865589,
+  "with_context_em": 60.0,
+  "new_share_context": 0.15524193548387097
+ },
+ "ungrounded-fresh": {
+  "n_pairs": 20,
+  "steps": 30,
+  "train_routers": false,
+  "base": {
+   "em": 20.0,
+   "f1": 26.66666666666667,
+   "predictions": [
+    "Head of Samoa",
+    "five-year terms",
+    "1871",
+    "Malietoa Tanumafili II",
+    "Samoa was a constitutional monarchy with the head of state being the Samo"
+   ]
+  },
+  "warmup": {
+   "em": 20.0,
+   "f1": 26.66666666666667,
+   "predictions": [
+    "Head of Samoa",
+    "Samoa's first joint heads of state were Tuiatua Tupua",
+    "1883",
+    "Malietoa Tanumafili II",
+    "Samoa was a constitutional monarchy, with the head of state being a hereditary"
+   ]
+  },
+  "final": {
+   "em": 0.0,
+   "f1": 13.333333333333334,
+   "predictions": [
+    "Samoa",
+    "Tupua Tamasese Mea'ole and Malietoa Tanum",
+    "1964",
+    "Tuiatua Tupua Tamasese Efi",
+    "Monarchy"
+   ]
+  },
+  "delta_em_vs_base": -20.0,
+  "delta_f1_vs_base": -13.333333333333337,
+  "delta_em_vs_warmup": -20.0,
+  "loss_first": 2.993368148803711,
+  "loss_final": 0.643500030040741,
+  "with_context_em": 40.0,
+  "new_share_context": 0.15383064516129033
+ }
+}

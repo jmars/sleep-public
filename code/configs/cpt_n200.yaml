@@ -1,0 +1,15 @@
+# Continued-pretraining setting (n = 200 passages, 974 questions), paper Table 3 right column.
+# Not run in the M0-M3 unit; the config exists so the M5 run needs no schema change.
+
+data:
+  name: cpt_n200
+  n_passages: 200
+  min_questions_per_passage: 1
+  seed: 0
+
+dream:
+  n_dreams: 5
+
+sft:
+  steps: 200
+  lr: 0.0001

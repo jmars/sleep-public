@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qlora-sleep"
+version = "0.1.0"
+description = "Minimal QLoRA-over-MoE replication of the Sleep paradigm (arXiv:2606.03979), SQuAD knowledge incorporation"
+requires-python = ">=3.10"
+dependencies = [
+    # transformers is pinned <5: the 5.x OLMoE implementation fuses experts into
+    # stacked tensors, which removes the per-expert ModuleList the surgery needs.
+    "transformers>=4.55,<5",
+    "peft>=0.14",
+    "bitsandbytes>=0.45",
+    "datasets>=3.2,<5",
+    "accelerate>=1.0",
+    "torch>=2.4",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning", "ignore::FutureWarning"]

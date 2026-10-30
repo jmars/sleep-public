@@ -1,0 +1,35 @@
+[data] 200 passages, 923 questions, mode=dreams, aggregate steps=6000
+[frames] F1 923 q | F2 473 q | F3 117 q | F4 92 q | with-context 150 q
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[dream] 200 passages from cache runs/p6_dreams.pt
+[dream] 200 passages in 0s
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-30 12:01:35.758826: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793361695.776714   10130 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793361695.783031   10130 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793361695.801688   10130 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793361695.801710   10130 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793361695.801713   10130 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793361695.801716   10130 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:09,  1.81s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:03<00:07,  1.81s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:05<00:05,  1.82s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:07<00:03,  1.82s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:09<00:01,  1.84s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:10<00:00,  1.53s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:10<00:00,  1.68s/it]
+[warmup] 40 texts (qa_pairs)
+[build] share band (0.05, 0.09) -> mask -0.75 share 0.06507362234580384
+[base] corpus_orig: n=923 EM=10.94 F1=21.88
+[base] corpus_para: n=473 EM=8.88 F1=19.58
+[base] transfer: n=117 EM=0.85 F1=8.35
+[base] heldout: n=92 EM=4.35 F1=13.86
+[aggregate] 1586 examples from 200 passages, 6000 steps, literalism {'n_passages': 200, 'median_containment': 0.0, 'alarm_count': 0, 'ok_count': 200, 'insufficient_count': 0}
+[probe 1000] EM=11.00 delta=+0.00 streak=0
+[probe 2000] EM=13.50 delta=+2.50 streak=0
+[probe 3000] EM=12.50 delta=+1.50 streak=0
+[probe 4000] EM=12.50 delta=+1.50 streak=0
+[probe 5000] EM=13.50 delta=+2.50 streak=0
+[probe 6000] EM=14.00 delta=+3.00 streak=0
+[sft] 6000 steps, last loss 0.2428382933139801, 4482846 label tokens, aborted=False
+[final] corpus_orig: EM=11.48 F1=21.74
+[final] corpus_para: EM=11.84 F1=19.67
+[final] transfer: EM=1.71 F1=6.94
+[final] heldout: EM=2.17 F1=8.57
+[done] runs/p6_n/summary.json status=COMPLETE wall=12994s

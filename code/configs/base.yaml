@@ -1,0 +1,99 @@
+# Shared defaults. Experiment overlays (single_n1.yaml, cpt_n200.yaml) merge over this.
+
+model:
+  id: allenai/OLMoE-1B-7B-0125
+  dtype: bfloat16
+  attn_implementation: eager
+  # The router is skipped from 4-bit conversion so it stays a trainable bf16 Linear.
+  quantisation:
+    load_in_4bit: true
+    quant_type: nf4
+    compute_dtype: bfloat16
+    double_quant: true
+    # CHILD names, not dotted paths: transformers matches the child attribute name,
+    # so "gate" skips mlp.gate at any depth (and does not touch gate_proj).
+    skip_modules: ["lm_head", "gate"]
+
+experts:
+  k_new: 4
+  clone_from: router_load
+  init_noise_frac: 1.0
+  # Masked pre-allocation: new experts are held out of the routing until warmup.
+  mask_value: 20.0
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.0
+
+dream:
+  n_dreams: 8
+  temperature: 0.9
+  top_p: 0.95
+  max_new_tokens: 256
+  prompt_variant: quiz
+  random_expert: true
+  top_k_keep: 4
+  random_keep: 2
+  max_containment: 0.5
+  ngram_n: 8
+
+warmup:
+  steps: 25
+  # top-k slots reserved for new experts, annealed linearly to zero
+  forced_slots: 2
+  lr: 0.001
+  max_len: 256
+  # W2 contrastive arm: cap the new bank's probability mass on held-out distractor
+  # text at `share_target` (uniform null is k_new/(64+k_new) = 0.059)
+  share_target: 0.07
+  penalty_weight: 1.0
+
+sft:
+  # dreams = the paper's form (loss over the whole dream string);
+  # qa = (question, answer) pairs in the EVAL template with the loss masked to the
+  # answer, which is what makes the stored fact retrievable from the gate's prompt;
+  # recap = gradient selection as in qa, but WHOLE-TEXT loss on recap-prose dreams.
+  mode: dreams
+  # FIXED for every arm, whatever its data or objective. The qa arm used to derive its
+  # steps from the pair count (epochs x pairs / batch), which gave it 6.2 steps against
+  # the comparators' 30 and made the arm contrast a schedule contrast (review2 A1).
+  steps: 30
+  lr: 0.0001
+  # routers are FROZEN during SFT: the bisected router bias is then the sole routing
+  # control, and the routers-on ablation drifted the new bank's share 0.230 -> 0.263
+  train_routers: false
+  batch_size: 4
+  max_len: 256
+  max_containment: 0.5
+  ngram_n: 8
+
+eval:
+  max_new_tokens: 16
+  batch_size: 8
+  min_questions_per_passage: 3
+
+gates:
+  # Paper Table 3, Llama-3.2-1B backbone.
+  paper_base: 31.9
+  paper_no_dreaming_single: 33.4
+  paper_no_dreaming_cpt: 32.0
+  paper_seal_single: 46.7
+  paper_sleep_single: 48.1
+  paper_sleep_cpt: 44.3
+  # M0 re-basing rule: |base - paper_base| > tolerance demotes the absolute gate.
+  rebase_tolerance: 5.0
+  # Primary relative gate: sleep - no_dreaming must reach the paper's own gap.
+  sleep_minus_no_dream: 12.4
+  # Degeneration rule: sleep <= sft_on_c + margin means rebuilt CPT.
+  degeneration_margin: 2.0
+  # Eval leak probe.
+  leak_min_delta: 10.0
+  # Dream literalism alarm on median 8-gram containment.
+  literalism_alarm: 0.5
+  literalism_insufficient: 0.3
+  # M3: a single-passage signal must be visible.
+  single_passage_min_gain: 2.0
+  # non-destruction: held-out EM may not drop more than this below the same run's
+  # post-surgery reading
+  heldout_max_drop: 2.0

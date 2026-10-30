@@ -1,0 +1,5 @@
+{"n_passages": 20, "n_questions": 109, "source": "data/squad_gate24.jsonl", "stage": "data", "t": 1793271348.3358524}
+{"mode": "base", "seconds": 32.321295976638794, "stage": "load", "t": 1793271380.656863}
+{"em": 11.926605504587156, "eval_mode": "no_context", "f1": 22.464000911369332, "mode": "base", "n": 109, "seconds": 82.0438756942749, "stage": "eval", "t": 1793271462.7009604}
+{"delta": 47.49999999999999, "leak": false, "min_delta": 10.0, "n": 40, "no_context_em": 10.0, "seconds": 41.47676086425781, "stage": "leak_probe", "t": 1793271504.1778703, "with_context_em": 57.49999999999999}
+{"absolute_gate_demoted": true, "mode": "base", "n_questions": 109, "no_context_em": 11.926605504587156, "no_context_f1": 22.464000911369332, "paper_base": 31.9, "rebase_gap": -19.97339449541284, "run": "m0_gate20_base", "stage": "summary", "t": 1793271504.178639, "wall_clock_s": 155.8428099155426}

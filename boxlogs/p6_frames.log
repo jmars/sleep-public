@@ -1,0 +1,246 @@
+[mine] 1580 supported dream pairs over 200 passages -> 1423 two-hop candidates, 600 kept (cap 600)
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-30 03:39:25.777172: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793331565.794048    5458 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793331565.800251    5458 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793331565.818976    5458 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793331565.818996    5458 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793331565.818999    5458 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793331565.819001    5458 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.05s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.05s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.05s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.06s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]
+[transfer] pass 1 (t5>=0.5): 89/600 accepted in 130s
+[transfer] pass 2 (t5>=0.4): 89 accepted
+[transfer] pass 3 (template): 200 accepted
+[transfer] 200/600 accepted (ladder template), 400 rejected
+[transfer] askability with-context EM: both 23.50, hop1 only 0.50, hop2 only 24.50
+[paraphrase] 473/923 accepted (51.2%) in 451s
+
+HUMAN SPOT-READ GATE -- 20 accepted transfer questions
+
+[ACCEPTED] What were the names of the the answer to "How many games were shown at E3 2007?" segments that Spielberg directed?
+  hop1: How many games were shown at E3 2007? -> Two
+  hop2: What were the names of the two segments that Spielberg directed? -> Eyes", starred Joan Crawford
+
+[ACCEPTED] What are the the answer to "How many alphabets are used to write the languages in the Eastern group?" languages being compared?
+  hop1: How many alphabets are used to write the languages in the Eastern group? -> two
+  hop2: What are the two languages being compared? -> Nuristani languages
+
+[ACCEPTED] What is its the answer to "What was Germany's position in 2010, in terms of the most positive influence in the world?" largest pay-TV company?
+  hop1: What was Germany's position in 2010, in terms of the most positive influence in the world? -> second
+  hop2: What is its second largest pay-TV company? -> Comcast
+
+[ACCEPTED] what is the Boston the answer to "What type of facility is it?" market?
+  hop1: What type of facility is it? -> TV
+  hop2: what is the Boston TV market? -> 8th largest
+
+[ACCEPTED] How many individuals self-identified as multiracial in the the answer to "What year did Iran's budget deficits become a chronic problem?" US census?
+  hop1: What year did Iran's budget deficits become a chronic problem? -> 2010
+  hop2: How many individuals self-identified as multiracial in the 2010 US census? -> 9 million
+
+[ACCEPTED] What is the amount of imports from the UK and the answer to "Which direction do valleys on the southern face of the Alps run?" Africa?
+  hop1: Which direction do valleys on the southern face of the Alps run? -> south
+  hop2: What is the amount of imports from the UK and South Africa? -> £6.4 million
+
+[ACCEPTED] What was the name of the answer to "What is the SI unit of a watt?" of the Larios?
+  hop1: What is the SI unit of a watt? -> one
+  hop2: What was the name of one of the Larios? -> Gibson
+
+[ACCEPTED] What was the color imported from Turkey and the answer to "What regions were excluded?" in the 18th and early 19th century?
+  hop1: What regions were excluded? -> India
+  hop2: What was the color imported from Turkey and India in the 18th and early 19th century? -> Turkey red
+
+[ACCEPTED] Who were the the answer to "How many of those are Indo-European?" people who suggested the eclipse?
+  hop1: How many of those are Indo-European? -> two
+  hop2: Who were the two people who suggested the eclipse? -> W. G. Waddington
+
+[ACCEPTED] What are the names of the answer to "How many more cowboys did Wyatt kill?" famous mandolin makers?
+  hop1: How many more cowboys did Wyatt kill? -> three
+  hop2: What are the names of three famous mandolin makers? -> Lyon and Healy, Vega, and Larson Brothers
+
+[ACCEPTED] What are the answer to "How many upcoming video games were shown at TGS 2007?" measurements being compared?
+  hop1: How many upcoming video games were shown at TGS 2007? -> Two
+  hop2: What are two measurements being compared? -> two powers
+
+[ACCEPTED] What is the name of the formation that contains the answer to "When was the first period of the Middle Ages?" avialan fossils?
+  hop1: When was the first period of the Middle Ages? -> Early
+  hop2: What is the name of the formation that contains early avialan fossils? -> Tiaojishan Formation
+
+[ACCEPTED] When was the War of the answer to "What is the second most spoken language in the United States?" Succession?
+  hop1: What is the second most spoken language in the United States? -> Spanish
+  hop2: When was the War of Spanish Succession? -> 1702–1709
+
+[ACCEPTED] What was the name of the person who led the army that captured a nearby fortress after riding the answer to "Which direction does the wind blow the best?" from Barcelona?
+  hop1: Which direction does the wind blow the best? -> south
+  hop2: What was the name of the person who led the army that captured a nearby fortress after riding south from Barcelona? -> Charles Mordaunt, 3rd Earl of Peterborough
+
+[ACCEPTED] What are the answer to "How many groups of language does the passage mention?" measurements being compared?
+  hop1: How many groups of language does the passage mention? -> two
+  hop2: What are two measurements being compared? -> two powers
+
+[ACCEPTED] What year did the War of the the answer to "What is the second largest Romance language in the world?" Succession begin?
+  hop1: What is the second largest Romance language in the world? -> Spanish
+  hop2: What year did the War of the Spanish Succession begin? -> 1702
+
+[ACCEPTED] Who founded the First Humanist Society of the answer to "What was the name of the city he captured his first title in?" in 1929?
+  hop1: What was the name of the city he captured his first title in? -> New York
+  hop2: Who founded the First Humanist Society of New York in 1929? -> Charles Francis Potter
+
+[ACCEPTED] How does the cuisine in Boston differ from the rest of the answer to "What kind of crops did China raise?" England?
+  hop1: What kind of crops did China raise? -> new
+  hop2: How does the cuisine in Boston differ from the rest of New England? -> large emphasis on seafood, salt, and dairy products
+
+[ACCEPTED] How many copies of the answer to "What was the name of the game?" were sold in the PAL region during its first week?
+  hop1: What was the name of the game? -> Zelda
+  hop2: How many copies of Zelda were sold in the PAL region during its first week? -> three of every four
+
+[ACCEPTED] What is the name of the the answer to "What did Apollo turn the crows into?" bird?
+  hop1: What did Apollo turn the crows into? -> black
+  hop2: What is the name of the black bird? -> The black guillemot Cepphus grylle
+
+
+HUMAN SPOT-READ GATE -- 10 rejected transfer renders, with reasons
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: How the answer to "How many young men and women were sent to the eastern front?" studios does it have?
+  hop1: How many young men and women were sent to the eastern front?
+  hop2: How many studios does it have?
+
+[REJECTED] t6 not a question
+  render: What is the name of the bird that is known to migrate the answer to "Which direction does the wind blow the best?"
+  hop1: Which direction does the wind blow the best?
+  hop2: What is the name of the bird that is known to migrate south?
+
+[REJECTED] t6 not a question
+  render: Where is the Floating Hospital the answer to "How many years ago did the number of deaths from asthma decrease?"
+  hop1: How many years ago did the number of deaths from asthma decrease?
+  hop2: Where is the Floating Hospital for Children?
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: How the answer to "How many young men and women were sent to the eastern front?" years of schooling do they want to increase to?
+  hop1: How many young men and women were sent to the eastern front?
+  hop2: How many years of schooling do they want to increase to?
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: How the answer to "How many people were in the German army against their will?" are uninhabited?
+  hop1: How many people were in the German army against their will?
+  hop2: How many are uninhabited?
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: How the answer to "How many young men and women were sent to the eastern front?" people speak Romansh?
+  hop1: How many young men and women were sent to the eastern front?
+  hop2: How many people speak Romansh?
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: What was the last instalment of the loan that the the answer to "What country does Comcast operate in?" negotiated from the United States?
+  hop1: What country does Comcast operate in?
+  hop2: What was the last instalment of the loan that the United States negotiated from the United States?
+
+[REJECTED] t7 duplicate of an accepted question
+  render: What was the the answer to "What was Germany's position in 2010, in terms of the most positive influence in the world?" song he did?
+  hop1: What was Germany's position in 2010, in terms of the most positive influence in the world?
+  hop2: What was the second song he did?
+
+[REJECTED] t6 not a question
+  render: What is the third largest home telephone service provider in the the answer to "Who wishes to create an obligation?"
+  hop1: Who wishes to create an obligation?
+  hop2: What is the third largest home telephone service provider in the United States?
+
+[REJECTED] t1 bridge entity leaked into the question
+  render: How the answer to "How many people were in the German army against their will?" people were on the police special action squad?
+  hop1: How many people were in the German army against their will?
+  hop2: How many people were on the police special action squad?
+
+
+PARAPHRASE SAMPLES -- 10 accepted
+
+[ACCEPTED] What does every component state of federation possess?
+  -> What does every state in the federation have?
+
+[ACCEPTED] Asymmetric federalism exist when?
+  -> What is the name of the type of federalism that exists when?
+
+[ACCEPTED] Is Spain apart of federalism?
+  -> Is Spain a part of federalism?
+
+[ACCEPTED] How many years does the Chief justice serve?
+  -> How long does the Chief justice serve?
+
+[ACCEPTED] What year did American Idol first air its fourteenth season?
+  -> When did American Idol first air its fourteenth season?
+
+[ACCEPTED] What was Keith Urbans position on American Idol in its fourteenth season? 
+  -> What was Keith Urban's position on American Idol in its fourteenth season?
+
+[ACCEPTED] Who did not come back as a mentor in season 14?
+  -> Who did not return as a mentor in season 14?
+
+[ACCEPTED] When did season 14 premiere?
+  -> When did season 14 of the show that premiered in 2014 start?
+
+[ACCEPTED] Who took Urban's spot at the New York auditions?
+  -> Who took the place of Urban at the New York auditions?
+
+[ACCEPTED] What is need in the developing world 
+  -> What is needed in the developing world?
+
+
+PARAPHRASE SAMPLES -- 10 rejected, with reasons
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: Which cities in Spain are part of the historic movement?
+  original: What cities in Spain are in the historic movement?
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: What document declares supreme power for the people?
+  original: What document declares supreme power for the people?
+
+[REJECTED] p2 not the same question (overlap 0.20)
+  render: Who is the highest judge in Estonia?
+  original: Who holds supreme judicial power in Estonia?
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: How many judges are on Estonia's supreme court?
+  original: How many judges are on Estonia's supreme court?
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: Who was the host of American Idol in its fourteenth season?
+  original: Who was the host of American Idol in its fourteenth season? 
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: Which former contestant replaced Keith Urban for auditions in New York City?
+  original: Which former contestant replaced Keith Urban for auditions in New York City?
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: What does data collected by unicef and who show?
+  original: What does data collected by unicef and Who show
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: Which country is the worst violator of the treaty?
+  original: What country is the worst violator
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: How much money did the Premier League earn regarding television rights in 2010-13?
+  original: How much money did Premier League earn regarding television rights in 2010-13?
+
+[REJECTED] p2 barely reworded (overlap 1.00)
+  render: How many games did BT show in the years 2013-16?
+  original: How many games did BT show in 2013-16?
+
+[build] {
+ "frames_written": [
+  "data/transfer_twohop.jsonl",
+  "data/corpus_para.jsonl"
+ ],
+ "n_transfer_accepted": 200,
+ "n_transfer_candidates": 600,
+ "transfer_yield_ladder": "template",
+ "n_para_accepted": 473,
+ "para_accept_rate": 0.5124593716143012,
+ "primary_single_hop_frame": "corpus_orig",
+ "transfer_gate": "MEASURED",
+ "spot_read_artifact": "runs/p6_frames/spot_read.txt",
+ "seconds": 846.6
+}

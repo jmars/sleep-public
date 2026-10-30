@@ -1,0 +1,16 @@
+[data] 6 dreams, 20 pairs (13 grounded, support 0.65)
+[grounded-fresh] 13 prepared pairs, 30 steps, routers=False
+`torch_dtype` is deprecated! Use `dtype` instead!
+No prebuilt binary for ROCm 7.16, loading ROCm 7.15 instead. Set BNB_ROCM_VERSION to override.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:18,  3.61s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:14,  3.51s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:11<00:11,  3.73s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:14<00:07,  3.59s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:17<00:03,  3.54s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.95s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.28s/it]
+[grounded-fresh] base EM=20 F1=26.7
+[grounded-fresh] warmup EM=20 F1=26.7
+[grounded-fresh] SFT loss 4.595 -> 0.025 EM=20 F1=20.0 with_ctx=60 share=0.155
+[grounded-fresh] preds=['Presidency', "Tupua Tamasese Mea'ole died after a year in office", '1970', 'Tuiatua Tupua Tamasese Efi', 'constitutional monarchy']
+[ungrounded-fresh] 20 prepared pairs, 30 steps, routers=False
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:03<00:18,  3.61s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:07<00:13,  3.50s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:10<00:10,  3.47s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:13<00:06,  3.47s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:17<00:03,  3.49s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  2.94s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:19<00:00,  3.22s/it]
+[ungrounded-fresh] base EM=20 F1=26.7
+[ungrounded-fresh] warmup EM=20 F1=26.7
+[ungrounded-fresh] SFT loss 2.993 -> 0.644 EM=0 F1=13.3 with_ctx=40 share=0.154
+[ungrounded-fresh] preds=['Samoa', "Tupua Tamasese Mea'ole and Malietoa Tanum", '1964', 'Tuiatua Tupua Tamasese Efi', 'Monarchy']
+[done] runs/probe_grounded_fresh/summary.json

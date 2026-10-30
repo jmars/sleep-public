@@ -1,0 +1,81 @@
+{
+  "run": "e3_samoa",
+  "config": "single_n1",
+  "sft_mode": "qa",
+  "warmup_arm": "w1",
+  "dream_variant": "quiz",
+  "dream_temperature": 0.7,
+  "cycles": 1,
+  "n_passages": 1,
+  "n_questions": 5,
+  "pooled_base_em": 20.0,
+  "pooled_final_em": 0.0,
+  "pooled_gain": -20.0,
+  "base_em_arg": null,
+  "n_heldout_questions": 92,
+  "heldout_post_surgery_em": 3.260869565217391,
+  "heldout_final_em": 2.1739130434782608,
+  "timings": {
+    "teacher_phase_s": 42.29944443702698,
+    "total_s": 217.7726390361786
+  },
+  "per_passage": [
+    {
+      "passage": 0,
+      "passage_id": "5726b98bf1498d1400e8e8f2",
+      "n_questions": 5,
+      "base_em": 20.0,
+      "final_em": 0.0,
+      "base_f1": 24.444444444444446,
+      "final_f1": 6.153846153846154,
+      "new_share": 0.0376008064516129,
+      "share_trained": 0.0923807123655914,
+      "share_heldout": 0.07745695351368159,
+      "share_contrast": 0.014923758851909802,
+      "top4_base_share_heldout": 0.08873519770936981,
+      "share_mask_value": -0.75,
+      "base_predictions": [
+        "Head of Samoa",
+        "five-year terms",
+        "1871",
+        "Malietoa Tanumafili II",
+        "Samoa had been a monarchy since the 19th century."
+      ],
+      "predictions": [
+        "Maui",
+        "Samoa's first joint heads of state were elected for a five-year term",
+        "1889",
+        "Tuiatua Tupua Tamasese Efi",
+        "Samoa was a constitutional monarchy from 1962 to 1970, and a parliamentary republic"
+      ],
+      "golds": [
+        [
+          "Prime Minister"
+        ],
+        [
+          "life"
+        ],
+        [
+          "1963"
+        ],
+        [
+          "Malietoa Tanumafili II"
+        ],
+        [
+          "constitutional monarchy"
+        ]
+      ],
+      "heldout_em": 2.1739130434782608,
+      "heldout_f1": 8.577628988098096,
+      "seconds": 173.3,
+      "with_context_post_em": 80.0,
+      "with_context_final_em": 80.0,
+      "with_context_drop": 0.0
+    }
+  ],
+  "heldout_drop": 1.0869565217391304,
+  "gates": {
+    "pooled_gain_vs_own_base": false,
+    "heldout_drop_within_2pts": true
+  }
+}

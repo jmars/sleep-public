@@ -1,0 +1,13 @@
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-30 00:16:22.536580: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793319382.553575    4655 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793319382.559894    4655 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793319382.578668    4655 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319382.578688    4655 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319382.578691    4655 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793319382.578693    4655 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:05,  1.04s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:02<00:04,  1.05s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:03<00:03,  1.05s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:04<00:02,  1.05s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:05<00:01,  1.06s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.11it/s]Loading checkpoint shards: 100%|██████████| 6/6 [00:05<00:00,  1.02it/s]
+{"data": "data/squad_corpus200.jsonl", "passages": 200, "dreams": 1600, "variant": "quiz", "temperature": 0.7, "seconds": 10260.0, "out": "runs/p6_dreams.pt"}

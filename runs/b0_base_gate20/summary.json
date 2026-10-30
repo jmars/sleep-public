@@ -1,0 +1,18 @@
+{
+  "mode": "base",
+  "run": "b0_base_gate20",
+  "no_context_em": 11.926605504587156,
+  "no_context_f1": 23.722973844654184,
+  "n_questions": 109,
+  "leak": {
+    "no_context_em": 12.5,
+    "with_context_em": 55.00000000000001,
+    "delta": 42.50000000000001,
+    "min_delta": 10.0,
+    "leak": false
+  },
+  "wall_clock_s": 95.57010126113892,
+  "paper_base": 31.9,
+  "rebase_gap": -19.97339449541284,
+  "absolute_gate_demoted": true
+}

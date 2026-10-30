@@ -1,0 +1,62 @@
+{"n_passages": 20, "n_questions": 109, "sft_mode": "qa", "stage": "data", "t": 1793272799.5074034}
+{"answer_support": 0.0, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 1, "n_kept": 6, "n_pairs": 1, "passage": 0, "stage": "cycle", "t": 1793274080.7211215, "verdict": "OK"}
+{"cycle": 0, "first_loss": 9.841605186462402, "last_loss": 6.817015171051025, "passage": 0, "stage": "sft", "steps": 4, "t": 1793274131.318732}
+{"base_em": 0.0, "base_f1": 0.0, "final_em": 0.0, "final_f1": 0.0, "n_questions": 5, "new_share": 0.190625, "passage": 0, "passage_id": "57267de2dd62a815002e870e", "seconds": 163.1, "stage": "passage", "t": 1793274137.0222173}
+{"answer_support": 0.6666666666666666, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 12, "n_kept": 6, "n_pairs": 12, "passage": 1, "stage": "cycle", "t": 1793274177.0447962, "verdict": "OK"}
+{"cycle": 0, "first_loss": 2.6784801483154297, "last_loss": 2.0087807178497314, "passage": 1, "stage": "sft", "steps": 6, "t": 1793274228.620727}
+{"base_em": 40.0, "base_f1": 40.0, "final_em": 20.0, "final_f1": 27.999999999999996, "n_questions": 5, "new_share": 0.20134943181818182, "passage": 1, "passage_id": "56f985bd9b226e1400dd1506", "seconds": 96.7, "stage": "passage", "t": 1793274233.7689736}
+{"answer_support": 0.2727272727272727, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 11, "n_kept": 6, "n_pairs": 11, "passage": 2, "stage": "cycle", "t": 1793274273.552941, "verdict": "OK"}
+{"cycle": 0, "first_loss": 5.884311676025391, "last_loss": 3.374981164932251, "passage": 2, "stage": "sft", "steps": 5, "t": 1793274326.5938826}
+{"base_em": 20.0, "base_f1": 38.98989898989898, "final_em": 0.0, "final_f1": 22.54545454545455, "n_questions": 5, "new_share": 0.2057549504950495, "passage": 2, "passage_id": "5726cfd8f1498d1400e8ebf6", "seconds": 98.0, "stage": "passage", "t": 1793274331.8072062}
+{"answer_support": 0.7272727272727273, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 22, "n_kept": 6, "n_pairs": 22, "passage": 3, "stage": "cycle", "t": 1793274370.235668, "verdict": "OK"}
+{"cycle": 0, "first_loss": 4.448824405670166, "last_loss": 3.4627599716186523, "passage": 3, "stage": "sft", "steps": 11, "t": 1793274427.8923893}
+{"base_em": 0.0, "base_f1": 10.0, "final_em": 0.0, "final_f1": 23.333333333333332, "n_questions": 5, "new_share": 0.19245793269230768, "passage": 3, "passage_id": "5731fd11e17f3d14004225b2", "seconds": 101.4, "stage": "passage", "t": 1793274433.2594109}
+{"answer_support": 0.6666666666666666, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 6, "n_kept": 6, "n_pairs": 6, "passage": 4, "stage": "cycle", "t": 1793274474.2672877, "verdict": "OK"}
+{"cycle": 0, "first_loss": 6.093932628631592, "last_loss": 3.7233123779296875, "passage": 4, "stage": "sft", "steps": 4, "t": 1793274523.2317624}
+{"base_em": 12.5, "base_f1": 21.022727272727273, "final_em": 0.0, "final_f1": 6.25, "n_questions": 8, "new_share": 0.22168508287292818, "passage": 4, "passage_id": "56d36d5f59d6e41400146370", "seconds": 96.3, "stage": "passage", "t": 1793274529.6072714}
+{"answer_support": 1.0, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 2, "n_kept": 6, "n_pairs": 2, "passage": 5, "stage": "cycle", "t": 1793274578.327872, "verdict": "OK"}
+{"cycle": 0, "first_loss": 1.9485183954238892, "last_loss": 1.286241054534912, "passage": 5, "stage": "sft", "steps": 4, "t": 1793274621.0940418}
+{"base_em": 33.33333333333333, "base_f1": 46.666666666666664, "final_em": 16.666666666666664, "final_f1": 30.0, "n_questions": 6, "new_share": 0.20669642857142856, "passage": 5, "passage_id": "56de2cf84396321400ee262f", "seconds": 96.8, "stage": "passage", "t": 1793274626.457507}
+{"answer_support": 0.5, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 10, "n_kept": 6, "n_pairs": 10, "passage": 6, "stage": "cycle", "t": 1793274667.1827831, "verdict": "OK"}
+{"cycle": 0, "first_loss": 3.6401100158691406, "last_loss": 3.3521170616149902, "passage": 6, "stage": "sft", "steps": 5, "t": 1793274724.7945533}
+{"base_em": 0.0, "base_f1": 24.360248447204967, "final_em": 0.0, "final_f1": 6.444444444444445, "n_questions": 5, "new_share": 0.17151162790697674, "passage": 6, "passage_id": "572eb0c2c246551400ce4520", "seconds": 104.9, "stage": "passage", "t": 1793274731.387687}
+{"answer_support": 0.6666666666666666, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 3, "n_kept": 6, "n_pairs": 3, "passage": 7, "stage": "cycle", "t": 1793274771.3634908, "verdict": "OK"}
+{"cycle": 0, "first_loss": 7.682289123535156, "last_loss": 3.040048837661743, "passage": 7, "stage": "sft", "steps": 4, "t": 1793274817.1700613}
+{"base_em": 0.0, "base_f1": 8.022192232718549, "final_em": 0.0, "final_f1": 9.25925925925926, "n_questions": 6, "new_share": 0.1954507743362832, "passage": 7, "passage_id": "56e0d27c7aa994140058e757", "seconds": 91.5, "stage": "passage", "t": 1793274822.8485715}
+{"answer_support": 0.4, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 5, "n_kept": 6, "n_pairs": 5, "passage": 8, "stage": "cycle", "t": 1793274861.2623084, "verdict": "OK"}
+{"cycle": 0, "first_loss": 4.028909683227539, "last_loss": 2.182635545730591, "passage": 8, "stage": "sft", "steps": 4, "t": 1793274903.7978818}
+{"base_em": 20.0, "base_f1": 43.33333333333333, "final_em": 20.0, "final_f1": 30.0, "n_questions": 5, "new_share": 0.22312330163043478, "passage": 8, "passage_id": "572760f55951b619008f8907", "seconds": 85.6, "stage": "passage", "t": 1793274908.4211128}
+{"answer_support": 0.7058823529411765, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 17, "n_kept": 6, "n_pairs": 17, "passage": 9, "stage": "cycle", "t": 1793275101.8023677, "verdict": "OK"}
+{"cycle": 0, "first_loss": 5.916796684265137, "last_loss": 1.9836845397949219, "passage": 9, "stage": "sft", "steps": 8, "t": 1793275156.8034174}
+{"base_em": 0.0, "base_f1": 0.0, "final_em": 0.0, "final_f1": 0.0, "n_questions": 5, "new_share": 0.22419969512195123, "passage": 9, "passage_id": "57302bd0a23a5019007fceed", "seconds": 253.8, "stage": "passage", "t": 1793275162.1914527}
+{"answer_support": 0.0, "containment_median": 0.05909090909090909, "cycle": 0, "n_dropped": 0, "n_examples": 2, "n_kept": 6, "n_pairs": 2, "passage": 10, "stage": "cycle", "t": 1793275536.8131087, "verdict": "OK"}
+{"cycle": 0, "first_loss": 1.8956506252288818, "last_loss": 0.9853267669677734, "passage": 10, "stage": "sft", "steps": 4, "t": 1793275584.0779147}
+{"base_em": 11.11111111111111, "base_f1": 12.592592592592592, "final_em": 0.0, "final_f1": 0.0, "n_questions": 9, "new_share": 0.199676513671875, "passage": 10, "passage_id": "56d96856dc89441400fdb408", "seconds": 430.5, "stage": "passage", "t": 1793275592.7181473}
+{"answer_support": 0.5263157894736842, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 19, "n_kept": 6, "n_pairs": 19, "passage": 11, "stage": "cycle", "t": 1793275644.7883031, "verdict": "OK"}
+{"cycle": 0, "first_loss": 10.441177368164062, "last_loss": 3.1156225204467773, "passage": 11, "stage": "sft", "steps": 9, "t": 1793275698.5957444}
+{"base_em": 40.0, "base_f1": 48.88888888888889, "final_em": 40.0, "final_f1": 55.714285714285715, "n_questions": 5, "new_share": 0.18617334905660377, "passage": 11, "passage_id": "5729b65c6aef051400155088", "seconds": 111.4, "stage": "passage", "t": 1793275704.0754936}
+{"answer_support": 0.3333333333333333, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 6, "n_kept": 6, "n_pairs": 6, "passage": 12, "stage": "cycle", "t": 1793275750.9674346, "verdict": "OK"}
+{"cycle": 0, "first_loss": 1.7731261253356934, "last_loss": 0.8915026187896729, "passage": 12, "stage": "sft", "steps": 4, "t": 1793275800.5407574}
+{"base_em": 40.0, "base_f1": 50.5, "final_em": 40.0, "final_f1": 52.44444444444445, "n_questions": 5, "new_share": 0.2130373023715415, "passage": 12, "passage_id": "570ad72b4103511400d59a72", "seconds": 102.0, "stage": "passage", "t": 1793275806.055052}
+{"answer_support": 0.3333333333333333, "containment_median": 0.03125, "cycle": 0, "n_dropped": 0, "n_examples": 6, "n_kept": 6, "n_pairs": 6, "passage": 13, "stage": "cycle", "t": 1793275847.7599137, "verdict": "OK"}
+{"cycle": 0, "first_loss": 4.1627702713012695, "last_loss": 3.4095401763916016, "passage": 13, "stage": "sft", "steps": 4, "t": 1793275899.751839}
+{"base_em": 0.0, "base_f1": 29.047619047619044, "final_em": 0.0, "final_f1": 10.0, "n_questions": 5, "new_share": 0.23941532258064516, "passage": 13, "passage_id": "5733dc134776f4190066138e", "seconds": 99.0, "stage": "passage", "t": 1793275905.0507586}
+{"answer_support": 0.5, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 12, "n_kept": 6, "n_pairs": 12, "passage": 14, "stage": "cycle", "t": 1793275949.909891, "verdict": "OK"}
+{"cycle": 0, "first_loss": 4.8274245262146, "last_loss": 2.225971221923828, "passage": 14, "stage": "sft", "steps": 6, "t": 1793276004.6505268}
+{"base_em": 20.0, "base_f1": 25.71428571428572, "final_em": 20.0, "final_f1": 37.77777777777778, "n_questions": 5, "new_share": 0.21393229166666666, "passage": 14, "passage_id": "56e09b2a7aa994140058e635", "seconds": 105.6, "stage": "passage", "t": 1793276010.614499}
+{"answer_support": 0.6, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 10, "n_kept": 6, "n_pairs": 10, "passage": 15, "stage": "cycle", "t": 1793276071.036392, "verdict": "OK"}
+{"cycle": 0, "first_loss": 5.169338703155518, "last_loss": 2.566470146179199, "passage": 15, "stage": "sft", "steps": 5, "t": 1793276123.7110991}
+{"base_em": 40.0, "base_f1": 40.0, "final_em": 60.0, "final_f1": 60.0, "n_questions": 5, "new_share": 0.1839817880794702, "passage": 15, "passage_id": "57277bc0f1498d1400e8f962", "seconds": 118.7, "stage": "passage", "t": 1793276129.3135042}
+{"answer_support": 1.0, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 8, "n_kept": 6, "n_pairs": 8, "passage": 16, "stage": "cycle", "t": 1793276239.721189, "verdict": "OK"}
+{"cycle": 0, "first_loss": 1.92052161693573, "last_loss": 2.0025627613067627, "passage": 16, "stage": "sft", "steps": 4, "t": 1793276284.7409472}
+{"base_em": 20.0, "base_f1": 27.27272727272727, "final_em": 0.0, "final_f1": 19.48717948717949, "n_questions": 5, "new_share": 0.16612215909090908, "passage": 16, "passage_id": "572b91e5f75d5e190021fe52", "seconds": 161.0, "stage": "passage", "t": 1793276290.2900405}
+{"answer_support": 0.6666666666666666, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 3, "n_kept": 6, "n_pairs": 3, "passage": 17, "stage": "cycle", "t": 1793276482.4709156, "verdict": "OK"}
+{"cycle": 0, "first_loss": 2.9959347248077393, "last_loss": 1.6074496507644653, "passage": 17, "stage": "sft", "steps": 4, "t": 1793276530.8183281}
+{"base_em": 0.0, "base_f1": 16.666666666666664, "final_em": 20.0, "final_f1": 40.0, "n_questions": 5, "new_share": 0.22021484375, "passage": 17, "passage_id": "56dde56e9a695914005b967c", "seconds": 245.6, "stage": "passage", "t": 1793276535.9350212}
+{"answer_support": 0.6, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 10, "n_kept": 6, "n_pairs": 10, "passage": 18, "stage": "cycle", "t": 1793276641.1969068, "verdict": "OK"}
+{"cycle": 0, "first_loss": 4.197275161743164, "last_loss": 3.306494951248169, "passage": 18, "stage": "sft", "steps": 5, "t": 1793276688.6957161}
+{"base_em": 0.0, "base_f1": 9.904761904761905, "final_em": 0.0, "final_f1": 8.380952380952381, "n_questions": 5, "new_share": 0.19581422018348624, "passage": 18, "passage_id": "570d1a97b3d812140066d411", "seconds": 158.2, "stage": "passage", "t": 1793276694.1045442}
+{"answer_support": 0.5, "containment_median": 0.0, "cycle": 0, "n_dropped": 0, "n_examples": 2, "n_kept": 6, "n_pairs": 2, "passage": 19, "stage": "cycle", "t": 1793276733.3350096, "verdict": "OK"}
+{"cycle": 0, "first_loss": 12.385188102722168, "last_loss": 8.3961181640625, "passage": 19, "stage": "sft", "steps": 4, "t": 1793276780.5269606}
+{"base_em": 0.0, "base_f1": 3.076923076923076, "final_em": 0.0, "final_f1": 0.0, "n_questions": 5, "new_share": 0.2329877336448598, "passage": 19, "passage_id": "56dfc3097aa994140058e15d", "seconds": 91.9, "stage": "passage", "t": 1793276786.0480187}
+{"n_questions": 109, "pooled_base_em": 14.678899082568808, "pooled_final_em": 11.009174311926605, "pooled_gain": -3.669724770642203, "stage": "summary", "t": 1793276786.0554237}

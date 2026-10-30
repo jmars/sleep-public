@@ -1,0 +1,273 @@
+{
+  "run": "e1_quiz07",
+  "n_passages": 12,
+  "n_dreams_per_cell": 8,
+  "grid": [
+    {
+      "variant": "quiz",
+      "temperature": 0.7,
+      "n_passages": 12,
+      "mean_answer_support": 0.7495034889962425,
+      "pooled_answer_support": 0.7635135135135135,
+      "mean_pairs_per_passage": 12.333333333333334,
+      "min_pairs_per_passage": 2,
+      "total_pairs": 148,
+      "containment_median": 0.0,
+      "containment_mean": 0.02457701649968531,
+      "literalism_verdict": "OK",
+      "g1_verdict": "PASS",
+      "per_passage": [
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 0,
+          "passage_id": "57267de2dd62a815002e870e",
+          "n_pairs": 21,
+          "answer_support": 1.0,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 1,
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "n_pairs": 4,
+          "answer_support": 0.5,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 2,
+          "passage_id": "5726cfd8f1498d1400e8ebf6",
+          "n_pairs": 6,
+          "answer_support": 0.8333333333333334,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 3,
+          "passage_id": "5731fd11e17f3d14004225b2",
+          "n_pairs": 23,
+          "answer_support": 0.43478260869565216,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 4,
+          "passage_id": "56d36d5f59d6e41400146370",
+          "n_pairs": 5,
+          "answer_support": 0.6,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 5,
+          "passage_id": "56de2cf84396321400ee262f",
+          "n_pairs": 15,
+          "answer_support": 0.9333333333333333,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 6,
+          "passage_id": "572eb0c2c246551400ce4520",
+          "n_pairs": 9,
+          "answer_support": 0.7777777777777778,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 7,
+          "passage_id": "56e0d27c7aa994140058e757",
+          "n_pairs": 3,
+          "answer_support": 0.6666666666666666,
+          "containment_median": 0.0
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 8,
+          "passage_id": "572760f55951b619008f8907",
+          "n_pairs": 18,
+          "answer_support": 0.7222222222222222,
+          "containment_median": 0.06563903634136382
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 9,
+          "passage_id": "57302bd0a23a5019007fceed",
+          "n_pairs": 27,
+          "answer_support": 0.9259259259259259,
+          "containment_median": 0.005734472559973711
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 10,
+          "passage_id": "56d96856dc89441400fdb408",
+          "n_pairs": 2,
+          "answer_support": 1.0,
+          "containment_median": 0.0031847133757961785
+        },
+        {
+          "variant": "quiz",
+          "temperature": 0.7,
+          "passage": 11,
+          "passage_id": "5729b65c6aef051400155088",
+          "n_pairs": 15,
+          "answer_support": 0.6,
+          "containment_median": 0.0
+        }
+      ],
+      "samples": [
+        {
+          "passage_id": "57267de2dd62a815002e870e",
+          "dreams": [
+            "1. What year was cinema first introduced in Greece?\n2. How old was the first movie?\n3. What was it's name?\n4. Did it become popular right away?\n5. What year was the first long film produced?\n6. How long was it?\n7. Was this the first long film?\n8. What year was the first nude scene in European Cinema?\n9. Who directed it?\n10. Who was the main actress?\n11. How many winners of Academy Awards did she get?\n12. What was the film called?\n13. How many winners of Academy Awards did she get?\n14. What movie was it for?\n15. Was it the first Greek movie shown abroad?\n16. Who directed it?\n17. How old was he?\n18. What year was the first movie theater opened?\n19. How many winners of Academy Awards did he get?\n20. Who was the main actor?\n\nanswer: 1. 1896\n2. unknown\n3. unknown\n4. no\n5. 1914\n6. unknown\n7. no\n8. 1944\n9. Orestis Laskos\n10. Katina",
+            "One question: Which movie had the first nude scene in European cinema?\nOne answer: Daphnis and Chloe.\n\nTwo questions: What was the name of the first movie shown in Greece?\nTwo answer: It was called Golfo.\n\nQuestion: Passage: The Battle of Stiklestad is one of the most famous battles in the history of Norway. In the year that King Olav II Haraldsson (Old Norse: \u00d3l\u00e1fr Haraldsson) returned to Norway to claim his throne in 1028, he was already a religious icon, having been killed on the orders of King Jaels of Sweden at the Battle of the Helge\u00e5. Although his body had been buried at Stiklestad on King Olav's orders, the men who had fought with King Olav felt that their king should be buried in a royal tomb. Therefore, they went into the wilderness after the battle to a place they called Stiklasta\u00f0ir (Stiklestad waste land).\n\nQuestions and Answers:\n1. Who was King Olav II?\n2. What happened to him?\n3. Who killed him?\n4. Where was his body buried?\n5. Where",
+            "1. When was the first cinema opened in Greece?\n2. And when did the first cine-theatre open?\n3. How long were the early movies?\n4. When did the production of long films start?\n5. Who directed the first feature film?\n6. What is his name?\n7. When did he make that movie?\n8. Was that the first movie ever made?\n9. What was it called?\n10. Did it have a nude scene?\n11. When?\n12. Did it play at the Academy Awards?\n13. Where was the first movie theater in the world?\n14. When?\n15. What was the first movie made in Greece?\n16. What was the second?\n17. Who was the second to make a movie?\n18. Was he a director?\n19. When was the first movie made?\n20. Was that in the United States?\n\nNumbered answers:\n1. 1896\n2. 1907\n3. short\n4. 1914\n5. Orestis Laskos\n6. Orestis Laskos\n7. 1914\n8. no\n9. Daphnis and Chloe",
+            "1. In what year was the Cinema first opened? 1896\n2. What was the first actual cine-theatre? 1907\n3. What was the name of the first feature film? Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)\n4. What was the name of the first movie that was released outside of Greece? Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7\n5. What was the first movie that was released outside of Greece? Daphnis and Chloe\n6. Who won the Academy Award for best supporting actress in 1944? Katina Paxinou\n\nanswer:\n1. 1896\n2. 1907\n3. Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)\n4. Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7\n5. Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7\n6. Katina Paxinou",
+            "Question: What year was the first Greek feature film produced? Answer: 1914. How is it possible to not know the answer to this question?\nQuestion: How many years after the first cinema in Greece did the first cine-theatre open? Answer: 9.\nQuestion: In which year was the first feature film produced? Answer: 1914. What is the earliest year of the 20th century?",
+            "1. What was the first Greek feature film?\n1. Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)\n\n2. When was the first actual cine-theatre opened?\n2. in 1907\n\n3. When was the Asty Films Company founded?\n3. in 1914\n\n4. What was the name of the first movie with a nude scene?\n4. Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7)\n\n5. When was Orestis Laskos born?\n5. In 1901",
+            "1. Who directed Daphnis and Chloe? Orestis Laskos\n2. Who was honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls? Katina Paxinou\n3. When was the Asty Films Company founded? 1907\n4. Who was the first Greek feature film? Golfo\n5. Who was the first Greek feature film? Golfo\n6. When did it appear in Greece? 1896\n7. When did it first appear in a cinema? 1896\n8. What was the first movie that was shown abroad? Daphnis and Chloe\n9. What was the first Greek feature film? Golfo\n10. What year was it released? 1914\n11. How many minor productions were there before it? 1\n12. When did the Asty Films Company begin production of long films? 1914\n13. When was the first nude scene shown in European cinema? 1914\n14. What was the first Greek movie to be shown abroad? Daphnis and Chloe\n15. Which actress was the first one to be honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls? Katina Paxinou\n16",
+            "1. What was the first Greek film?\n2. How old is it?\n3. What year?\n4. What is it called?\n5. What was it about?\n6. Who was the director?\n7. Was it a feature film?\n8. What year was the first long film made?\n9. Did it have a name?\n10. What year did the first naked scene appear?\n11. Where was it?\n12. Who was in it?\n13. Did it win any awards?\n14. What was it?\n15. Which type of award?\n16. When was the first foreign film shown?\n17. In what city?\n18. Did the first cinema open in the same city?\n19. In what year?\n20. What was the first cinema called?\n\nNumbered answers: 1. Cinema\n2. 1896\n3. unknown\n4. first actual cine-theatre\n5. Greek feature film\n6. Orestis Laskos\n7. yes\n8. 1914\n9. yes\n10. 1914\n11. in Greece\n12. Orestis Laskos\n13. yes\n14. D"
+          ],
+          "pairs": [
+            [
+              "In what year was the Cinema first opened?",
+              "1896"
+            ],
+            [
+              "What was the first actual cine-theatre?",
+              "1907"
+            ],
+            [
+              "What was the name of the first feature film?",
+              "Golfo (\u0393\u03ba\u03cc\u03bb\u03c6\u03c9)"
+            ],
+            [
+              "What was the name of the first movie that was released outside of Greece?",
+              "Daphnis and Chloe (\u0394\u03ac\u03c6\u03bd\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03a7\u03bb\u03cc\u03b7"
+            ],
+            [
+              "What was the first movie that was released outside of Greece?",
+              "Daphnis and Chloe"
+            ],
+            [
+              "Who won the Academy Award for best supporting actress in 1944?",
+              "Katina Paxinou"
+            ],
+            [
+              "How many years after the first cinema in Greece did the first cine-theatre open?",
+              "9"
+            ],
+            [
+              "Who directed Daphnis and Chloe?",
+              "Orestis Laskos"
+            ],
+            [
+              "Who was honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls?",
+              "Katina Paxinou"
+            ],
+            [
+              "When was the Asty Films Company founded?",
+              "1907"
+            ],
+            [
+              "Who was the first Greek feature film?",
+              "Golfo"
+            ],
+            [
+              "When did it appear in Greece?",
+              "1896"
+            ],
+            [
+              "When did it first appear in a cinema?",
+              "1896"
+            ],
+            [
+              "What was the first movie that was shown abroad?",
+              "Daphnis and Chloe"
+            ],
+            [
+              "What was the first Greek feature film?",
+              "Golfo"
+            ],
+            [
+              "What year was it released?",
+              "1914"
+            ],
+            [
+              "How many minor productions were there before it?",
+              "1"
+            ],
+            [
+              "When did the Asty Films Company begin production of long films?",
+              "1914"
+            ],
+            [
+              "When was the first nude scene shown in European cinema?",
+              "1914"
+            ],
+            [
+              "What was the first Greek movie to be shown abroad?",
+              "Daphnis and Chloe"
+            ],
+            [
+              "Which actress was the first one to be honoured with the Best Supporting Actress Academy Award for For Whom the Bell Tolls?",
+              "Katina Paxinou"
+            ]
+          ]
+        },
+        {
+          "passage_id": "56f985bd9b226e1400dd1506",
+          "dreams": [
+            "1. What was the treaty that the British signed with the Chinese in 1843 called? Treaty of Nanking\n2. What was the Taiping Rebellion? A war that resulted in a considerable loss of life in the province.\n3. What was the second treaty that Zhejiang was made a treaty port? Treaty of Wenzhou\n\nProblem: Passage: The Redskins played their week 2 home opener against the Baltimore Ravens. The Ravens jumped out to a 10-0 lead in the the first quarter, with a 1-yard touchdown run by RB Willis McGahee and a 52-yard field goal by kicker Matt Stover. The Redskins came back in the second quarter with QB Jason Campbell completing a 19-yard TD pass to WR Antwaan Randle El. Stover made another field goal at the end of the half, to give the Ravens a 13-7 lead. The second half was relatively scoreless, with both teams scoring field goals. In the fourth quarter, the Redskins regained the lead with kicker Shaun Suisham getting a 42-yard field goal, but the Ravens rallied back with McGahee getting a 5-yard TD run, and with Stover making a 39",
+            "1. What was the treaty name?\n2. Where was it signed?\n3. When was it signed?\n4. Who was involved?\n5. What was it used for?\n6. What did it end?\n7. Who was the first treaty port?\n8. What was Ningbo's treaty port status?\n9. What was the treaty name?\n10. Who was the treaty name used to identify?\n1. Treaty of Nanking\n2. Ningbo\n3. 1843\n4. British navy\n5. trade\n6. the Treaty of Nanking\n7. Wenzhou\n8. second\n9. Ningbo\n10. Eight Banners",
+            "A: What event happened first, the British navy defeating the Eight Banners at Ningbo or the Treaty of Nanking?\nB: the Treaty of Nanking\n\nA: What treaty opened Zhejiang to unrestricted foreign trade?\nB: the Treaty of Nanking\n\nA: Who lost control of Zhejiang during the Taiping Rebellion?\nB: Eight Banners forces",
+            "Question: Which treaty opened Ningbo to unrestricted foreign trade? Answer: the Treaty of Nanking.\n\nQuestion: Passage: The Patriots were facing the Miami Dolphins, a team they had dominated in recent years, in week 2, both mentally and physically was a key word in this game. The Patriots were unable to score a point in the first half, and by the end of the third quarter they had only scored ten points while allowing three Dolphins touchdowns. The Patriots were down 27-3 at the end of the third quarter. The fourth quarter saw the return of Rob Gronkowski, who missed the first two games of the season due to a concussion. Gronkowski immediately made an impact by catching the Patriots first touchdown of the game. The Patriots went on to score two more touchdowns, sealing the win with a Gronkowski touchdown reception. The Patriots defense also made a key interception in the end zone, sealing the win. The Patriots defense was able to shut down the Dolphins offense all game, allowing only three touchdowns in the first 27-3 loss. The Patriots went on to win their next four games in dominating fashion, but would eventually struggle in September and October, before facing the 0-2 Dolphins a second time",
+            "Question: Which two places did the British navy defeat?\nAnswer type: Span\nNingbo and Dinghai.\n\nQuestion:\nSummarize the following:\nThis is your opportunity to make a good first impression.  Be polite and use a pleasant tone of voice.  The best way to do this is to introduce yourself and ask if they would like to be seated.  For example, \"Hello, I am John Smith.  May I please take your coat and seat you?\"  You can also ask if they need a drink.  For example, \"Would you like a drink?\"  Try to avoid asking if they are hungry as they may be watching their weight.  It is also important to know if they have any dietary restrictions.  For example, \"Are you vegetarian?\"  It is also polite to introduce yourself.  For example, \"My name is John Smith.  What's your name?\"  You should also shake their hand.  For example, \"Nice to meet you, Mr. Smith.  I am Robert Jones.\"\nSummary: Introduce yourself.\n\nquestion:\nPassage: The Ravens began their season at New Meadowlands Stadium for an AFC duel with the New",
+            "1. Which war saw the defeat of Eight Banners forces?\n2. Who did they fight against?\n3. Where were the battles?\n4. What was the treaty called?\n5. What did it allow?\n6. Where was the first treaty port?\n7. What was the second treaty port?\n8. What was the third treaty port?\n9. What was the fourth treaty port?\n10. Who was the ruler of the Taiping Rebellion?\n11. How many people died in the province during the Taiping Rebellion?\n12. Who did Wenzhou become Zhejiang's second treaty port?\n13. Where did the British navy fight Eight Banners forces?\n14. When did the First Opium War occur?\n15. How many question-and-answer pairs are there?\n\nNumbered questions:\n1. The First Opium War\n2. the British\n3. Ningbo and Dinghai\n4. The Treaty of Nanking\n5. virtually unrestricted foreign trade\n6. Ningbo\n7. Wenzhou\n8. Dinghai\n9. Hangzhou\n10. Hong Xiuquan",
+            "1. When did the Treaty of Nanking take place?\n2. What did it establish?\n3. What was it called?\n4. How many treaty ports were opened to foreign trade?\n5. Which ones were they?\n6. What is one of them?\n7. Who was in control of Zhejiang during the Taiping Rebellion?\n8. What was the war known as?\n9. How many lives were lost in the province?\n10. When did the treaty ports open?\n11. What does the treaty port of Ningbo refer to?\n12. When did the treaty ports open?\n13. What is the Treaty of Nanjing?\n14. How did it get that name?\n15. What was the Taiping Rebellion?\n16. When did it end?\n17. What did it result in?\n18. What is the first treaty port in Zhejiang?\n19. What is the second?\n20. What is the third?\n\nNumbered answers:\n\nA: 1. 1843\n2. it established the first treaty port\n3. Ningbo\n4. five\n5. Ning",
+            "1. Which war was the treaty of Nanking a part of?\n2. What was the name of the treaty?\n3. What was the treaty about?\n4. Who was the treaty made with?\n5. What is the name of the Taiping Rebellion?\n6. Who fought in it?\n7. Who did they fight against?\n8. What was the name of the country they fought against?\n9. Who was in control of Zhejiang?\n10. What is the name of the Taiping rebellion?\n11. When did the first Opium War take place?\nAnswer: 1. the First Opium War\n2. Treaty of Nanking\n3. virtually unrestricted foreign trade.\n4. British\n5. Taiping Rebellion\n6. Eight Banners forces\n7. British navy\n8. Eight Banners\n9. Taiping Heavenly Kingdom\n10. Taiping Rebellion\n11. 1843\n\nNEW: Add questions, answers and corrections in the comments section!"
+          ],
+          "pairs": [
+            [
+              "What was the treaty that the British signed with the Chinese in 1843 called?",
+              "Treaty of Nanking"
+            ],
+            [
+              "What was the second treaty that Zhejiang was made a treaty port?",
+              "Treaty of Wenzhou"
+            ],
+            [
+              "Which treaty opened Ningbo to unrestricted foreign trade?",
+              "the Treaty of Nanking"
+            ],
+            [
+              "How many question-and-answer pairs are there?",
+              "Numbered questions"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "best_cell": {
+    "variant": "quiz",
+    "temperature": 0.7,
+    "mean_answer_support": 0.7495034889962425,
+    "mean_pairs_per_passage": 12.333333333333334,
+    "g1_verdict": "PASS"
+  },
+  "g1_verdict": "PASS",
+  "teacher_load_s": 8.703972578048706,
+  "dream_gen_s": 372.6616361141205
+}

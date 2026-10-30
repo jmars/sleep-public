@@ -1,0 +1,110 @@
+{
+ "base": {
+  "mode": "no_context",
+  "n": 5,
+  "em": 20.0,
+  "f1": 26.66666666666667,
+  "predictions": [
+   "Head of Samoa",
+   "five-year terms",
+   "1871",
+   "Malietoa Tanumafili II",
+   "Samoa was a constitutional monarchy with the head of state being the Samo"
+  ]
+ },
+ "warmup": {
+  "mode": "no_context",
+  "n": 5,
+  "em": 40.0,
+  "f1": 40.0,
+  "predictions": [
+   "Samoa's Head of State",
+   "five years",
+   "1883",
+   "Malietoa Tanumafili II",
+   "constitutional monarchy"
+  ]
+ },
+ "arms": {
+  "short-routers": {
+   "n_pairs": 20,
+   "steps": 10,
+   "train_routers": true,
+   "loss": [
+    2.961,
+    1.516
+   ],
+   "em": 0.0,
+   "f1": 13.333333333333334,
+   "with_context_em": 60.0,
+   "lora_max_delta": 0.0010115145705640316,
+   "predictions": [
+    "President of Samoa",
+    "The term of office for Samoa's first joint heads of state was one year",
+    "1889",
+    "Tuiatua Tupua Tamasese Efi",
+    "monarchy"
+   ]
+  },
+  "long-routers": {
+   "n_pairs": 20,
+   "steps": 30,
+   "train_routers": true,
+   "loss": [
+    1.555,
+    0.015
+   ],
+   "em": 0.0,
+   "f1": 17.142857142857142,
+   "with_context_em": 40.0,
+   "lora_max_delta": 0.0029216213151812553,
+   "predictions": [
+    "talkative",
+    "Tupua Tamasese Mea'ole and Malietoa Tanum",
+    "1959",
+    "Student: Malietoa Tanumafili II",
+    "System of Traditional Chieftainship"
+   ]
+  },
+  "long-frozen": {
+   "n_pairs": 20,
+   "steps": 30,
+   "train_routers": false,
+   "loss": [
+    0.004,
+    0.001
+   ],
+   "em": 0.0,
+   "f1": 27.42857142857143,
+   "with_context_em": 40.0,
+   "lora_max_delta": 0.0025721783749759197,
+   "predictions": [
+    "Student: Prime Minister of Samoa",
+    "Tupua Tamasese Mea'ole and Malietoa Tanum",
+    "1973",
+    "Tuiatua Tupua Tamasese Efi",
+    "Student: a constitutional monarchy"
+   ]
+  },
+  "long-grounded": {
+   "n_pairs": 13,
+   "steps": 30,
+   "train_routers": false,
+   "loss": [
+    0.0,
+    0.0
+   ],
+   "em": 0.0,
+   "f1": 19.42857142857143,
+   "with_context_em": 60.0,
+   "lora_max_delta": 0.0028846270870417356,
+   "predictions": [
+    "Student: Prime Minister of Samoa",
+    "Malietoa Tanumafili II and Tuiatua Tupua",
+    "1976",
+    "Tuiatua Tupua Tamasese Efi",
+    "Constitutional monarchy with the King as the head of state."
+   ]
+  }
+ }
+}

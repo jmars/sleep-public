@@ -1,0 +1,140 @@
+HUMAN SPOT-READ GATE -- 20 accepted transfer questions
+
+[ACCEPTED] How many copies of the answer to "What was the game of the year?" were sold in the PAL region during its first week?
+  hop1: What was the game of the year? -> Zelda
+  hop2: How many copies of Zelda were sold in the PAL region during its first week? -> three of every four
+
+[ACCEPTED] How many copies of the answer to "What was the name of the game?" were sold in the PAL region during its first week?
+  hop1: What was the name of the game? -> Zelda
+  hop2: How many copies of Zelda were sold in the PAL region during its first week? -> three of every four
+
+[ACCEPTED] When did the answer to "What was the name of the game?" come out?
+  hop1: What was the name of the game? -> Twilight Princess
+  hop2: When did Twilight Princess come out? -> March 31, 2007
+
+[ACCEPTED] How many copies of the answer to "Who did IGN say was the best game ever made?" were sold in the PAL region during its first week?
+  hop1: Who did IGN say was the best game ever made? -> Zelda
+  hop2: How many copies of Zelda were sold in the PAL region during its first week? -> three of every four
+
+[ACCEPTED] How many copies of the answer to "Who won the best game of the year?" were sold in the PAL region during its first week?
+  hop1: Who won the best game of the year? -> Zelda
+  hop2: How many copies of Zelda were sold in the PAL region during its first week? -> three of every four
+
+[ACCEPTED] How many miles the answer to "Who dedicated a performance of "Hey Mama" to their mother?" of Rio de Janeiro is Saint Helena?
+  hop1: Who dedicated a performance of "Hey Mama" to their mother? -> West
+  hop2: How many miles west of Rio de Janeiro is Saint Helena? -> 2,500
+
+[ACCEPTED] What's the name of the hospital located in the answer to "Who dedicated a performance of "Hey Mama" to their mother?" End?
+  hop1: Who dedicated a performance of "Hey Mama" to their mother? -> West
+  hop2: What's the name of the hospital located in West End? -> Countess Mountbatten House
+
+[ACCEPTED] How many miles the answer to "Who gave the funeral?" of Rio de Janeiro is Saint Helena?
+  hop1: Who gave the funeral? -> West
+  hop2: How many miles west of Rio de Janeiro is Saint Helena? -> 2,500
+
+[ACCEPTED] How many miles the answer to "Who gave the funeral?" of the Cunene River is Saint Helena?
+  hop1: Who gave the funeral? -> West
+  hop2: How many miles west of the Cunene River is Saint Helena? -> 1,210
+
+[ACCEPTED] What is the answer to "What alphabet did Bactrian use?" for "divisive person"?
+  hop1: What alphabet did Bactrian use? -> Greek
+  hop2: What is the Greek for "divisive person"? -> Titus 3:10
+
+[ACCEPTED] What is the non-rhotic the answer to "What is the second group?" New England accent known as?
+  hop1: What is the second group? -> Eastern
+  hop2: What is the non-rhotic Eastern New England accent known as? -> Boston English
+
+[ACCEPTED] Which groups have shown the most amount of shared Middle the answer to "What is the second group?" ancestry?
+  hop1: What is the second group? -> Eastern
+  hop2: Which groups have shown the most amount of shared Middle Eastern ancestry? -> Jewish populations
+
+[ACCEPTED] What did Romanian-born documentary maker Ilinca Calugareanu write about in her article for the answer to "What city did Schwarzenegger capture his first Mr. Olympia title?" Times?
+  hop1: What city did Schwarzenegger capture his first Mr. Olympia title? -> New York
+  hop2: What did Romanian-born documentary maker Ilinca Calugareanu write about in her article for The New York Times? -> the story of Irina Margareta Nistor
+
+[ACCEPTED] What was the First Humanist Society of the answer to "What city did Schwarzenegger capture his first Mr. Olympia title?" a member of?
+  hop1: What city did Schwarzenegger capture his first Mr. Olympia title? -> New York
+  hop2: What was the First Humanist Society of New York a member of? -> Humanism: A New Religion
+
+[ACCEPTED] What was the First Humanist Society of the answer to "What was the name of the city he captured his first title in?" a member of?
+  hop1: What was the name of the city he captured his first title in? -> New York
+  hop2: What was the First Humanist Society of New York a member of? -> Humanism: A New Religion
+
+[ACCEPTED] What was the First Humanist Society of the answer to "Who did Schwarzenegger capture his first Mr. Olympia title in?" a member of?
+  hop1: Who did Schwarzenegger capture his first Mr. Olympia title in? -> New York
+  hop2: What was the First Humanist Society of New York a member of? -> Humanism: A New Religion
+
+[ACCEPTED] What is the largest home the answer to "What does ISP stand for?" in the U.S.?
+  hop1: What does ISP stand for? -> Internet service provider
+  hop2: What is the largest home Internet service provider in the U.S.? -> Comcast
+
+[ACCEPTED] In what part of the answer to "What was the first commercial ISP?" is it located?
+  hop1: What was the first commercial ISP? -> The World
+  hop2: In what part of the world is it located? -> Pakistan
+
+[ACCEPTED] In what part of the answer to "Who was the first customer of the first ISP?" is it located?
+  hop1: Who was the first customer of the first ISP? -> The World
+  hop2: In what part of the world is it located? -> Pakistan
+
+[ACCEPTED] How does the cuisine in the answer to "In what city is it located?" differ from the rest of New England?
+  hop1: In what city is it located? -> Boston
+  hop2: How does the cuisine in Boston differ from the rest of New England? -> large emphasis on seafood, salt, and dairy products
+
+
+HUMAN SPOT-READ GATE -- 10 rejected transfer renders, with reasons
+
+[REJECTED] t6 not a question
+  render: What was the name of the high-def port of the answer to "What was the best selling entry in the Zelda series?"
+  hop1: What was the best selling entry in the Zelda series?
+  hop2: What was the name of the high-def port of Twilight Princess?
+
+[REJECTED] t6 not a question
+  render: Who made the answer to "What was the best selling entry in the Zelda series?"
+  hop1: What was the best selling entry in the Zelda series?
+  hop2: Who made Twilight Princess?
+
+[REJECTED] t6 not a question
+  render: What is the amount of imports from the UK and South the answer to "Which region does not contain Asia?"
+  hop1: Which region does not contain Asia?
+  hop2: What is the amount of imports from the UK and South Africa?
+
+[REJECTED] t6 not a question
+  render: And what is the largest consumer of natural gas in the answer to "Which region does not contain Asia?"
+  hop1: Which region does not contain Asia?
+  hop2: And what is the largest consumer of natural gas in Africa?
+
+[REJECTED] t6 not a question
+  render: What is the largest consumer of oil in the answer to "Which region does not contain Asia?"
+  hop1: Which region does not contain Asia?
+  hop2: What is the largest consumer of oil in Africa?
+
+[REJECTED] t6 not a question
+  render: What is the largest oil producer in the answer to "Which region does not contain Asia?"
+  hop1: Which region does not contain Asia?
+  hop2: What is the largest oil producer in Africa?
+
+[REJECTED] t6 not a question
+  render: What is the second largest natural gas producer in the answer to "Which region does not contain Asia?"
+  hop1: Which region does not contain Asia?
+  hop2: What is the second largest natural gas producer in Africa?
+
+[REJECTED] t7 duplicate of an accepted question
+  render: How many miles the answer to "Who dedicated a performance of "Hey Mama" to their mother?" of the Cunene River is Saint Helena?
+  hop1: Who dedicated a performance of "Hey Mama" to their mother?
+  hop2: How many miles west of the Cunene River is Saint Helena?
+
+[REJECTED] t6 not a question
+  render: Where was the Old the answer to "Who dedicated a performance of "Hey Mama" to their mother?"
+  hop1: Who dedicated a performance of "Hey Mama" to their mother?
+  hop2: Where was the Old West?
+
+[REJECTED] t6 not a question
+  render: What province borders Punjab to the answer to "Who dedicated a performance of "Hey Mama" to their mother?"
+  hop1: Who dedicated a performance of "Hey Mama" to their mother?
+  hop2: What province borders Punjab to the west?
+
+
+PARAPHRASE SAMPLES -- 10 accepted
+
+
+PARAPHRASE SAMPLES -- 10 rejected, with reasons

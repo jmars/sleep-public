@@ -1,0 +1,5 @@
+{"n_passages": 1, "n_questions": 5, "source": "data/squad_n1.jsonl", "stage": "data", "t": 1793246917.541597}
+{"mode": "base", "seconds": 33.75642371177673, "stage": "load", "t": 1793246951.2820761}
+{"em": 20.0, "eval_mode": "no_context", "f1": 30.0, "mode": "base", "n": 5, "seconds": 7.928615570068359, "stage": "eval", "t": 1793246959.210831}
+{"delta": 60.0, "leak": false, "min_delta": 10.0, "n": 5, "no_context_em": 20.0, "seconds": 8.74646806716919, "stage": "leak_probe", "t": 1793246967.9574156, "with_context_em": 80.0}
+{"absolute_gate_demoted": true, "mode": "base", "n_questions": 5, "no_context_em": 20.0, "no_context_f1": 30.0, "paper_base": 31.9, "rebase_gap": -11.899999999999999, "run": "m0_base_n1", "stage": "summary", "t": 1793246967.9578142, "wall_clock_s": 50.43191480636597}

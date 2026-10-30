@@ -1,0 +1,172 @@
+{
+ "control": {
+  "n_dream_pairs": 38,
+  "n_qa_examples": 38,
+  "sft_steps": 30,
+  "sft_lr": 0.0001,
+  "train_routers": true,
+  "sft_loss": [
+   1.1102,
+   0.1851
+  ],
+  "em_base": 20.0,
+  "em_warmup": 20.0,
+  "em_after": 20.0,
+  "f1_base": 26.66666666666667,
+  "f1_after": 33.33333333333333,
+  "preds_after": [
+   "Prime Minister of Samoa",
+   "five years",
+   "1879",
+   "Malietoa Tanumafili II",
+   "parliamentary democracy"
+  ],
+  "with_context_em": 60.0,
+  "leak": false,
+  "share_eval_prompts": 0.26288006756756754,
+  "share_dreams": 0.2402671089385475,
+  "format_em": {
+   "eval": 20.0,
+   "qa": 20.0,
+   "quiz": 0.0
+  },
+  "literalism_median": 0.0,
+  "seconds": 204.0
+ },
+ "low-lr": {
+  "n_dream_pairs": 38,
+  "n_qa_examples": 38,
+  "sft_steps": 30,
+  "sft_lr": 1e-05,
+  "train_routers": true,
+  "sft_loss": [
+   1.1102,
+   1.077
+  ],
+  "em_base": 20.0,
+  "em_warmup": 20.0,
+  "em_after": 20.0,
+  "f1_base": 26.66666666666667,
+  "f1_after": 33.33333333333333,
+  "preds_after": [
+   "Head of State",
+   "May 2009",
+   "1883",
+   "Malietoa Tanumafili II",
+   "Samoa was a constitutional monarchy"
+  ],
+  "with_context_em": 80.0,
+  "leak": false,
+  "share_eval_prompts": 0.22960304054054054,
+  "share_dreams": 0.22322363826815642,
+  "format_em": {
+   "eval": 20.0,
+   "qa": 20.0,
+   "quiz": 0.0
+  },
+  "literalism_median": 0.0,
+  "seconds": 170.8
+ },
+ "no-router": {
+  "n_dream_pairs": 38,
+  "n_qa_examples": 38,
+  "sft_steps": 30,
+  "sft_lr": 0.0001,
+  "train_routers": false,
+  "sft_loss": [
+   1.1102,
+   0.3559
+  ],
+  "em_base": 20.0,
+  "em_warmup": 20.0,
+  "em_after": 20.0,
+  "f1_base": 26.66666666666667,
+  "f1_after": 20.0,
+  "preds_after": [
+   "Head of State",
+   "five years",
+   "1825",
+   "Tuiatua Tupua Tamasese Efi",
+   "constitutional monarchy"
+  ],
+  "with_context_em": 60.0,
+  "leak": false,
+  "share_eval_prompts": 0.23412162162162162,
+  "share_dreams": 0.2233109287709497,
+  "format_em": {
+   "eval": 20.0,
+   "qa": 20.0,
+   "quiz": 0.0
+  },
+  "literalism_median": 0.0,
+  "seconds": 169.3
+ },
+ "qa": {
+  "n_dream_pairs": 38,
+  "n_qa_examples": 38,
+  "sft_steps": 19,
+  "sft_lr": 0.0001,
+  "train_routers": true,
+  "sft_loss": [
+   2.7144,
+   3.3344
+  ],
+  "em_base": 20.0,
+  "em_warmup": 20.0,
+  "em_after": 0.0,
+  "f1_base": 26.66666666666667,
+  "f1_after": 13.333333333333334,
+  "preds_after": [
+   "Prime Minister of Samoa",
+   "The term of office for the first joint head of state was one year.",
+   "Answer the question with a short factual answer.",
+   "Tuiatua Tupua Tamasese Efi",
+   "The Samoan Islands were annexed by the United States in the early 20"
+  ],
+  "with_context_em": 20.0,
+  "leak": false,
+  "share_eval_prompts": 0.24670608108108108,
+  "share_dreams": 0.2311016061452514,
+  "format_em": {
+   "eval": 0.0,
+   "qa": 20.0,
+   "quiz": 0.0
+  },
+  "literalism_median": 0.0,
+  "seconds": 149.9
+ },
+ "qa-no-router": {
+  "n_dream_pairs": 38,
+  "n_qa_examples": 38,
+  "sft_steps": 19,
+  "sft_lr": 0.0001,
+  "train_routers": false,
+  "sft_loss": [
+   2.7144,
+   3.4234
+  ],
+  "em_base": 20.0,
+  "em_warmup": 20.0,
+  "em_after": 20.0,
+  "f1_base": 26.66666666666667,
+  "f1_after": 20.0,
+  "preds_after": [
+   "",
+   "Samoa's first joint head of state was Malietoa Tanumafili",
+   "What year did the second head of state die?",
+   "Malietoa Tanumafili II",
+   ""
+  ],
+  "with_context_em": 0.0,
+  "leak": true,
+  "share_eval_prompts": 0.23745777027027026,
+  "share_dreams": 0.22459846368715083,
+  "format_em": {
+   "eval": 20.0,
+   "qa": 40.0,
+   "quiz": 0.0
+  },
+  "literalism_median": 0.0,
+  "seconds": 149.2
+ }
+}

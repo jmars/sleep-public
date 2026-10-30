@@ -1,0 +1,16 @@
+{
+  "mode": "sft-on-c",
+  "run": "m0_sft_on_c",
+  "no_context_em": 0.0,
+  "no_context_f1": 19.047619047619047,
+  "n_questions": 5,
+  "leak": {
+    "no_context_em": 0.0,
+    "with_context_em": 80.0,
+    "delta": 80.0,
+    "min_delta": 10.0,
+    "leak": false
+  },
+  "wall_clock_s": 100.64527654647827,
+  "paper_no_dreaming": 33.4
+}

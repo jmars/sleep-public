@@ -1,0 +1,25 @@
+# Single-passage (n = 1) knowledge incorporation, paper Table 3 left column.
+
+data:
+  name: single_n1
+  n_passages: 1
+  min_questions_per_passage: 5
+  seed: 0
+
+eval:
+  # M0 base frame: measure the base model on a wider passage sample first.
+  baseline_passages: 50
+  max_new_tokens: 16
+  batch_size: 8
+
+dream:
+  n_dreams: 8
+  temperature: 0.9
+  prompt_variant: quiz
+
+sft:
+  steps: 30
+  lr: 0.0001
+
+gates:
+  single_passage_min_gain: 2.0

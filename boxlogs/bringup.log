@@ -1,0 +1,76 @@
+[0] bitsandbytes + pytest (absent from the base image; E4/E5 installed them by hand)
+  WARNING: The script pygmentize is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts py.test and pytest are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+pipx 1.0.0 requires argcomplete>=1.9.4, but you have argcomplete 1.8.1 which is incompatible.
+    bnb 0.50.2 pytest 9.2.0
+    exit=0
+[1] pillow + numpy pin
+    pillow exit=0
+  WARNING: The script f2py is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+    numpy 1.26.4 pillow 12.3.0
+[2] transformers + peft
+  WARNING: The script tqdm is installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts hf, huggingface-cli and tiny-agents are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts accelerate, accelerate-config, accelerate-estimate-memory, accelerate-launch and accelerate-merge-weights are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+  WARNING: The scripts transformers and transformers-cli are installed in '/home/ubuntu/.local/bin' which is not on PATH.
+  Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+2026-10-30 16:01:46.175048: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793376106.256903    2936 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793376106.281701    2936 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793376106.434780    2936 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376106.434825    2936 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376106.434829    2936 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376106.434833    2936 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+    transformers 4.57.6 peft 0.21.2 OlmoeForCausalLM ok
+    import exit=0
+[3] CPU gate
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+92 passed, 1 warning in 20.75s
+    pytest exit=0
+[4] weights
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:00<00:00, 20.06it/s]Fetching 15 files: 100%|██████████| 15/15 [00:16<00:00,  1.10s/it]
+    snapshot /home/ubuntu/.cache/huggingface/hub/models--allenai--OLMoE-1B-7B-0125/snapshots/9b0c1aa87e34a20052389dce1f0cf01da783f654
+    download exit=0
+[5] GPU smoke gate
+[PASS] transformers version in range :: 4.57.6
+[PASS] cuda available :: NVIDIA A100-SXM4-40GB
+[PASS] device is not the local ROCm card :: NVIDIA A100-SXM4-40GB
+/usr/lib/python3/dist-packages/scipy/__init__.py:146: UserWarning: A NumPy version >=1.17.3 and <1.25.0 is required for this version of SciPy (detected version 1.26.4
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+[PASS] NF4 Linear4bit forward :: (8, 32)
+[PASS] NF4 Linear4bit backward :: grad finite
+`torch_dtype` is deprecated! Use `dtype` instead!
+2026-10-30 16:02:46.040430: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1793376166.056909    3208 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1793376166.063041    3208 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1793376166.081256    3208 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376166.081274    3208 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376166.081277    3208 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1793376166.081279    3208 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+Loading checkpoint shards:   0%|          | 0/6 [00:00<?, ?it/s]Loading checkpoint shards:  17%|█▋        | 1/6 [00:01<00:08,  1.66s/it]Loading checkpoint shards:  33%|███▎      | 2/6 [00:03<00:06,  1.68s/it]Loading checkpoint shards:  50%|█████     | 3/6 [00:05<00:05,  1.69s/it]Loading checkpoint shards:  67%|██████▋   | 4/6 [00:06<00:03,  1.70s/it]Loading checkpoint shards:  83%|████████▎ | 5/6 [00:08<00:01,  1.73s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:09<00:00,  1.44s/it]Loading checkpoint shards: 100%|██████████| 6/6 [00:09<00:00,  1.57s/it]
+[PASS] OLMoE 4-bit load + expand_experts :: n_base=64, build=20s
+[PASS] LoRA on new experts only :: lora experts [64, 65, 66, 67]
+[PASS] VRAM after build :: 5.5 GiB allocated / 9.5 GiB reserved
+[PASS] 16-token greedy generate :: 'William Shakespeare\n\nQUES: The first rec'
+[PASS] routing telemetry records :: new share 0.249 (uniform 4/68)
+[PASS] warmup moved the new columns :: share after warmup 0.255
+[PASS] SFT micro-step ran :: loss 1.662 -> 1.246
+[PASS] SFT produced non-zero LoRA gradient :: 384/384 LoRA tensors with a non-zero final gradient
+
+[smoke] 13/13 checks passed, wall=37s
+[smoke] PASS
+    smoke exit=0
+NVIDIA A100-SXM4-40GB, 40960 MiB
+[bringup] done

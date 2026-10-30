@@ -1,0 +1,7 @@
+# Build artefacts and run payloads that are not part of the deposit
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.pt
+*.tmp
+.venv/

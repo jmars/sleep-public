@@ -1,0 +1,59 @@
+# plan3 overlay: the full protocol at Table-3-exact corpus scale.
+#
+# 200 passages, one student per arm, aggregate training (steps = sft.steps x n_passages),
+# evaluated on all 923 questions of the corpus. The dream configuration is NOT changed
+# from the cells E1/E4/E5 validated (quiz@0.7, 8 dreams, sub-floor filter, grad-score,
+# top-4 + 2 random): changing it at the decisive run would fork the instrument.
+
+data:
+  name: corpus200
+  n_passages: 200
+  min_questions_per_passage: 1
+  seed: 0
+
+dream:
+  n_dreams: 8
+  # E1's G1 cell: support 0.750, 12.3 pairs/passage, containment median 0.000
+  temperature: 0.7
+  prompt_variant: quiz
+  top_k_keep: 4
+  random_keep: 2
+
+warmup:
+  steps: 25
+  forced_slots: 2
+
+sft:
+  # PER PASSAGE. The corpus arm trains `steps x n_passages` steps (6000 at n=200) in ONE
+  # train_sft call, so per-example epochs match the per-passage runs exactly.
+  steps: 30
+  lr: 0.0001
+  batch_size: 4
+  train_routers: false
+
+eval:
+  max_new_tokens: 16
+  # one batch value everywhere (arm frames, probes, with-context); batching flips ~1
+  # answer of 109, so cross-batch comparisons are never made
+  batch_size: 32
+
+gates:
+  # plan3 guards. Held-out drop is 3.0 here rather than E4/E5's 2.0: this student
+  # accumulates 10x the training on one adapter set, and the frame's granularity is
+  # ~1.1 pts at 92 questions (convention stated, not tuned to the result).
+  heldout_max_drop: 3.0
+  with_context_max_drop: 10.0
+  literalism_alarm: 0.5
+  literalism_insufficient: 0.3
+  # Paper Table 3 CORPUS column: sleep 44.3, removing-dreaming 36.2 -> gap 8.1 pts.
+  # The 12.4-pt single-passage figure is deliberately NOT armed here (column mismatch).
+  paper_corpus_sleep: 44.3
+  paper_corpus_no_dream: 36.2
+  corpus_sleep_minus_no_dream: 8.1
+  # Stop rule thresholds (pre-registered)
+  stop_null_abs_pts: 2.0
+  # Eval-set build targets
+  transfer_target_accepted: 150
+  transfer_min_accepted: 100
+  paraphrase_min_accepted: 800
+  paraphrase_target_accept_rate: 0.85
